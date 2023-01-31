@@ -402,6 +402,8 @@ $aLang = [
     'ARTICLE_MAIN_PRICEA'                       => 'A',
     'ARTICLE_MAIN_PRICEB'                       => 'B',
     'ARTICLE_MAIN_PRICEC'                       => 'C',
+    'ARTICLE_MAIN_INSTALLMENT'                  => 'Aufbauplan',
+    'ARTICLE_MAIN_INSTALLMENT_MONTHS'           => 'monate',
     'ARTICLE_MAIN_VAT'                          => 'Spez. MwSt.',
     'ARTICLE_MAIN_ARTCOPY'                      => 'Art. kopieren',
     'ARTICLE_MAIN_VARIANTE'                     => 'Variante von  ',
@@ -418,9 +420,6 @@ $aLang = [
     'ARTICLE_MAIN_DISTEAN'                      => 'Hersteller EAN',
     'ARTICLE_MAIN_MPN'                          => 'Hersteller-Artikelnummer (MPN)',
     'ARTICLE_MAIN_MANUFACTURERID'               => 'Hersteller',
-    'HELP_ARTICLE_MAIN_PRICE'                   => 'Dieser Preis wird an Varianten des Artikels vererbt.' .
-                                                   '<ul><li>Abhängig von den Shopeinstellungen wird der Netto- oder der Bruttopreis eingegeben/angezeigt.</li>' .
-                                                   '<li>In Klammern steht immer der Bruttopreis.</li></ul>',
     'ARTICLE_OVERVIEW_ARTMADEON'                => 'Art. erstellt am',
     'ARTICLE_OVERVIEW_LASTCHANGE'               => 'Letzte Änderung am',
     'ARTICLE_OVERVIEW_SALEPOSITION'             => 'Verkaufsrang Position ',

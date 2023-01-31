@@ -7,6 +7,10 @@ services:
     - '8080:80'
     depends_on:
       - database
+    extra_hosts:
+      - "host.internal.docker:host-gateway"
+    env_file:
+      - .env.docker
     volumes:
     - ./app:/app
     - ./docker/apache/conf/sites-available/000-default.conf:/etc/apache2/sites-available/000-default.conf

@@ -11,6 +11,8 @@ use Exception;
 use oxField;
 use OxidEsales\Eshop\Core\Field;
 use OxidEsales\Eshop\Core\Registry;
+use OxidEsales\EshopCommunity\Core\Installment;
+use OxidEsales\EshopCommunity\Core\Price;
 use oxList;
 
 // defining supported link types
@@ -471,6 +473,13 @@ class Article extends \OxidEsales\Eshop\Core\Model\MultiLanguageModel implements
     protected $actionType = ACTION_NA;
 
     /**
+     * Article installment
+     *
+     * @var \OxidEsales\EshopCommunity\Core\Installment
+     */
+    private Installment $installment;
+
+    /**
      * Constructor, sets shop ID for article (\OxidEsales\Eshop\Core\Config::getShopId()),
      * initiates parent constructor (parent::oxI18n()).
      *
@@ -483,6 +492,7 @@ class Article extends \OxidEsales\Eshop\Core\Model\MultiLanguageModel implements
                 $this->$sParam = $mValue;
             }
         }
+
         parent::__construct();
         $this->init('oxarticles');
     }
@@ -1171,6 +1181,8 @@ class Article extends \OxidEsales\Eshop\Core\Model\MultiLanguageModel implements
             $this->_iStockStatusOnLoad = $this->_iStockStatus;
 
             $this->_isLoaded = true;
+
+            $this->installment = new Installment($this);
 
             return true;
         }
@@ -3768,6 +3780,28 @@ class Article extends \OxidEsales\Eshop\Core\Model\MultiLanguageModel implements
         }
 
         return false;
+    }
+
+    public function getFirstPaymant(): ?\OxidEsales\Eshop\Core\Price
+    {
+        $firstPayment = (float)$this->getFieldData('OXFIRSTPAYMENT');
+
+        return new \OxidEsales\Eshop\Core\Price($firstPayment);
+    }
+
+    public function getPaymentMonths(): ?int
+    {
+        $paymentMonths = (int)$this->getFieldData('OXPAYMENTMONTHS');
+
+        return $paymentMonths;
+    }
+
+    /**
+     * @return \OxidEsales\EshopCommunity\Core\Installment
+     */
+    public function getInstallment(): Installment
+    {
+        return $this->installment;
     }
 
     /**
