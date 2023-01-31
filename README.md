@@ -1,41 +1,37 @@
-# Docker based LAMP
-
-LAMP is abbreviate of Linux Apache MySQL/MariaDB PHP.
-
-That mean complete environment for development on PHP language.
-
 ## How to use
 
-Just copy docker-compose.yml from dist example
+Build project
 
-    cp docker-compose.dist.yml docker-compose.yml
-
-Then build
-
-    docker-compose build
+    make build
 
 And run composition
 
-    docker-compose up -d
+    make up
 
-After this you may go to http://localhost and will see the NGINX default
-index page.
+Now you need enter to app:
 
-Of course you wan to pass your PHP files to this composition, for this you
-need overwrite strings like:
+    make enter
 
-    - ./app:/var/www/html
+After you need to do migrations:
 
-To your path with sources, eg `- ../my-sources-in-parent-folder:/var/www/html`.
+    vendor/bin/oe-eshop-db_migrate migrations:migrate
 
-If you don't like `/var/www/html` path, you may create your own config of
-apache and bind it into `php` or if you use fpm based container, then write
-config for NGINX and bind it `nginx` container.
+Done:
 
-## Links
+    URL: localhost:8080
 
-* [Video on YouTube](https://www.youtube.com/watch?v=he-Rps8VcFk) about Docker LAMP
-composition (on Russian language)
-* [Video on YouTube](https://www.youtube.com/watch?v=qxGlQZIbpHM) about minimal
-version of PHP-FPM and xDebug (on Russian language)
-* [WIKI page](https://en.wikipedia.org/wiki/LAMP_software_bundle) about LAMP
+## Result
+
+1. Add to input after price in admin panel <br>
+<img src="RESULT_TEST_TASK/1.jpg">
+2. Create 2 articles with and without installments. <br>
+   <img src="RESULT_TEST_TASK/2.png">
+   <img src="RESULT_TEST_TASK/3.png">
+3. Articles saved in database <br>
+   <img src="RESULT_TEST_TASK/4.png">
+4. A banner with information about the installment plan appeared in the article details.
+   <img src="RESULT_TEST_TASK/5.jpg">
+5. When you click on the banner, the following information appears. (There is a German translation.)
+   <img src="RESULT_TEST_TASK/6.png">
+6. The banner will not appear in the Article without an installment plan.
+   <img src="RESULT_TEST_TASK/7.jpg">
