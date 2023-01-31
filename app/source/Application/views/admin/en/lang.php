@@ -402,6 +402,8 @@ $aLang = [
     'ARTICLE_MAIN_PRICEA'                       => 'A',
     'ARTICLE_MAIN_PRICEB'                       => 'B',
     'ARTICLE_MAIN_PRICEC'                       => 'C',
+    'ARTICLE_MAIN_INSTALLMENT'                  => 'Installment',
+    'ARTICLE_MAIN_INSTALLMENT_MONTHS'           => 'months',
     'ARTICLE_MAIN_VAT'                          => 'Spec. VAT',
     'ARTICLE_MAIN_ARTCOPY'                      => 'Copy Product',
     'ARTICLE_MAIN_VARIANTE'                     => 'Variant of ',
@@ -418,9 +420,6 @@ $aLang = [
     'ARTICLE_MAIN_DISTEAN'                      => 'Man. EAN',
     'ARTICLE_MAIN_MPN'                          => 'MPN',
     'ARTICLE_MAIN_MANUFACTURERID'               => 'Manufacturer',
-    'HELP_ARTICLE_MAIN_PRICE'                   => 'This price is inherited to product\'s variants.' .
-                                                   '<ul><li>Depending on the shop settings net price or gross price is input/shown.</li>' .
-                                                   '<li>Gross price is always shown in parentheses.</li></ul>',
     'ARTICLE_OVERVIEW_ARTMADEON'                => 'Product created on',
     'ARTICLE_OVERVIEW_LASTCHANGE'               => 'Last Modification on',
     'ARTICLE_OVERVIEW_SALEPOSITION'             => 'Position Sales Rating ',

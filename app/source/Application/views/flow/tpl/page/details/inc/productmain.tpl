@@ -90,7 +90,6 @@
                 [{include file="page/details/inc/morepics.tpl"}]
             [{/block}]
         </div>
-
         <div class="col-xs-12 col-sm-8 col-md-5 col-lg-6 details-col-middle">
             [{block name="details_productmain_title"}]
                 <h1 id="productTitle" itemprop="name">
@@ -208,6 +207,7 @@
                     [{block name="details_productmain_price"}]
                         [{oxhasrights ident="SHOWARTICLEPRICE"}]
                             [{block name="details_productmain_price_value"}]
+                                [{include file="page/details/inc/installment.tpl"}]
                                 [{if $oDetailsProduct->getFPrice()}]
                                     <label id="productPrice" class="price">
                                         [{assign var="sFrom" value=""}]

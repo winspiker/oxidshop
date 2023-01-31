@@ -27,6 +27,8 @@
 	<field name="oxpic6" />
 	<field name="oxpic7" />
 	<field name="oxprice" />
+	<field name="oxfirstpayment" />
+	<field name="oxpaymentmonths" />
 	<field name="oxpricea" />
 	<field name="oxpriceb" />
 	<field name="oxpricec" />

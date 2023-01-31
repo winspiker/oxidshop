@@ -117,6 +117,12 @@ $aLang = array(
     'WIDGET_PRODUCT_RELATED_PRODUCTS_CROSSSELING_SUBHEADER' => 'Kunden die sich diesen Artikel angesehen haben, haben sich auch folgende Artikel angesehen.',
     'DETAILS_VPE_MESSAGE_1'                                 => 'Dieser Artikel kann nur in Verpackungseinheiten zu je',
     'DETAILS_VPE_MESSAGE_2'                                 => 'erworben werden.',
+    'INSTALLMENT_TITLE'                                     => "Jetzt kaufen, später bezahlen",
+    'INSTALLMENT_FIRST_PAYMENT'                             => "Erste zahlung",
+    'INSTALLMENT_NUMBER_OF_PAYMENT'                         => "Zahl der zahlung",
+    'INSTALLMENT_MONTHLY_PAYMENT'                           => "Monatliche bezahlung",
+    'INSTALLMENT_FULL_PRICE'                                => "Voller preis",
+    'MONTHS'                                                => 'monate',
 
     // Modal-Warenkorb
     'DD_MINIBASKET_MODAL_TABLE_TITLE'                       => 'Artikel',

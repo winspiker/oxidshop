@@ -16,6 +16,7 @@ use OxidEsales\Eshop\Application\Model\Category;
 use OxidEsales\Eshop\Core\Field;
 use OxidEsales\Eshop\Core\MailValidator;
 use OxidEsales\Eshop\Core\Registry;
+use OxidEsales\EshopCommunity\Core\Installment;
 use oxPaymentList;
 use oxRegistry;
 use oxField;
