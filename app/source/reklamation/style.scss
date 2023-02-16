@@ -1,0 +1,606 @@
+@import 'normalize.css';
+
+.reklamation-form {
+    max-width: 800px;
+    margin: 20px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+
+    * {
+        box-sizing: border-box; 
+    }
+
+    .reklamation-form--notification {
+        border: solid 3px #f00;
+        padding: 15px;
+        margin-bottom: 40px;
+        h2 {
+            color: #f00;
+            margin-top: 0;
+        }
+
+        > * {
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .reklamation-form--main-fields {
+        display: flex;
+        flex-wrap: wrap;
+
+        h2 {
+            color: #f62f5e;
+        }
+    }
+
+    .reklamation-form--client {
+        display: flex;
+        flex-wrap: wrap;
+
+        h2 {
+            color: #f62f5e;
+        }
+    }
+
+    .reklamation-form--list {
+        margin-bottom: 40px;
+        h2 {
+            color: #f62f5e;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            td {
+                border: solid 1px #ccc;
+                padding: 0;
+
+                input, textarea {
+                    border: none;
+                    outline: none;
+                    width: 100%;
+                    display: block;
+                    font-size: 18px;
+                    line-height: 24px;
+                    padding: 10px 15px;
+                    outline: none;
+
+                    &:focus {
+                        outline: none;
+                    
+                    }
+                }
+
+
+                textarea {
+                    resize: none;
+                }
+            }
+
+            th {
+                
+                font-size: 12px;
+                transform: translateY(-50%);
+                background: #fff;
+                padding: 0;
+                text-align: left;
+            }
+
+            tr {
+                td {
+                    &:last-child {
+                        text-align: center;
+                        padding: 0 10px;
+                    }
+                }
+            }
+
+            button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 !important;
+                border-radius: 0;
+                border: none;
+                font-size: 12px;
+                width: 30px;
+                height: 30px;
+            }
+        }
+
+        #add-row {
+            padding: 13px 15px 10px 15px;
+            background-color: #f62f5e;
+            color: #fff;
+            font-weight: bold;
+            border: none;
+            margin-top: 10px;
+        }
+        
+    }
+
+    .reklamation-form--reason {
+        h2 {
+            color: #f62f5e;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            column-count: 3;
+            column-gap: 20px;
+
+            @media (max-width: 768px) {
+                column-count: 1;
+                column-gap: 0; 
+            }
+
+            li {
+                display: inline-block;
+                margin-bottom: 10px;
+
+                @media (max-width: 768px) {
+                    display: block;
+                }
+
+                .sonstiges-additional-field {
+                  padding-left: 30px;
+                  margin-top: 5px;
+                  
+                  input {
+                    border: solid 1px #ccc;
+                    width: 100%;
+                    outline: none;;
+                    display: block;
+                    font-size: 18px;
+                    line-height: 24px;
+                    padding: 5px 10px;
+                    outline: none;
+                    margin-bottom: 5px;
+                  }
+                }
+
+                small {
+                    display: block;
+                    color: #777;
+                }
+
+                label {
+                    position: relative;
+                    padding-left: 30px;
+                    display: block;
+                    cursor: pointer;
+                    padding-top: 1px;
+
+
+                    span {
+                        display: block;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 18px;
+                        height: 18px;
+                        border: solid 1px #ccc;
+                        z-index: 2;
+                    }
+
+                    input {
+                        position: absolute;
+                        left: 0;
+                        z-index: 1;
+                        opacity: 0;
+
+                        &:checked {
+                            & + span,
+                            & + small + span {
+                                border: solid 1px #f62f5e;
+                                background: #f62f5e;
+
+                                &:before {
+                                    content: '';
+                                    display: block;
+                                    width: 8px;
+                                    height: 3px;
+                                    border-radius: 3px;
+                                    position: absolute;
+                                    left: 1px;
+                                    top: 8px;
+                                    transform: rotate(45deg);
+                                    background: #fff;
+                                }
+
+                                &:after {
+                                    content: '';
+                                    display: block;
+                                    width: 12px;
+                                    height: 3px;
+                                    border-radius: 3px;
+                                    position: absolute;
+                                    left: 4px;
+                                    top: 7px;
+                                    transform: rotate(-45deg);
+                                    background: #fff;
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+
+    .reklamation-form--wish {
+        h2 {
+            color: #f62f5e;
+        }
+
+        > div {
+            margin-bottom: 30px;
+            max-width: 380px;
+            padding: 10px 10px;
+            border: solid 1px #ccc;
+
+            a {
+                text-decoration: none;
+                color: #000000;
+            }
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            justify-content: space-between;
+
+            @media (max-width: 768px) {
+                flex-direction: column;
+            }
+
+            > * + * {
+                margin-left: 40px;
+
+                @media (max-width: 768px) {
+                    margin-left: 0;
+                }
+            }
+
+            li {
+                display: inline-block;
+                margin-bottom: 10px;
+
+                .sonstiges-additional-field {
+                  padding-left: 30px;
+                  margin-top: 5px;
+                  
+                  input {
+                    border: solid 1px #ccc;
+                    width: 100%;
+                    outline: none;;
+                    display: block;
+                    font-size: 18px;
+                    line-height: 24px;
+                    padding: 5px 10px;
+                    outline: none;
+                    margin-bottom: 5px;
+                  }
+                }
+
+                small {
+                    display: block;
+                    color: #777;
+                }
+
+                label {
+                    position: relative;
+                    padding-left: 30px;
+                    display: block;
+                    cursor: pointer;
+
+
+                    span {
+                        display: block;
+                        position: absolute;
+                        left: 0;
+                        top: -1px;
+                        width: 18px;
+                        height: 18px;
+                        border: solid 1px #ccc;
+                        z-index: 2;
+                    }
+
+                    input {
+                        position: absolute;
+                        left: 0;
+                        z-index: 1;
+                        opacity: 0;
+
+                        &:checked {
+                            & + span,
+                            & + small + span {
+                                border: solid 1px #f62f5e;
+                                background: #f62f5e;
+
+                                &:before {
+                                    content: '';
+                                    display: block;
+                                    width: 8px;
+                                    height: 3px;
+                                    border-radius: 3px;
+                                    position: absolute;
+                                    left: 1px;
+                                    top: 8px;
+                                    transform: rotate(45deg);
+                                    background: #fff;
+                                }
+
+                                &:after {
+                                    content: '';
+                                    display: block;
+                                    width: 12px;
+                                    height: 3px;
+                                    border-radius: 3px;
+                                    position: absolute;
+                                    left: 4px;
+                                    top: 7px;
+                                    transform: rotate(-45deg);
+                                    background: #fff;
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+
+                > span {
+                    padding-left: 30px;
+                    display: block;
+                    font-size: 14px;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+
+    .reklamation-form--bank {
+        display: flex;
+        margin-top: 30px;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
+
+        .reklamation-form--bank-data {
+            padding: 20px;
+            margin-left: 30px;
+            min-width: 300px;
+            border: solid 3px #f62f5e;
+
+            @media (max-width: 768px) {
+                margin-left: 0;
+                margin-top: 30px;
+            }
+
+
+            h2 {
+                color: #f62f5e;
+            }
+        }
+
+        .reklamation-form--bank-fields {
+            > * {
+                &:first-child {
+                    margin-top: 0;
+                }
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .reklamation-form--agb {
+        margin-top: 30px;
+        max-width: 380px;
+
+        a {
+            text-decoration: none;
+            color: #000000;
+        }
+
+        label {
+            position: relative;
+            padding-left: 30px;
+            display: block;
+            cursor: pointer;
+
+
+            span {
+                display: block;
+                position: absolute;
+                left: 0;
+                top: -1px;
+                width: 18px;
+                height: 18px;
+                border: solid 1px #ccc;
+                z-index: 2;
+            }
+
+            input {
+                position: absolute;
+                left: 0;
+                z-index: 1;
+                opacity: 0;
+
+                &:checked {
+                    & + span,
+                    & + small + span {
+                        border: solid 1px #f62f5e;
+                        background: #f62f5e;
+
+                        &:before {
+                            content: '';
+                            display: block;
+                            width: 8px;
+                            height: 3px;
+                            border-radius: 3px;
+                            position: absolute;
+                            left: 1px;
+                            top: 8px;
+                            transform: rotate(45deg);
+                            background: #fff;
+                        }
+
+                        &:after {
+                            content: '';
+                            display: block;
+                            width: 12px;
+                            height: 3px;
+                            border-radius: 3px;
+                            position: absolute;
+                            left: 4px;
+                            top: 7px;
+                            transform: rotate(-45deg);
+                            background: #fff;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+
+    .reklamation-form--attention {
+        display: flex;
+        margin-top: 30px;
+        border: solid 1px #f00;
+        padding: 10px;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
+
+        h2 {
+            background: #f00;
+            padding: 15px;
+            white-space: nowrap;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            margin: 0;
+            margin-right: 20px;
+
+            @media (max-width: 768px) {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+
+        .reklamation-form--attention-desc {
+            font-size: 12px;
+            > * {
+                &:first-child {
+                    margin-top: 0;
+                }
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .reklamation-form--small-text  {
+        margin-top: 30px;
+        font-size: 12px;
+
+        column-count: 4;
+        column-gap: 20px;
+        padding: 10px;
+        border: solid 1px #ccc;
+
+        @media (max-width: 768px) {
+            column-count: 1;
+        }
+        
+        ul {
+            padding-left: 15px;
+
+            li {
+                margin-bottom: 10px;
+            }
+        }
+
+        h3 {
+            margin-top: 0;
+        }
+    }
+
+    .reklamation-form--field {
+        width: 100%;
+        position: relative;
+       
+        margin-bottom: 20px;
+
+        label {
+            font-size: 12px;
+            position: absolute;
+            left: 10px;
+            top: 0;
+            transform: translateY(-50%);
+            background: #fff;
+            display: block;
+            padding: 0 5px;
+        }
+
+        input {
+            border: solid 1px #ccc;
+            width: 100%;
+            display: block;
+            font-size: 18px;
+            line-height: 24px;
+            padding: 10px 15px;
+            outline: none;
+
+            &:focus {
+                outline: none;
+                border-color: #87B144;
+
+                & + label {
+                    color: #87B144;
+                }
+            }
+        }
+
+        &.reklamation-form--field-half {
+            width: calc(50% - 10px);
+            margin-right: 20px;
+        }
+        
+        &.reklamation-form--field-one-of-third {
+            width: calc(33.3% - 10px);
+            margin-right: 20px;
+        }
+
+        &.reklamation-form--field-two-of-third {
+            width: calc(66.6% - 10px);
+            margin-right: 20px;
+        }
+
+        &.reklamation-form--field--last-in-row {
+            margin-right: 0;
+        }
+    }
+
+    button[type="submit"] {
+        padding: 13px 15px 13px 15px;
+        background-color: #f62f5e;
+        color: #fff;
+        font-weight: bold;
+        border: none;
+        margin-top: 20px;
+        font-size: 24px;
+    }
+}

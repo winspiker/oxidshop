@@ -1,45 +1,29 @@
-# Shop configuration
-/source/config.inc.php
+# See https://help.github.com/ignore-files/ for more about ignoring files.
 
-# Log
-/source/log/
-!/source/log/.htaccess
+# dependencies
+/node_modules
 
-# Cache
-/source/cache/
-!/source/cache/.htaccess
-!/source/cache/dir.txt
+# testing
+/coverage
 
-# Export
-/source/export/
-!/source/export/.gitkeep
+# production
+/dist
 
-# Temporary files
-/source/tmp/
-!/source/tmp/.htaccess
-
-# Composer
-/vendor/
-/composer.lock
-
-# Testing library
-/test_config.yml
-/source/Services/
-
-# Editions
-/source/Edition/
-
-# IDE
-/.idea/
-/.phpstorm-oxid.meta.php
-/.ide-helper.php
-
-# OS
+# misc
 .DS_Store
 
-# DI cache
-/source/Internal/Container/container_cache.php
 
-# DI for modules and packages
-/var/generated_services.yaml
-/tests/Integration/Internal/Container/Dao/generated_project.yaml
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+.DS_Store
+.idea
+*.map
+*.config
+
+
+/_notes
+
+/source/blog/
+/source/modules/mollie/molliepayment/

@@ -1,0 +1,22 @@
+{
+  "name": "exonn/exonn_asum",
+  "description": "Exonn Article SEO URL Manager",
+  "type": "oxideshop-module",
+  "keywords": ["exonn", "SEO", "module", "oxid"],
+  "homepage": "https://www.exonn.de",
+  "extra": {
+    "oxideshop": {
+      "target-directory": "exonn/exonn_asum"
+    }
+  },
+  "version": "1.2.3",
+  "require": {
+    "ext-bcmath": "*",
+    "ext-json": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Exonn\\Asum\\": "../../../source/modules/exonn/exonn_asum"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+15:11:49
+17.121.114.57
+Array
+(
+)
+
+Array
+(
+    [force_sid] => 3edb05852f7013f62cfdedcf10a7b506
+    [redirected] => 1
+)
+
+time: 0.97430896759
+
+
+

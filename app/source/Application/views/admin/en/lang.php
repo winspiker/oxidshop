@@ -4,8 +4,12 @@
  * See LICENSE file for license details.
  */
 
+/*
+ * Capitalisation in this document:
+ * First letter is always capitalized
+ * All nouns are capitalized
+ */
 $sLangName = 'English';
-
 
 // -------------------------------
 // RESOURCE IDENTIFIER = STRING
@@ -369,7 +373,8 @@ $aLang = [
     'ARTICLE_EXTEND_SHOWCUSTOMAGREEMENT'        => 'Confirm terms and conditions',
     'ARTICLE_EXTEND_NONMATERIAL'                => 'Intangible Product',
     'ARTICLE_EXTEND_FREESHIPPING'               => 'Free Shipping',
-    'ARTICLE_EXTEND_BLFIXEDPRICE'               => 'Deactivate wished Price',
+    'ARTICLE_EXTEND_ISNOTCOD'                   => 'Cash on delivery not allowed',
+    'ARTICLE_EXTEND_BLFIXEDPRICE'               => 'Deactivate Price Alert',
     'ARTICLE_EXTEND_ARTINCATS'                  => 'Product is in these Categories',
     'ARTICLE_EXTEND_DEFAULT'                    => 'Set as Main Category',
     'ARTICLE_EXTEND_UPDATEMEDIA'                => 'Update media',
@@ -402,8 +407,6 @@ $aLang = [
     'ARTICLE_MAIN_PRICEA'                       => 'A',
     'ARTICLE_MAIN_PRICEB'                       => 'B',
     'ARTICLE_MAIN_PRICEC'                       => 'C',
-    'ARTICLE_MAIN_INSTALLMENT'                  => 'Installment',
-    'ARTICLE_MAIN_INSTALLMENT_MONTHS'           => 'months',
     'ARTICLE_MAIN_VAT'                          => 'Spec. VAT',
     'ARTICLE_MAIN_ARTCOPY'                      => 'Copy Product',
     'ARTICLE_MAIN_VARIANTE'                     => 'Variant of ',
@@ -420,6 +423,9 @@ $aLang = [
     'ARTICLE_MAIN_DISTEAN'                      => 'Man. EAN',
     'ARTICLE_MAIN_MPN'                          => 'MPN',
     'ARTICLE_MAIN_MANUFACTURERID'               => 'Manufacturer',
+    'HELP_ARTICLE_MAIN_PRICE'                   => 'This price is inherited to product\'s variants.' .
+                                                   '<ul><li>Depending on the shop settings net price or gross price is input/shown.</li>' .
+                                                   '<li>Gross price is always shown in parentheses.</li></ul>',
     'ARTICLE_OVERVIEW_ARTMADEON'                => 'Product created on',
     'ARTICLE_OVERVIEW_LASTCHANGE'               => 'Last Modification on',
     'ARTICLE_OVERVIEW_SALEPOSITION'             => 'Position Sales Rating ',
@@ -652,22 +658,15 @@ $aLang = [
     'DISCOUNT_USERS_ALLUSERSINGROUP'            => 'All Users',
     'DISCOUNT_USERS_SETGROUPS'                  => 'Assigned User Groups',
     'DISCOUNT_USERS_SETUSER'                    => 'Assigned Users',
-
-    // @deprecated 6.6.0 dynpages will be removed on the next major
-        'DYN_ECONDA_ACTIVE'                         => 'Activate Econda Webcontrolling?',
-        'DYN_ECONDA_ATTENTION'                      => 'Please note: ',
-        'DYN_ECONDA_COPY_FILE'                      => 'You have to copy the file "emos2.js" which you receive from Econda into the directory %s',
-    // END deprecated
+    'DYN_ECONDA_ACTIVE'                         => 'Activate Econda Webcontrolling?',
+    'DYN_ECONDA_ATTENTION'                      => 'Please note: ',
+    'DYN_ECONDA_COPY_FILE'                      => 'You have to copy the file "emos2.js" which you receive from Econda into the directory %s',
 
     'DYNBASE_ADDCATTOCAMPAIGN'                       => 'Add category to campaign parameter',
     'DYNBASE_DO_SUCCESS'                             => 'Success! Your export file can be downloaded <a href="%s" target="_blank">here</a>',
     'DYNBASE_DO_LINK'                                => 'The Partner can also pick-up this file himself - please note following Link: ',
-
-    // @deprecated 6.6.0 dynpages will be removed on the next major
-        'DYNSCREEN_TITLE'                                => 'marketing',
-        'DYNSCREEN_LIST_SERVICE'                         => 'Service Area',
-    // END deprecated
-
+    'DYNSCREEN_TITLE'                                => 'marketing',
+    'DYNSCREEN_LIST_SERVICE'                         => 'Service Area',
     'EDITOR_PLAINTEXT_HINT'                          => '<b>Note:</b> If you need to preserve text line breaks (e.g. plaintext e-mails), please use tab "html CODE" instead of "Design".',
     'ALTERNATIVE_IMAGE_SERVER_NOTE'                  => '<b>Note:</b> Alternative image server configuration detected, files will not be uploaded to remote location. Please take care about synchronization manually.',
     'EXCEPTION_USER_USEREXISTS'                      => 'This user allready exists!',
@@ -688,7 +687,7 @@ $aLang = [
     'EXCEPTION_NODESCRIPTIONADDED'                   => 'Please enter description',
     'EXCEPTION_NOMEDIAADDED'                         => 'Please enter existing media URL or upload the file',
     'EXCEPTION_COULDNOTWRITETOFILE'                  => 'Could not write to file',
-    'EXCEPTION_FILENOTFOUND'                         => 'File not found (see oxideshop.log for details)',
+    'EXCEPTION_FILENOTFOUND'                         => 'File not found (see EXCEPTION_LOG.txt for details)',
     'EXCEPTION_THEME_NOT_LOADED'                     => 'Theme could not be loaded',
     'EXCEPTION_MODULE_NOT_LOADED'                    => 'Module could not be loaded',
     'EXCEPTION_PARENT_VERSION_UNSPECIFIED'           => 'Parent theme did not specify version',
@@ -749,17 +748,11 @@ $aLang = [
     'LANGUAGE_EMPTYLANGUAGENAME_ERROR'               => 'Please enter language name!',
     'LANGUAGE_ABBREVIATION_INVALID_ERROR'            => 'Language abbreviation invalid! Permitted characters are a-z, A-Z, 0-9 and the underscore.',
     'SETUP_DIRNOTDELETED_WARNING'                    => 'Please delete directory: Setup!',
-    // deprecated 6.6.0
     'UPDATEAPP_DIRNOTDELETED_WARNING'                => 'Please delete directory: updateApp!',
-    // END deprecated
     'SETUP_CONFIGPERMISSIONS_WARNING'                => 'Due to security reasons put your config.inc.php file to read-only mode!',
     'LOGIN_TITLE'                                    => 'OXID eShop Login',
-    // @deprecated 6.10.0
     'LOGIN_ERROR'                                    => 'Error! Incorrect username and/or password!',
     'LOGIN_NO_COOKIE_SUPPORT'                        => 'Error! Your browser does not support cookies!',
-    // END deprecated
-    'ERROR_MESSAGE_USER_NOVALIDLOGIN'                => 'Error! Incorrect username and/or password!',
-    'ERROR_MESSAGE_COOKIE_NOCOOKIE'                  => 'Error! Your browser does not support cookies!',
     'LOGIN_LANGUAGE'                                 => 'Language',
     'LOGIN_PROFILE'                                  => 'Profile',
     'LOGIN_START'                                    => 'Start OXID eShop Admin',
@@ -775,11 +768,8 @@ $aLang = [
     'NAVIGATION_LOGOUT'                              => 'Logout',
     'NAVIGATION_HOME'                                => 'Home',
     'NAVIGATION_PAGE'                                => 'Page',
-    // @deprecated
     'NAVIGATION_NEWVERSIONAVAILABLE'                 => 'Version %s is available.',
-    // END deprecated
-    'NAVIGATION_NEW_VERSION_AVAILABLE'               => 'You are using version %s, version %s is now available. Please update now.',
-    // @deprecated 6.5.6 "News" feature will be removed completely
+    // @deprecated since v.5.3.0 (2016-06-17); The Admin Menu: Customer Info -> News feature will be moved to a module in v6.0.0
     'NEWS_LIST_TITLE'                                => '[OXID News Administration]',
     'NEWS_LIST_SHORTTEXT'                            => 'Title',
     'NEWS_LIST_MENUITEM'                             => 'Customer Information',
@@ -797,14 +787,11 @@ $aLang = [
     'NAVIGATION_SYSREQ_MESSAGE_INACTIVE'             => "The permanent system health check has been deactivated. You can re-activate it in the Perform. tab at Master settings -> Core settings. To check it anyway, please click on this link: ",
     'NAVIGATION_SHOPFRONT'                           => "Shop's start page",
 
-    // @deprecated Functionality for Newsletter management will be removed.
     'NEWSLETTER_DONE_NEWSSEND'                           => 'Your Newsletter has been sent.',
     'NEWSLETTER_DONE_GOTONEWSLETTER'                     => 'go to Newsletter ',
     'NEWSLETTER_DONE_TITLE'                              => 'OXID Newsletter',
-    // END deprecated
     'NEWSLETTER_LIST_MENUITEM'                           => 'Customer Information',
     'NEWSLETTER_LIST_MENUSUBITEM'                        => 'Newsletter',
-    // @deprecated Functionality for Newsletter management will be removed.
     'NEWSLETTER_MAIN_MODEL'                              => 'Sample',
     'NEWSLETTER_PLAIN_TEXT'                              => 'Plain Text Sample',
     'NEWSLETTER_PREVIEW_PLAINTEXT'                       => 'PLAIN TEXT',
@@ -815,7 +802,6 @@ $aLang = [
     'NEWSLETTER_SEND_TITLE'                              => 'OXID Newsletter',
     'NEWSLETTER_SEND_SEND1'                              => 'Send',
     'NEWSLETTER_SEND_SEND2'                              => 'of overall',
-    // END deprecated
     'ORDER_ARTICLE_YOUWANTTODELETE'                      => 'Do you really want to delete this product?',
     'ORDER_ARTICLE_YOUWANTTOSTORNO'                      => 'Do you really want to cancel this product?',
     'ORDER_ARTICLE_ENETTO'                               => 'Net',
@@ -863,7 +849,7 @@ $aLang = [
     'ORDER_REMARK_REMARK'                                => '[Remark]',
     'ORDER_REMARK_ORDER'                                 => '[Order]',
     'ORDER_REMARK_USER'                                  => '[Reg.]',
-    // @deprecated 6.5.6 "News" feature will be removed completely
+    // @deprecated since v.5.3.0 (2016-06-17); The Admin Menu: Customer Info -> News feature will be moved to a module in v6.0.0
     'ORDER_REMARK_NEWS'                                  => '[News]',
     // END deprecated
     'ORDER_OVERVIEW_VATIDCHECKFAIL'                      => 'VAT ID validation failed',
@@ -914,30 +900,30 @@ $aLang = [
     'PAYMENT_MAIN_LONGDESC'                              => 'Payment Description',
     'PAYMENT_MAIN_NOTICEDEFAULTVALUESSELECTED'           => 'Default values have been selected',
     'PAYMENT_OVERVIEW_HOWMANYPAYMENTS'                   => 'How many purchases were paid with this payment method',
-    'PRICEALARM_DONE_SENDEMAIL'                          => 'Notification mail(s) sent.',
-    'PRICEALARM_DONE_GOTOPRICEALARM'                     => 'Go to Wished Price ',
-    'PRICEALARM_LIST_CONFIRMDATE'                        => 'Received',
-    'PRICEALARM_LIST_SENDDATE'                           => 'Notified',
-    'PRICEALARM_LIST_CUSTOMERSPRICE'                     => 'Wished price',
+    'PRICEALARM_DONE_SENDEMAIL'                          => 'Sent Price Alert e-mails.',
+    'PRICEALARM_DONE_GOTOPRICEALARM'                     => 'go to Price Alert ',
+    'PRICEALARM_LIST_CONFIRMDATE'                        => 'Confirmation Date',
+    'PRICEALARM_LIST_SENDDATE'                           => 'Shipping Date',
+    'PRICEALARM_LIST_CUSTOMERSPRICE'                     => 'Cust. Price',
     'PRICEALARM_LIST_STANDARTPRICE'                      => 'Reg. Price',
     'PRICEALARM_LIST_MENUITEM'                           => 'Customer Information',
-    'PRICEALARM_LIST_MENUSUBITEM'                        => 'Wished Price',
-    'PRICEALARM_MAIL_OXIDPRICEALARM'                     => 'Wished Price',
-    'PRICEALARM_MAIL_OPENEMAILS1'                        => 'The wished price was reached',
-    'PRICEALARM_MAIL_OPENEMAILS2'                        => 'times.',
-    'PRICEALARM_MAIL_SENDPRICEALARMEMAIL1'               => 'To send the notification mail(s) please',
-    'PRICEALARM_MAIL_SENDPRICEALARMEMAIL2'               => 'click here!',
+    'PRICEALARM_LIST_MENUSUBITEM'                        => 'Price Alert',
+    'PRICEALARM_MAIL_OXIDPRICEALARM'                     => 'OXID eSales Price Alert',
+    'PRICEALARM_MAIL_OPENEMAILS1'                        => 'There are',
+    'PRICEALARM_MAIL_OPENEMAILS2'                        => 'Price Alert e-mails open and ready to be send.',
+    'PRICEALARM_MAIL_SENDPRICEALARMEMAIL1'               => 'To send the Price Alert e-mails to the customers please',
+    'PRICEALARM_MAIL_SENDPRICEALARMEMAIL2'               => 'click here.',
     'PRICEALARM_MAIN_SUCCESS'                            => 'E-mail has been sent successfully',
     'PRICEALARM_MAIN_ERROR'                              => 'Error sending e-mail',
-    'PRICEALARM_MAIN_EMAIL'                              => 'E-mail addres',
-    'PRICEALARM_MAIN_CUSTOMER'                           => 'Name of customer',
-    'PRICEALARM_MAIN_SUBSCRIPTIONDATE'                   => 'Received',
-    'PRICEALARM_MAIN_MAILINGDATE'                        => 'Notified',
+    'PRICEALARM_MAIN_EMAIL'                              => 'E-mail',
+    'PRICEALARM_MAIN_CUSTOMER'                           => 'Customer',
+    'PRICEALARM_MAIN_SUBSCRIPTIONDATE'                   => 'Subscription Date',
+    'PRICEALARM_MAIN_MAILINGDATE'                        => 'Shipping Date',
     'PRICEALARM_MAIN_PRODUCT'                            => 'Product',
-    'PRICEALARM_MAIN_CUSTOMERPRICE'                      => 'Wished price',
-    'PRICEALARM_MAIN_REGULARPRICE'                       => 'Regular price',
+    'PRICEALARM_MAIN_CUSTOMERPRICE'                      => 'Customer Price',
+    'PRICEALARM_MAIN_REGULARPRICE'                       => 'Regular Price',
     'PRICEALARM_MAIN_EMAILSEND'                          => 'Send e-mail',
-    'PRICEALARM_SEND_TITLE'                              => '[!] Wished Price',
+    'PRICEALARM_SEND_TITLE'                              => 'oxid Price Alert',
     'PRICEALARM_MESSAGE_SENT'                            => 'Sent',
     'PRICEALARM_SEND_FROM'                               => 'from',
     'ROLES_LIST_TITLE'                                   => 'Title',
@@ -1026,7 +1012,7 @@ $aLang = [
     'SHOP_MALL_MALLINHERIT_OXDISCOUNT'                   => 'Inherit all <b>discounts</b> from parent shop',
     'SHOP_MALL_MALLINHERIT_OXLINKS'                      => 'Inherit all <b>shop links</b> from parent shop',
     'SHOP_MALL_MALLINHERIT_OXVOUCHERSERIES'              => 'Inherit all <b>coupon series</b> from parent shop',
-    // @deprecated 6.5.6 "News" feature will be removed completely
+    // @deprecated since v.5.3.0 (2016-06-17); The Admin Menu: Customer Info -> News feature will be moved to a module in v6.0.0
     'SHOP_MALL_MALLINHERIT_OXNEWS'                       => 'Inherit <b>shop news</b> from parent shop',
     // END deprecated
     'SHOP_MALL_MALLINHERIT_OXSELECTLIST'                 => 'Inherit all <b>select lists</b> from parent shop',
@@ -1073,9 +1059,9 @@ $aLang = [
     'SHOP_CONFIG_CSVSEPARATOR'                                => 'CSV Separation Char for Im/Export',
     'SHOP_CONFIG_CSVFIELDENCLOSER'                            => 'CSV-Encloser for Im/Export',
     'SHOP_CONFIG_DISABLEARTDUBLICATES'                        => 'When Products are copied: Do not set copied Product to active',
-    /** @deprecated since v6.5.4 (2020-04-06); Suggest feature will be removed completely */
+    // @deprecated since v6.2.0 (2017-02-15); Recommendations feature will be moved to an own module.
     'SHOP_CONFIG_ALLOW_SUGGEST_ARTICLE'                       => 'Allow the recommendation of products',
-    /** end deprecated */
+    // END deprecated
     'SHOP_CONFIG_EXPORTNUMBEROFLINES'                         => 'Number of Lines which are exported per Tick in CSV Export',
     'SHOP_CONFIG_MWSTSETTING'                                 => 'VAT Settings for XML export',
     'SHOP_CONFIG_NUMBEROFEMAILSPERTICK'                       => 'Number of Newsletters sent per Tick',
@@ -1098,7 +1084,7 @@ $aLang = [
     'SHOP_CONFIG_CALCULATEVATOFORPAYCHARGE'                   => 'Display VAT contained in Payment Method Charges in Shopping Cart and Invoice',
     'SHOP_CONFIG_CALCPAYVATONTOP'                             => 'Enter Payment Method Charges as net Price (plus VAT)',
     'SHOP_CONFIG_CMSFOLDER'                                   => 'CMS Page Folders',
-    // @deprecated 6.5.6 "News" feature will be removed completely
+    // @deprecated since v.5.3.0 (2016-06-17); The Admin Menu: Customer Info -> News feature will be moved to a module in v6.0.0
     'SHOP_CONFIG_CNTOFNEWS'                                   => 'Number of News which are displayed in the News Box',
     // END deprecated
     'SHOP_CONFIG_DATEFORMAT'                                  => 'Date Format in eShop Admin',
@@ -1134,11 +1120,7 @@ $aLang = [
     'SHOP_CONFIG_STOCKWARNINGLIMIT'                           => 'Stock Level at which Users are informed that only a few Products remain in Stock',
     'SHOP_CONFIG_STOCKOFFDEFAULTMESSAGE'                      => 'Use default "out-of-stock" Message',
     'SHOP_CONFIG_STOCKONDEFAULTMESSAGE'                       => 'Use default "in-stock" Message',
-
-    // @deprecated since v6.5.1 (2019-02-07); credit card payment method will be no longer supported
     'SHOP_CONFIG_STORECREDITCARDINFO'                         => 'Save Credit Card information',
-    // END deprecated
-
     'SHOP_CONFIG_SHOWTSINTERNATIONALFEESMESSAGE'              => 'Display a message about possible international delivery fees',
     'SHOP_CONFIG_SHOWTSCODMESSAGE'                            => 'Display a message about possible "cash on delivery" payment method fees',
     'SHOP_CONFIG_TIMEFORMAT'                                  => 'Time Format in eShop Admin',
@@ -1256,9 +1238,7 @@ $aLang = [
     'SYSREQ_MOD_REWRITE'                      => 'Apache mod_rewrite module',
     'SYSREQ_ALLOW_URL_FOPEN'                  => 'allow_url_fopen or fsockopen to port 80',
     'SYSREQ_PHP4_COMPAT'                      => 'Zend compatibility mode must be off',
-    // @deprecated since v.6.5.1 (2020-02-12);
-    'SYSREQ_PHP_VERSION'                      => 'PHP version from 7.4 to 8.0',
-    // END deprecated
+    'SYSREQ_PHP_VERSION'                      => 'PHP version 7.0 or 7.1',
     'SYSREQ_REQUEST_URI'                      => 'REQUEST_URI set',
     'SYSREQ_LIB_XML2'                         => 'LIB XML2',
     'SYSREQ_PHP_XML'                          => 'DOM',
@@ -1267,11 +1247,7 @@ $aLang = [
     'SYSREQ_TOKENIZER'                        => 'Tokenizer',
     'SYSREQ_BC_MATH'                          => 'BCMath',
     'SYSREQ_MYSQL_CONNECT'                    => 'PDO_MySQL',
-
-    // @deprecated since v6.5.1 (2020-03-12); We do not check mysql version
-    'SYSREQ_MYSQL_VERSION'                    => 'MySQL Version 5.5 or 5.7',
-    // END deprecated
-
+    'SYSREQ_MYSQL_VERSION'                    => 'MySQL version 5.5 or 5.7',
     'SYSREQ_GD_INFO'                          => 'GDlib v2 incl. JPEG support',
     'SYSREQ_INI_SET'                          => 'ini_set allowed',
     'SYSREQ_REGISTER_GLOBALS'                 => 'register_globals must be off',
@@ -1337,9 +1313,7 @@ $aLang = [
     'TOOLTIPS_NEWUSERPAYMENT'                 => 'Create new Payment Method',
     'TOOLTIPS_NEWREMARK'                      => 'Add Note',
     'TOOLTIPS_NEWPAYMENT'                     => 'Create new Payment Method',
-    // @deprecated Functionality for Newsletter management will be removed.
     'TOOLTIPS_NEWNEWSLETTER'                  => 'New Newsletter Sample',
-    // END deprecated
     'TOOLTIPS_NEWSHOP'                        => 'Create New Shop',
     'TOOLTIPS_NEWUSERGROUP'                   => 'Create New User Group',
     'TOOLTIPS_NEWCATEGORY'                    => 'Create New Category',
@@ -1358,9 +1332,7 @@ $aLang = [
     'TOOLTIPS_NEWMWST'                        => 'Create new VAT',
     'TOOLTIPS_NEWDELIVERY'                    => 'Create new Shipping Cost Rule',
     'TOOLTIPS_NEWDELIVERYSET'                 => 'Create new Shipping Method',
-    // @deprecated 6.5.6 "News" feature will be removed completely
     'TOOLTIPS_NEWNEWS'                        => 'Create new Message',
-    // END deprecated
     'TOOLTIPS_NEWVOUCHER'                     => 'Create new Coupon Serie',
     'TOOLTIPS_NEWCATTREE'                     => 'Re-Index Category Tree',
     'TOOLTIPS_NEWLINK'                        => 'Create new Link',
@@ -1415,7 +1387,7 @@ $aLang = [
     'USER_REMARK_REMARK'                      => '[Remark]',
     'USER_REMARK_ORDER'                       => '[Order]',
     'USER_REMARK_USER'                        => '[Reg.]',
-    // @deprecated 6.5.6 "News" feature will be removed completely
+    // @deprecated since v.5.3.0 (2016-06-17); The Admin Menu: Customer Info -> News feature will be moved to a module in v6.0.0
     'USER_REMARK_NEWS'                        => '[News]',
     // END deprecated
     'USERGROUP_LIST_MENUITEM'                 => 'Administer Users',
@@ -1494,8 +1466,8 @@ $aLang = [
     'SHOP_PERF_LOADCATTREE'                   => 'Load Categories and display Category Navigation',
     'SHOP_PERF_LOADCURRENCY'                  => 'Display Currencies',
     'SHOP_PERF_LOADLANGUAGES'                 => 'Display Languages',
-    // @deprecated 6.5.6 "News" feature will be removed completely
     'SHOP_PERF_LOADNEWS'                      => 'Load News',
+    // @deprecated since v.5.3.0 (2016-06-17); The Admin Menu: Customer Info -> News feature will be moved to a module in v6.0.0
     'SHOP_PERF_LOADNEWSONLYSTART'             => 'Load News only on Start Page',
     // END deprecated
     'SHOP_PERF_LOADVARIANTS'                  => 'Load Variants in Lists (Search Results, Categories). This uses much Memory and may cause Performance Problems on small Servers',
@@ -1509,12 +1481,8 @@ $aLang = [
     'SHOP_PERF_USETIMECHECKINARTLOAD'         => 'Check "Active From/To" when loading Products',
     'SHOP_PERF_DISBASKETSAVING'               => 'Don\'t save Shopping Carts of registered Users',
     'SHOP_PERF_HIDELEFTCOLUMN'                => 'Hide left column',
-
-    // @deprecated 6.6.0 dynpages will be removed on the next major
-        'DYNSCREEN_LOCAL_TITLE'                   => 'e-commerce Services',
-        'DYNSCREEN_LOCAL_TEXT'                    => 'Some general info about e-commerce services ...',
-    // END deprecated
-
+    'DYNSCREEN_LOCAL_TITLE'                   => 'e-commerce Services',
+    'DYNSCREEN_LOCAL_TEXT'                    => 'Some general info about e-commerce services ...',
     'GENIMPORT_MENUITEM'                      => 'Service',
     'GENIMPORT_MENUSUBITEM'                   => 'Generic Import',
     'GENIMPORT_STEP_1_TITLE'                  => 'Uploading CSV file',
@@ -1564,12 +1532,10 @@ $aLang = [
     'mxlist'                   => 'List All Users',
     'mxmanageprod'             => 'Administer Products',
     'mxmainmenu'               => 'Master Settings',
-    // @deprecated 6.5.6 "News" feature will be removed completely
     'mxnews'                   => 'News',
-    // END deprecated
     'mxorders'                 => 'Administer Orders',
     'mxpaymeth'                => 'Payment Methods',
-    'mxpricealarm'             => 'Wished Price',
+    'mxpricealarm'             => 'Price Alert',
     'mxremlist'                => 'List All Reviews',
     'mxsellist'                => 'Selection Lists',
     'mxservice'                => 'Service',
@@ -1591,11 +1557,7 @@ $aLang = [
     'mxmanufacturer'           => 'Brands/Manufacturers',
     'mxvouchers'               => 'Coupon Series',
     'mxwrapping'               => 'Gift Wrapping',
-
-    // @deprecated 6.6.0 dynpages will be removed on the next major
-        'mxdynscreenlocal'         => 'Services info',
-    // END deprecated
-
+    'mxdynscreenlocal'         => 'Services info',
     'mxoxexchange'             => 'OXID eXchange',
     'mxnewsletter'             => 'Newsletter',
     'mxorderovw'               => 'Order Summary',
@@ -1606,21 +1568,17 @@ $aLang = [
     /* tabs */
     'tbclorder_iPayment'       => 'IPayment',
     // newsletter_list',
-    // @deprecated Functionality for Newsletter management will be removed.
     'tbclnewsletter_main'      => 'HTML',
     'tbclnewsletter_plain'     => 'TEXT',
     'tbclnewsletter_preview'   => 'Preview',
     'tbclnewsletter_selection' => 'Selection',
-    // END deprecated
     'tbcl_main'                => 'Main',
     'tbcladminlinks_mall'      => 'Mall',
     'tbcldelivery_mall'        => 'Mall',
     'tbcldeliveryset_mall'     => 'Mall',
     'tbcldiscount_mall'        => 'Mall',
     'tbclmanufacturer_mall'    => 'Mall',
-    // @deprecated 6.5.6 "News" feature will be removed completely
     'tbclnews_mall'            => 'Mall',
-    // END deprecated
     'tbclvendor_mall'          => 'Mall',
     'tbclselectlist_mall'      => 'Mall',
     'tbclvoucherserie_mall'    => 'Mall',
@@ -1679,10 +1637,9 @@ $aLang = [
     'tbcldiscount_users'       => 'Users',
     //languages
     'tbcllanguage_main'        => 'Main',
-    // @deprecated 6.5.6 "News" feature will be removed completely
+    //  news_list',
     'tbclnews_main'            => 'Main',
     'tbclnews_text'            => 'Text',
-    // END deprecated
     //  order_list',
     'tbclorder_overview'       => 'Overview',
     'tbclorder_main'           => 'Main',
@@ -1878,7 +1835,7 @@ $aLang = [
     'SHOP_RDFA_SHOW_PRODUCTSTOCK'     => 'Show real available product stock',
 
     'PAYMENT_RDFA_ASIGN_PAYMENT'           => 'Assign payment',
-    'PAYMENT_RDFA_ADVICE'                  => '<b>Hint:</b> Please choose only those payment methods, pre-defined in GoodRelations, that comply with your payment method <b>%s</b>',
+    'PAYMENT_RDFA_ADVICE'                  => '<b>Hint:</b> Please choose only those payment methods, pre-defined in GoodRelations, that comply with your payment method <b>%s</b>.',
     'PAYMENT_RDFA_GENERAL'                 => 'General payment methods',
     'PAYMENT_RDFA_CASH'                    => 'Cash',
     'PAYMENT_RDFA_GOOGLECHECKOUT'          => 'Google Checkout',
@@ -1889,7 +1846,6 @@ $aLang = [
     'PAYMENT_RDFA_BYINVOICE'               => 'Invoice',
     'PAYMENT_RDFA_CHECKINADVANCE'          => 'Check in advance',
     'PAYMENT_RDFA_BYBANKTRANSFERINADVANCE' => 'Cash in advance',
-
     'PAYMENT_RDFA_CREDITCARD'              => 'Credit card payment',
     'PAYMENT_RDFA_AMERICANEXPRESS'         => 'American Express',
     'PAYMENT_RDFA_DINERSCLUB'              => 'Diners Club',
@@ -1911,16 +1867,15 @@ $aLang = [
     'DELIVERY_RDFA_FEDERALEXPRESS'             => 'FedEx',
     'DELIVERY_RDFA_UPS'                        => 'UPS',
     'SHOP_SYSTEM_SHOWREMEMBERME'               => 'Show "Remember me" option in login box',
-    // @deprecated Functionality for Newsletter management will be removed.
     'NEWSLETTER_SUBJECT'                       => 'Subject',
-    // END deprecated
 
     'SHOP_PERF_SEO_CACHE'                        => 'Enable SEO cache',
     'SHOP_PERF_SYSREQ_CHECK'                     => 'Enable system health messages at the start page',
+    'INFO_MODULES_MOVED_TO_EXTENSIONS'           => 'Themes and modules handling moved to new menu "Extensions"',
     'EXCEPTION_THEME_SHOULD_BE_ONLY_IN_DATABASE' => 'Theme should not be defined in config.inc.php',
-    'EMAIL_PRICEALARM_CUSTOMER_PRICEALARMIN'     => 'Wished Price in ',
+    'EMAIL_PRICEALARM_CUSTOMER_PRICEALARMIN'     => 'Price Alert in ',
     'EMAIL_PRICEALARM_CUSTOMER_HY'               => 'Hallo,',
-    'EMAIL_PRICEALARM_CUSTOMER_HAVEPRICEALARM'   => 'we have a Wished Price in',
+    'EMAIL_PRICEALARM_CUSTOMER_HAVEPRICEALARM'   => 'we have a Price Alert in',
     'EMAIL_PRICEALARM_CUSTOMER_ITEM1'            => 'The Product',
     'EMAIL_PRICEALARM_CUSTOMER_ITEM2'            => "you're interested in and you offered a price of",
     'EMAIL_PRICEALARM_CUSTOMER_ITEM3'            => 'is now available for',
@@ -1972,7 +1927,7 @@ $aLang = [
     'OXDIAG_SHOP_ORIGINAL'                => 'This OXID eShop was not modified and is fully original',
 
     'OXDIAG_MODIFIEDHINTS1'                       => 'OXID eShop has sophisticated possibility to extend it by modules without changing shipped files. It\'s not recommended and not needed to change shop files. See also our <a href="http://blog.oxid-esales.com/2009/02/how-extend-oxid-eshop-with-modules-part-1/" target=_blank>tutorials</a>.',
-    'OXDIAG_MODIFIEDHINTS2'                       => 'It is possible to use your own templates without changing shipped ones.',
+    'OXDIAG_MODIFIEDHINTS2'                       => 'Since OXID eShop 4.2.0 it\'s possible to use <a href="https://oxidforge.org/en/oxid-eshop-version-4-2-0.html#New_Features" target=_blank>your own templates without changing shipped ones</a>.',
     'OXDIAG_VERSIONMISMATCHHINTS'                 => 'Apparently one or more updates went wrong. See details link for more information about more details for each file. A left over file which is not any longer included in OXID eShop could also be a <u>possible</u> reason for version mismatch. Find information about update in our <a href="http://www.oxid-esales.com/en/support-services/documentation-and-help/oxid-eshop/installation/oxid-eshop-update-installation" target=_blank>Documentation and help</a>.',
 
 
@@ -2041,8 +1996,7 @@ $aLang = [
     'TITLE'                          => 'Salutation',
     'SUBJECT'                        => 'Subject',
     'MESSAGE'                        => 'Message',
-    'ADMIN_SETTINGS_LICENSE_VERSION_FETCH_INFO_ERROR' => 'Error when fetching version information',
-    'CURL_EXECUTE_ERROR' => 'Connection error (%s). Please try again later',
+
 ];
 
 /*

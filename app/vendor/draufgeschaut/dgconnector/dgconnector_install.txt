@@ -1,0 +1,101 @@
+﻿﻿[dg] Modul Connector, Installations und Update Assistent
+Automatisierte Modulupdates und Neuinstallation von draufgeschaut.de Modulen
+
+Vielen Dank für Ihre Bestellung bei draufgeschaut.de.
+
+Zum Betrieb des Moduls muss der IonCube loader installiert sein.
+Ob dieser bei Ihnen installiert ist können Sie im OXID Admin unter Service => Systeminfo einsehen.
+
+Sollte diese Systemvorraussetzung nicht gegeben sein installieren Sie das Modul NICHT. 
+Kontaktieren Sie ihren Provider um die entsprechenden Systemvorraussetzung mit Ihren Provider herzustellen.
+
+Beim Update von einer OXID Version kleiner 6.0 ist es wichtig, dass Sie unter Module das alte Modul deaktivieren.
+Vor dem kopieren der neuen Daten müssen die alten Dateien entfernt werden.
+
+Sie können gefahrlos alle Dateien die mit dgconnector* beginnen löschen, alle Dateien für das Modul sind im dgconnector.zip enthalten.
+ 
+Zur Installation führen Sie folgende Schritte durch:
+
+ - Erstinstallation:
+ 
+ - - Produktivsystem:
+     composer config repositories.draufgeschaut composer https://update.draufgeschaut.de
+     composer require --update-no-dev draufgeschaut/dgconnector
+     
+ - - Testsystem/Entwicklungssystem:
+     composer config repositories.draufgeschaut composer https://update.draufgeschaut.de
+     composer require draufgeschaut/dgconnector
+     
+ - Modulupdate:
+ 
+ - - Produktivsystem:
+     composer config repositories.draufgeschaut composer https://update.draufgeschaut.de
+     composer require --no-dev draufgeschaut/dgconnector
+     
+ - - Testsystem/Entwicklungssystem:
+     composer config repositories.draufgeschaut composer https://update.draufgeschaut.de 
+     composer update draufgeschaut/dgconnector
+ 
+
+4. Aktivieren Sie das Modul unter Erweiterungen => Module => [dg] Modul Connector, Installations und Update Assistent
+
+
+
+Bei Modulen mit Konfiguration nehmen Sie unter [dg] Module => Performace => Modul Connector, Installations und Update Assistent die weiteren Einstellungen vor.
+
+
+Nach der Installation aktualisieren sie unter Service => Tools die Views und Leeren Sie bitte noch das Verzeichnis /tmp im Shop, außer der Datei ".htaccess".
+
+
+Bitte nutzen Sie falls im Modul vorhanden den Support-Reiter für Supportanfragen, Vielen Dank.
+
+Falls Sie die Installation nicht selbst ausführen möchten können Sie unter www.volker-doerk.de die Installation bestellen.
+
+draufgeschaut.de
+E-Mail: support@draufgeschaut.de 
+URL: http://www.volker-doerk.de
+
+Dateiliste:
+ - modules\dgconnector\Application\Controller\Admin\dgconnector_admin.php
+ - modules\dgconnector\Application\Controller\Admin\dgconnector_install.php
+ - modules\dgconnector\Application\Controller\Admin\dgconnector_list.php
+ - modules\dgconnector\Application\Controller\Admin\dgconnector_main.php
+ - modules\dgconnector\Application\Controller\Admin\dgconnector_maintenance_admin.php
+ - modules\dgconnector\Application\Controller\Admin\dgconnector_maintenance_list.php
+ - modules\dgconnector\Application\Controller\Admin\dgconnector_maintenance_main.php
+ - modules\dgconnector\Application\Controller\Admin\dgconnector_module.php
+ - modules\dgconnector\Application\Controller\Admin\dgconnector_setup.php
+ - modules\dgconnector\Application\Controller\Admin\dgconnector_support.php
+ - modules\dgconnector\Application\Controller\Admin\dgconnector_tplblocks_admin.php
+ - modules\dgconnector\Application\Controller\Admin\dgconnector_tplblocks_list.php
+ - modules\dgconnector\Application\Controller\Admin\dgconnector_tplblocks_main.php
+ - modules\dgconnector\Application\Controller\Admin\dgconnector_update.php
+ - modules\dgconnector\Application\Controller\Admin\dgconnectorsetup.php
+ - modules\dgconnector\Application\Model\dgconnectorconfig.php
+ - modules\dgconnector\Application\Model\dgconnectorevents.php
+ - modules\dgconnector\Application\Model\dgconnectorinstall.php
+ - modules\dgconnector\Application\Model\dgconnectormaintenance.php
+ - modules\dgconnector\Application\Model\dgconnectortplblocks.php
+ - modules\dgconnector\Application\Model\dgconnectorupdate.php
+ - modules\dgconnector\Application\translations\de\dgconnector_lang.php
+ - modules\dgconnector\Application\translations\en\dgconnector_lang.php
+ - modules\dgconnector\Application\views\admin\de\dgconnector_lang.php
+ - modules\dgconnector\Application\views\admin\en\dgconnector_lang.php
+ - modules\dgconnector\Application\views\admin\tpl\dgconnector_admin.tpl
+ - modules\dgconnector\Application\views\admin\tpl\dgconnector_exception.tpl
+ - modules\dgconnector\Application\views\admin\tpl\dgconnector_install.tpl
+ - modules\dgconnector\Application\views\admin\tpl\dgconnector_list.tpl
+ - modules\dgconnector\Application\views\admin\tpl\dgconnector_main.tpl
+ - modules\dgconnector\Application\views\admin\tpl\dgconnector_maintenance_admin.tpl
+ - modules\dgconnector\Application\views\admin\tpl\dgconnector_maintenance_list.tpl
+ - modules\dgconnector\Application\views\admin\tpl\dgconnector_maintenance_main.tpl
+ - modules\dgconnector\Application\views\admin\tpl\dgconnector_module.tpl
+ - modules\dgconnector\Application\views\admin\tpl\dgconnector_setup.tpl
+ - modules\dgconnector\Application\views\admin\tpl\dgconnector_support.tpl
+ - modules\dgconnector\Application\views\admin\tpl\dgconnector_tplblocks_admin.tpl
+ - modules\dgconnector\Application\views\admin\tpl\dgconnector_tplblocks_list.tpl
+ - modules\dgconnector\Application\views\admin\tpl\dgconnector_tplblocks_main.tpl
+ - modules\dgconnector\Application\views\admin\tpl\dgconnectorsetup.tpl
+ - modules\dgconnector\Modul\dgconnector_navigation.php
+ - modules\dgconnector\out\admin\img\dgmute.gif
+ - modules\dgconnector\out\blocks\dgconnector_admin_header_links.tpl

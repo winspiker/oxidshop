@@ -1,0 +1,45 @@
+15:12:20
+91.7.239.49
+Array
+(
+)
+
+Array
+(
+    [force_sid] => 5127248f4b83a3ca4f7c5debfe7ac59b
+)
+
+time: 0.905714988708
+
+
+
+15:12:21
+91.7.239.49
+Array
+(
+)
+
+Array
+(
+    [force_sid] => 5127248f4b83a3ca4f7c5debfe7ac59b
+)
+
+time: 1.15169215202
+
+
+
+15:12:27
+91.7.239.49
+Array
+(
+)
+
+Array
+(
+    [force_sid] => 5127248f4b83a3ca4f7c5debfe7ac59b
+)
+
+time: 1.55265378952
+
+
+

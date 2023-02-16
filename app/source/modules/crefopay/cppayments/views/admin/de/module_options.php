@@ -1,0 +1,82 @@
+<?php
+// Moduloptionen
+$aLang = array(
+    'charset' => 'UTF-8',
+    
+    // Merchant Setup Group
+    'SHOP_MODULE_GROUP_merchant' => 'Zugangsdaten',
+    'SHOP_MODULE_CrefoPayMerchantId' => 'Merchant ID',
+    'HELP_SHOP_MODULE_CrefoPayMerchantId' => 'Ihre Merchant ID erhalten Sie vom CrefoPay <a href="mailto:service@crefopay.de">Integrations-Team</a>',
+    'SHOP_MODULE_CrefoPayStoreId' => 'Store ID',
+    'HELP_SHOP_MODULE_CrefoPayStoreId' => 'Ihre Store ID erhalten Sie vom CrefoPay <a href="mailto:service@crefopay.de">Integrations-Team</a>',
+    'SHOP_MODULE_CrefoPayPrivateKey' => 'Privater Schlüssel',
+    'HELP_SHOP_MODULE_CrefoPayPrivateKey' => 'Ihren individuellen Händler-Schlüssel (Private Key) erhalten Sie vom CrefoPay 
+                                              <a href="mailto:service@crefopay.de">Integrations-Team</a>',
+    'SHOP_MODULE_CrefoPayShopPublicKey' => 'Öffentlicher Schlüssel',
+    'HELP_SHOP_MODULE_CrefoPayShopPublicKey' => 'Ihren individuellen JS-Schlüssel (Shop Private Key) erhalten Sie vom CrefoPay 
+                                             <a href="mailto:service@crefopay.de">Integrations-Team</a>',
+                                                                                          
+    // Environment Group
+    'SHOP_MODULE_GROUP_environment' => 'Umgebung',
+    'SHOP_MODULE_CrefoPaySystemMode' => 'Betriebsmodus',
+    'SHOP_MODULE_CrefoPaySystemMode_0' => 'Sandbox',
+    'SHOP_MODULE_CrefoPaySystemMode_1' => 'Livebetrieb',
+    'HELP_SHOP_MODULE_CrefoPaySystemMode' => 'Wechseln Sie hier zwischen Sandbox (Testmodus) und Livebetrieb',
+    
+    'SHOP_MODULE_CrefoPayDefaultLang' => 'Standard Sprache',
+    'SHOP_MODULE_CrefoPayDefaultLang_DE' => 'Deutsch',
+    'SHOP_MODULE_CrefoPayDefaultLang_EN' => 'Englisch',
+    'SHOP_MODULE_CrefoPayDefaultLang_ES' => 'Spanisch',
+    'SHOP_MODULE_CrefoPayDefaultLang_FR' => 'Französisch',
+    'SHOP_MODULE_CrefoPayDefaultLang_IT' => 'Italienisch',
+    'SHOP_MODULE_CrefoPayDefaultLang_NL' => 'Niederländisch',
+    'HELP_SHOP_MODULE_CrefoPayDefaultLang' => 'Definieren Sie hier die Standard Ausgabesprache, für den Fall, dass die Benutzersprache nicht mit CrefoPay kompatibel ist.',
+    'SHOP_MODULE_CrefoPayAllowOtherPayments' => 'Nicht CrefoPay Bezahlarten',
+    'SHOP_MODULE_CrefoPayAllowOtherPayments_0' => 'Ausblenden', 
+    'SHOP_MODULE_CrefoPayAllowOtherPayments_1' => 'Erlauben', 
+    'HELP_SHOP_MODULE_CrefoPayAllowOtherPayments' => 'Hier können Sie nicht CrefoPay Bezahlarten ausblenden, wenn Sie nur Zahlungen über CrefoPay zulassen wollen.', 
+    'SHOP_MODULE_CrefoPayLogLevel' => 'Log Level',
+    'SHOP_MODULE_CrefoPayLogLevel_0' => 'Debug',
+    'SHOP_MODULE_CrefoPayLogLevel_1' => 'Warn',
+    'SHOP_MODULE_CrefoPayLogLevel_2' => 'Error',
+    'HELP_SHOP_MODULE_CrefoPayLogLevel' => 'Das Log Level bestimmt, welche Ereignisse in der Logdatei protokolliert werden. Mögliche Werte sind Debug (alles), Warning (Warnungen und Fehler), oder Error (nur Fehler).',
+    'SHOP_MODULE_CrefoPayLogFile' => 'Log Datei',
+    'HELP_SHOP_MODULE_CrefoPayLogFile' => 'Geben Sie hier den Namen der Logdatei ein. Lassen Sie das Feld leer wird crefopay.log verwendet.',
+    
+    // Transaction Group
+    'SHOP_MODULE_GROUP_transaction' => 'Bestellungen',
+    'SHOP_MODULE_CrefoPayAutoCapture' => 'Auto Capture',
+    'HELP_SHOP_MODULE_CrefoPayAutoCapture' => '<span class="text-danger">Achtung!</span> Aktivieren Sie Auto-Capture nur in Absprache mit dem CrefoPay <a href="mailto:service@crefopay.de">Integrations-Team</a>',
+    'SHOP_MODULE_CrefoPayB2BEnabled' => 'Business Transaktionen (B2B)',
+    'SHOP_MODULE_CrefoPayB2BEnabled_0' => 'Deaktivieren',
+    'SHOP_MODULE_CrefoPayB2BEnabled_1' => 'Aktivieren',
+    'HELP_SHOP_MODULE_CrefoPayB2BEnabled' => '<span class="text-danger">Achtung!</span> Diese Funktion sollten Sie nur aktivieren, wenn die Abwicklung von B2B Transaktionen Bestandteil Ihres CrefoPay Händlervertrages ist.',
+    'SHOP_MODULE_CrefoPayMerchantRef' => 'Händler Referenz',
+    'HELP_SHOP_MODULE_CrefoPayMerchantRef' => 'Geben Sie hier (optional) eine zusätzliche Referenz für Ihre Bestellungen an',
+    'SHOP_MODULE_CrefoPayBillPeriod' => 'Zahlungsziel Rechnung',
+    'HELP_SHOP_MODULE_CrefoPayBillPeriod' => 'Legen Sie hier fest, nach wieviel Tagen Sie die Zahlung von Rechnungen Ihrer Kunden erwarten',
+    'SHOP_MODULE_CrefoPayPrepaidPeriod' => 'Zahlungsziel Vorkasse',
+    'HELP_SHOP_MODULE_CrefoPayPrepaidPeriod' => 'Legen Sie hier fest, nach wieviel Tagen Sie Vorkasse Zahlungen Ihrer Kunden erwarten',
+    'SHOP_MODULE_CrefoPayBasketVal' => 'Gültigkeit Warenkorb',
+    'HELP_SHOP_MODULE_CrefoPayBasketVal' => 'Geben Sie hier (optional) dir Gültigkeitsdauer des Warenkorbs Ihrer Bestellungen an.',
+    'SHOP_MODULE_CrefoPayBasketValUnit' => 'Einheit der Gültigkeitsdauer',
+    'SHOP_MODULE_CrefoPayBasketValUnit_d' => 'Tage',
+    'SHOP_MODULE_CrefoPayBasketValUnit_m' => 'Minuten',
+    'SHOP_MODULE_CrefoPayBasketValUnit_h' => 'Stunden',
+    'HELP_SHOP_MODULE_CrefoPayBasketValUnit' => 'Geben Sie hier (optional) die Einheit der Gültigkeit des Warenkorbs Ihrer Bestellungen an.',
+
+    // Image Group
+    'SHOP_MODULE_GROUP_images' => 'Payment Logos',
+    'SHOP_MODULE_CrefoPayCvvLogo' => 'CVV Hilfe',
+    'SHOP_MODULE_CrefoPayCvvLogo_0' => 'Ausblenden',
+    'SHOP_MODULE_CrefoPayCvvLogo_1' => 'Einblenden',
+    'HELP_SHOP_MODULE_CrefoPayCvvLogo' => 'Diese Option blendet ein Bild der Rückseite einer Kreditkarte und zeigt, wo die CVV zu finden ist.',
+    'SHOP_MODULE_CrefoPayMcLogo' => 'MasterCard Logo',
+    'SHOP_MODULE_CrefoPayMcLogo_0' => 'Ausblenden',
+    'SHOP_MODULE_CrefoPayMcLogo_1' => 'Einblenden',
+    'HELP_SHOP_MODULE_CrefoPayMcLogo' => 'Diese Option blendet das MasterCard Logo ein. (Empfohlen)',
+    'SHOP_MODULE_CrefoPayVisaLogo' => 'VISA Logo',
+    'SHOP_MODULE_CrefoPayVisaLogo_0' => 'Ausblenden',
+    'SHOP_MODULE_CrefoPayVisaLogo_1' => 'Einblenden',
+    'HELP_SHOP_MODULE_CrefoPayVisaLogo' => 'Diese Option blendet das VISA Logo ein. (Empfohlen)',
+);

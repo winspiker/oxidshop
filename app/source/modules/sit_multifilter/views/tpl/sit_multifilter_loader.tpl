@@ -1,0 +1,6 @@
+[{include file="widget/product/list.tpl" type="infogrid" listId=$containerId products=$oArticleArray assign="articleContent"}]
+[{if $categoryId == "search"}]
+	[{$articleContent|replace:"sit_multifilter_loader":"search"}]
+[{else}]
+	[{$articleContent|replace:"sit_multifilter_loader":"alist"}]
+[{/if}]

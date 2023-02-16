@@ -1,0 +1,30 @@
+#demo {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none !important;
+}
+
+.cp-placeholder {
+    width: 211px;
+    height: 32px;
+    margin-bottom: 15px;
+}
+
+.cvv {
+    width: 60px;
+}
+
+.cp-payment-logos {
+    float: right;
+}
+
+.cp-ccissuer-logos {
+    text-align: center;
+}
+
+.cp-additional-payment-info {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}

@@ -1,0 +1,37 @@
+15:13:36
+79.234.225.48
+Array
+(
+    [_ga] => GA1.2.957735389.1604232836
+    [apay-session-set] => UsKq1vYCGI/t8x/RoU/QSb5iVCDpAtlMsnxRTx9DF0HvqxLTtqadNIlo/0HrouI=
+    [language] => 0
+    [sid] => c847579806cef27400946ec10f6e892c
+    [sid_key] => oxid
+    [_gid] => GA1.2.411100267.1637158363
+    [_gat] => 1
+    [_gcl_au] => 1.1.1979498396.1637158363
+    [_gat_UA-88088936-5] => 1
+    [_fbp] => fb.1.1637158363708.741914487
+    [prism_1000428378] => f44d0765-acb6-475a-be13-36ba9b82531c
+)
+
+Array
+(
+    [pgNr] => 1
+    [_ga] => GA1.2.957735389.1604232836
+    [apay-session-set] => UsKq1vYCGI/t8x/RoU/QSb5iVCDpAtlMsnxRTx9DF0HvqxLTtqadNIlo/0HrouI=
+    [language] => 0
+    [sid] => c847579806cef27400946ec10f6e892c
+    [sid_key] => oxid
+    [_gid] => GA1.2.411100267.1637158363
+    [_gat] => 1
+    [_gcl_au] => 1.1.1979498396.1637158363
+    [_gat_UA-88088936-5] => 1
+    [_fbp] => fb.1.1637158363708.741914487
+    [prism_1000428378] => f44d0765-acb6-475a-be13-36ba9b82531c
+)
+
+time: 0.741479158401
+
+
+

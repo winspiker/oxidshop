@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<OX>
+    <OXMENU id="DGMODULE">
+        <MAINMENU id="MARKETPLACES">
+            <SUBMENU id="dgidealo" cl="dgidealo_admin" list="dgidealo_list">
+                <TAB id="dgidealo_main" cl="dgidealo_main" />
+                <TAB id="dgidealo_export" cl="dgidealo_export" />
+                <TAB id="dgidealo_localinventar" cl="dgidealo_localinventar" />
+               <!-- <TAB id="dgidealo_pwsexport" cl="dgidealo_pwsexport" /> -->
+                <TAB id="dgidealo_support" cl="dgidealo_support" />
+                <TAB id="dgidealo_setup" cl="dgidealo_setup" />
+            </SUBMENU>
+        </MAINMENU>
+    </OXMENU>
+    <OXMENU id="NAVIGATION_ESHOPADMIN">
+        <MAINMENU id="mxorders">
+            <SUBMENU id="mxdisplayorders">
+                <TAB id="dgidealo_order" cl="dgidealo_order" />
+            </SUBMENU>
+        </MAINMENU>
+    </OXMENU>
+    <OXMENU id="NAVIGATION_ESHOPADMIN">
+        <MAINMENU id="mxmanageprod">
+            <SUBMENU id="mxarticles">
+                <TAB id="dgidealo_order" cl="dgidealo_article" />
+            </SUBMENU>
+        </MAINMENU>
+    </OXMENU>
+</OX>

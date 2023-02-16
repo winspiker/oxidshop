@@ -1,0 +1,21 @@
+{
+  "name": "seemannit/more-tabs",
+  "description": "More Tabs module for OXID eShop.",
+  "type": "oxideshop-module",
+  "keywords": ["oxid", "modules", "eShop", "emails", "responsive"],
+  "homepage": "https://www.oxid-responsive.com",
+  "license": [ "MIT" ],
+  "require": {
+    "php": ">=7.0"
+  },
+  "extra": {
+    "oxideshop": {
+      "target-directory": "seemannit/moretabs"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+        "SeemannIT\\MoreTabsModule\\": "../../../source/modules/seemannit/moretabs"
+    }
+  }
+}

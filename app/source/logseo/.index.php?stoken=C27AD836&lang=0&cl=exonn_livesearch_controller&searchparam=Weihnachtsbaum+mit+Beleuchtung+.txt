@@ -1,0 +1,96 @@
+15:06:56
+217.82.222.138
+Array
+(
+    [_gat] => 1
+    [language] => 0
+    [sid] => ee8def6dff96ea0be3234345ec009fe5
+    [_fbp] => fb.1.1637157825251.1223857290
+    [_ga] => GA1.2.1641149075.1637157825
+    [_gac_UA-88088936-5] => 1.1637157825.EAIaIQobChMI8MbZhcif9AIVz-d3Ch3JpQVnEAAYASAAEgKEGvD_BwE
+    [_gcl_aw] => GCL.1637157825.EAIaIQobChMI8MbZhcif9AIVz-d3Ch3JpQVnEAAYASAAEgKEGvD_BwE
+    [_gid] => GA1.2.626464692.1637157825
+    [_pin_unauth] => dWlkPU1tTTFaalpqWVdRdFlqaGxaQzAwTURobExUaGlOamN0WVdFMk5EZGhPREl3TnpjMw
+    [prism_1000428378] => 0e100c9a-5067-4d38-9bff-7efb34efcf35
+    [_omappvp] => TNV8O3xGcRA2VlRvzckSBxkDu1Y6de5HKnsdV0HLNhKHlK5c1L9dxtqdDgZuwnzBYNM46zp5w2SWluKpNXnfNNvIbSPODZ73
+    [_omappvs] => 1637157945529
+    [apay-session-set] => DsuVE5jhQnWEy/XrYLY3Brn8QKDg0XIvm03oGalTbexjIWGthmhPRlwiLhtglKk=
+    [_gcl_au] => 1.1.1813875128.1637157825
+    [sid_key] => oxid
+)
+
+Array
+(
+    [stoken] => C27AD836
+    [lang] => 0
+    [cl] => exonn_livesearch_controller
+    [searchparam] => Weihnachtsbaum mit Beleuchtung 
+    [_gat] => 1
+    [language] => 0
+    [sid] => ee8def6dff96ea0be3234345ec009fe5
+    [_fbp] => fb.1.1637157825251.1223857290
+    [_ga] => GA1.2.1641149075.1637157825
+    [_gac_UA-88088936-5] => 1.1637157825.EAIaIQobChMI8MbZhcif9AIVz-d3Ch3JpQVnEAAYASAAEgKEGvD_BwE
+    [_gcl_aw] => GCL.1637157825.EAIaIQobChMI8MbZhcif9AIVz-d3Ch3JpQVnEAAYASAAEgKEGvD_BwE
+    [_gid] => GA1.2.626464692.1637157825
+    [_pin_unauth] => dWlkPU1tTTFaalpqWVdRdFlqaGxaQzAwTURobExUaGlOamN0WVdFMk5EZGhPREl3TnpjMw
+    [prism_1000428378] => 0e100c9a-5067-4d38-9bff-7efb34efcf35
+    [_omappvp] => TNV8O3xGcRA2VlRvzckSBxkDu1Y6de5HKnsdV0HLNhKHlK5c1L9dxtqdDgZuwnzBYNM46zp5w2SWluKpNXnfNNvIbSPODZ73
+    [_omappvs] => 1637157945529
+    [apay-session-set] => DsuVE5jhQnWEy/XrYLY3Brn8QKDg0XIvm03oGalTbexjIWGthmhPRlwiLhtglKk=
+    [_gcl_au] => 1.1.1813875128.1637157825
+    [sid_key] => oxid
+)
+
+time: 2.50364494324
+
+
+
+15:09:17
+217.82.222.138
+Array
+(
+    [_fbp] => fb.1.1637157825251.1223857290
+    [language] => 0
+    [sid] => ee8def6dff96ea0be3234345ec009fe5
+    [displayedCookiesNotification] => 1
+    [prism_1000428378] => 0e100c9a-5067-4d38-9bff-7efb34efcf35
+    [_ga] => GA1.2.1641149075.1637157825
+    [_gac_UA-88088936-5] => 1.1637157825.EAIaIQobChMI8MbZhcif9AIVz-d3Ch3JpQVnEAAYASAAEgKEGvD_BwE
+    [_gcl_aw] => GCL.1637157825.EAIaIQobChMI8MbZhcif9AIVz-d3Ch3JpQVnEAAYASAAEgKEGvD_BwE
+    [_gid] => GA1.2.626464692.1637157825
+    [_pin_unauth] => dWlkPU1tTTFaalpqWVdRdFlqaGxaQzAwTURobExUaGlOamN0WVdFMk5EZGhPREl3TnpjMw
+    [_omappvp] => TNV8O3xGcRA2VlRvzckSBxkDu1Y6de5HKnsdV0HLNhKHlK5c1L9dxtqdDgZuwnzBYNM46zp5w2SWluKpNXnfNNvIbSPODZ73
+    [_omappvs] => 1637158031726
+    [apay-session-set] => DsuVE5jhQnWEy/XrYLY3Brn8QKDg0XIvm03oGalTbexjIWGthmhPRlwiLhtglKk=
+    [_gcl_au] => 1.1.1813875128.1637157825
+    [sid_key] => oxid
+)
+
+Array
+(
+    [stoken] => C27AD836
+    [lang] => 0
+    [cl] => exonn_livesearch_controller
+    [searchparam] => Weihnachtsbaum mit Beleuchtung 
+    [_fbp] => fb.1.1637157825251.1223857290
+    [language] => 0
+    [sid] => ee8def6dff96ea0be3234345ec009fe5
+    [displayedCookiesNotification] => 1
+    [prism_1000428378] => 0e100c9a-5067-4d38-9bff-7efb34efcf35
+    [_ga] => GA1.2.1641149075.1637157825
+    [_gac_UA-88088936-5] => 1.1637157825.EAIaIQobChMI8MbZhcif9AIVz-d3Ch3JpQVnEAAYASAAEgKEGvD_BwE
+    [_gcl_aw] => GCL.1637157825.EAIaIQobChMI8MbZhcif9AIVz-d3Ch3JpQVnEAAYASAAEgKEGvD_BwE
+    [_gid] => GA1.2.626464692.1637157825
+    [_pin_unauth] => dWlkPU1tTTFaalpqWVdRdFlqaGxaQzAwTURobExUaGlOamN0WVdFMk5EZGhPREl3TnpjMw
+    [_omappvp] => TNV8O3xGcRA2VlRvzckSBxkDu1Y6de5HKnsdV0HLNhKHlK5c1L9dxtqdDgZuwnzBYNM46zp5w2SWluKpNXnfNNvIbSPODZ73
+    [_omappvs] => 1637158031726
+    [apay-session-set] => DsuVE5jhQnWEy/XrYLY3Brn8QKDg0XIvm03oGalTbexjIWGthmhPRlwiLhtglKk=
+    [_gcl_au] => 1.1.1813875128.1637157825
+    [sid_key] => oxid
+)
+
+time: 0.698292970657
+
+
+

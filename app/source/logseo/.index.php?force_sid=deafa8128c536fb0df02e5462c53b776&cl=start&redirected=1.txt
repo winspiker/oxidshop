@@ -1,0 +1,23 @@
+15:09:01
+85.13.143.106
+Array
+(
+    [language] => 0
+    [sid] => deafa8128c536fb0df02e5462c53b776
+    [sid_key] => oxid
+)
+
+Array
+(
+    [force_sid] => deafa8128c536fb0df02e5462c53b776
+    [cl] => start
+    [redirected] => 1
+    [language] => 0
+    [sid] => deafa8128c536fb0df02e5462c53b776
+    [sid_key] => oxid
+)
+
+time: 1.04467487335
+
+
+

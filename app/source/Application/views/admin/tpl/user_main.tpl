@@ -141,7 +141,7 @@ function chkInsert()
                 [{oxmultilang ident="GENERAL_USTID"}]
                 </td>
                 <td class="edittext">
-                <input type="text" class="editinput" size="15" maxlength="[{$edit->oxuser__oxustid->fldmax_length}]" name="editval[oxuser__oxustid]" value="[{$edit->oxuser__oxustid->value}]" [{$readonly}]>
+                <input type="text" class="editinput" size="15" maxlength="[{$edit->oxuser__oxustid->fldmax_length}]" name="editval[oxuser__oxustid]" value="[{$edit->oxuser__oxustid->value}]" [{$readonly}]> <input type="submit" class="edittext" name="save" value="Prüfen" onClick="Javascript:document.myedit.fnc.value='save'" [{$readonly}]>
                 [{oxinputhelp ident="HELP_GENERAL_USTID"}]
                 </td>
             </tr>
@@ -221,7 +221,7 @@ function chkInsert()
                 [{oxmultilang ident="USER_MAIN_NEWPASSWORD"}]
                 </td>
                 <td class="edittext"><br>
-                <input type="password" class="editinput" size="15" name="newPassword" value="" autocomplete="new-password" [{$readonly}]>
+                <input type="password" class="editinput" size="15" name="newPassword" value="" [{$readonly}]>
                 [{oxinputhelp ident="HELP_USER_MAIN_NEWPASSWORD"}]
                 </td>
             </tr>

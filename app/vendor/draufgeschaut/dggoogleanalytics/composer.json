@@ -1,0 +1,43 @@
+{
+    "name":        "draufgeschaut/dggoogleanalytics",
+    "description": "Google Analytics Schnittstelle",
+    "type":        "oxideshop-module",
+    "keywords":    [ "draufgeschaut", "oxid", "modul", "eshop", "google analytics" ],
+    "homepage":    "https://www.volker-doerk.de",
+    "time":        "2021-04-24",
+    "license":     "Commercial",
+    "authors":     [
+        {
+            "name":  "Volker Doerk",
+            "email": "info@draufgeschaut.de",
+            "homepage": "https://www.volker-doerk.de",
+            "role": [ "Developer", "Owner" ]
+        }
+    ],
+    "support": {
+        "email": "support@draufgeschaut.de"
+    },
+    "extra":  {
+        "oxideshop": {
+            "target-directory": "dggoogleanalytics",
+            "source-directory": "modules/dggoogleanalytics",
+            "blacklist-filter": [
+                "*.json",
+				"*dggoogleanalytics_install.txt",
+                "metadate.php"
+            ]
+        }
+    },
+    "version": "5.20",    
+    "require": {
+        "ext-ioncube-loader": "*",
+        "oxid-esales/oxideshop-metapackage-ce": ">=6.0.0 <=6.0.3 - >=6.3.0 <=6.3.0",
+        "php": "5.6.* - 7.4.*",
+        "draufgeschaut/dgconnector": "^1.2"
+    },
+    "autoload":    {
+        "psr-4": {
+            "dgModule\\dgGoogleAnalyticsModul\\": "../../../source/modules/dggoogleanalytics"             
+        }
+    }
+}

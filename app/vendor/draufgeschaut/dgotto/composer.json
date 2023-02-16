@@ -1,0 +1,43 @@
+{
+    "name":        "draufgeschaut/dgotto",
+    "description": "Otto Market Anbindung",
+    "type":        "oxideshop-module",
+    "keywords":    [ "draufgeschaut", "oxid", "modul", "eshop", "otto" ],
+    "homepage":    "https://www.volker-doerk.de",
+    "time":        "2022-02-08",
+    "license":     "Commercial",
+    "authors":     [
+        {
+            "name":  "Volker Doerk",
+            "email": "info@draufgeschaut.de",
+            "homepage": "https://www.volker-doerk.de",
+            "role": [ "Developer", "Owner" ]
+        }
+    ],
+    "support": {
+        "email": "support@draufgeschaut.de"
+    },
+    "extra":  {
+        "oxideshop": {
+            "target-directory": "dgotto",
+            "source-directory": "modules/dgotto",
+            "blacklist-filter": [
+                "*.json",
+				"*dgotto_install.txt",
+                "metadate.php"
+            ]
+        }
+    },
+    "version": "1.30",    
+    "require": {
+        "ext-ioncube-loader": "*",
+        "oxid-esales/oxideshop-metapackage-ce": ">=6.0.0 <=6.0.3 - >=6.3.0 <=6.4.1",
+        "php": "5.6.* - 7.4.*",
+        "draufgeschaut/dgconnector": "^1.2"
+    },
+    "autoload":    {
+        "psr-4": {
+            "dgModule\\dgOttoModul\\": "../../../source/modules/dgotto"             
+        }
+    }
+}

@@ -1,0 +1,86 @@
+15:07:18
+87.179.55.171
+Array
+(
+    [_ga] => GA1.2.1893456639.1631470525
+    [_gcl_au] => 1.1.1736360683.1631470525
+    [_fbp] => fb.1.1631470525150.448969284
+    [apay-session-set] => AvvVx+iUvC4KHLEnvg6ycfQyVaV3UxuVqB8HV+CqQ7NB0bpcaK6TtFC0MMH8pNo=
+    [_pin_unauth] => dWlkPVltTXlOemRtTnpjdE5ETTJOeTAwTUdaaUxUZzNNVGd0T1dJd1pHWTRaR0l6TkRnNA
+    [_omappvp] => s40gWRrx4GRV8MQ4GpYSmWJlweYBj8PsSwXguOUvzL2DzFUTgyZfzsNwKlOzWIgrzmkvgKqei7Hz7UlSDudZ4FImTMsG3BSr
+    [_gcl_aw] => GCL.1636536747.Cj0KCQiA-K2MBhC-ARIsAMtLKRtUAOkb_O9Ij2kFSAv_9wKGq1Z4Z5Gh9MD_nfALYYGWNVhZTy70j8saAt78EALw_wcB
+    [_gac_UA-88088936-5] => 1.1636536747.Cj0KCQiA-K2MBhC-ARIsAMtLKRtUAOkb_O9Ij2kFSAv_9wKGq1Z4Z5Gh9MD_nfALYYGWNVhZTy70j8saAt78EALw_wcB
+    [prism_1000428378] => 39d59847-4883-416b-a35b-dbf9d79ebd93
+    [omSeen-ypkmneoddmg3xubfelar] => 1636536755814
+    [_omra] => {"ypkmneoddmg3xubfelar":"view"}
+)
+
+Array
+(
+    [force_sid] => b7c33cf5593324a2631bcae61d0c1248
+    [gclid] => CjwKCAiA7dKMBhBCEiwAO_crFEcmHt9r0l5yubXgP865R-1DCMcFPCIY4WQpHXE_ZcccpNMe3okqlhoCcbcQAvD_BwE
+    [_ga] => GA1.2.1893456639.1631470525
+    [_gcl_au] => 1.1.1736360683.1631470525
+    [_fbp] => fb.1.1631470525150.448969284
+    [apay-session-set] => AvvVx+iUvC4KHLEnvg6ycfQyVaV3UxuVqB8HV+CqQ7NB0bpcaK6TtFC0MMH8pNo=
+    [_pin_unauth] => dWlkPVltTXlOemRtTnpjdE5ETTJOeTAwTUdaaUxUZzNNVGd0T1dJd1pHWTRaR0l6TkRnNA
+    [_omappvp] => s40gWRrx4GRV8MQ4GpYSmWJlweYBj8PsSwXguOUvzL2DzFUTgyZfzsNwKlOzWIgrzmkvgKqei7Hz7UlSDudZ4FImTMsG3BSr
+    [_gcl_aw] => GCL.1636536747.Cj0KCQiA-K2MBhC-ARIsAMtLKRtUAOkb_O9Ij2kFSAv_9wKGq1Z4Z5Gh9MD_nfALYYGWNVhZTy70j8saAt78EALw_wcB
+    [_gac_UA-88088936-5] => 1.1636536747.Cj0KCQiA-K2MBhC-ARIsAMtLKRtUAOkb_O9Ij2kFSAv_9wKGq1Z4Z5Gh9MD_nfALYYGWNVhZTy70j8saAt78EALw_wcB
+    [prism_1000428378] => 39d59847-4883-416b-a35b-dbf9d79ebd93
+    [omSeen-ypkmneoddmg3xubfelar] => 1636536755814
+    [_omra] => {"ypkmneoddmg3xubfelar":"view"}
+)
+
+time: 2.32496619225
+
+
+
+15:07:51
+87.179.55.171
+Array
+(
+    [_ga] => GA1.2.1893456639.1631470525
+    [_gcl_au] => 1.1.1736360683.1631470525
+    [_fbp] => fb.1.1631470525150.448969284
+    [apay-session-set] => AvvVx+iUvC4KHLEnvg6ycfQyVaV3UxuVqB8HV+CqQ7NB0bpcaK6TtFC0MMH8pNo=
+    [_pin_unauth] => dWlkPVltTXlOemRtTnpjdE5ETTJOeTAwTUdaaUxUZzNNVGd0T1dJd1pHWTRaR0l6TkRnNA
+    [_omappvp] => s40gWRrx4GRV8MQ4GpYSmWJlweYBj8PsSwXguOUvzL2DzFUTgyZfzsNwKlOzWIgrzmkvgKqei7Hz7UlSDudZ4FImTMsG3BSr
+    [prism_1000428378] => 39d59847-4883-416b-a35b-dbf9d79ebd93
+    [omSeen-ypkmneoddmg3xubfelar] => 1636536755814
+    [_omra] => {"ypkmneoddmg3xubfelar":"view"}
+    [language] => 0
+    [sid] => 5296900f2541da94a68088d0e61e1a74
+    [_gid] => GA1.2.887577372.1637158043
+    [_gac_UA-88088936-5] => 1.1637158043.CjwKCAiA7dKMBhBCEiwAO_crFEcmHt9r0l5yubXgP865R-1DCMcFPCIY4WQpHXE_ZcccpNMe3okqlhoCcbcQAvD_BwE
+    [_gcl_aw] => GCL.1637158043.CjwKCAiA7dKMBhBCEiwAO_crFEcmHt9r0l5yubXgP865R-1DCMcFPCIY4WQpHXE_ZcccpNMe3okqlhoCcbcQAvD_BwE
+    [_gat] => 1
+    [_gat_UA-88088936-5] => 1
+)
+
+Array
+(
+    [force_sid] => b7c33cf5593324a2631bcae61d0c1248
+    [gclid] => CjwKCAiA7dKMBhBCEiwAO_crFEcmHt9r0l5yubXgP865R-1DCMcFPCIY4WQpHXE_ZcccpNMe3okqlhoCcbcQAvD_BwE
+    [_ga] => GA1.2.1893456639.1631470525
+    [_gcl_au] => 1.1.1736360683.1631470525
+    [_fbp] => fb.1.1631470525150.448969284
+    [apay-session-set] => AvvVx+iUvC4KHLEnvg6ycfQyVaV3UxuVqB8HV+CqQ7NB0bpcaK6TtFC0MMH8pNo=
+    [_pin_unauth] => dWlkPVltTXlOemRtTnpjdE5ETTJOeTAwTUdaaUxUZzNNVGd0T1dJd1pHWTRaR0l6TkRnNA
+    [_omappvp] => s40gWRrx4GRV8MQ4GpYSmWJlweYBj8PsSwXguOUvzL2DzFUTgyZfzsNwKlOzWIgrzmkvgKqei7Hz7UlSDudZ4FImTMsG3BSr
+    [prism_1000428378] => 39d59847-4883-416b-a35b-dbf9d79ebd93
+    [omSeen-ypkmneoddmg3xubfelar] => 1636536755814
+    [_omra] => {"ypkmneoddmg3xubfelar":"view"}
+    [language] => 0
+    [sid] => 5296900f2541da94a68088d0e61e1a74
+    [_gid] => GA1.2.887577372.1637158043
+    [_gac_UA-88088936-5] => 1.1637158043.CjwKCAiA7dKMBhBCEiwAO_crFEcmHt9r0l5yubXgP865R-1DCMcFPCIY4WQpHXE_ZcccpNMe3okqlhoCcbcQAvD_BwE
+    [_gcl_aw] => GCL.1637158043.CjwKCAiA7dKMBhBCEiwAO_crFEcmHt9r0l5yubXgP865R-1DCMcFPCIY4WQpHXE_ZcccpNMe3okqlhoCcbcQAvD_BwE
+    [_gat] => 1
+    [_gat_UA-88088936-5] => 1
+)
+
+time: 2.01674389839
+
+
+

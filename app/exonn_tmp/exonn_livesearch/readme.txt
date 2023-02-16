@@ -1,0 +1,2 @@
+1. Kopieren Sie den Inhalt des Verzeichnisses copy_this in Ihr Shop Stammverzeichnis.
+2. Klicken Sie unter Erweiterungen auf Module. W�hlen Sie aus der Liste das EXONN LiveSearch Modul und aktivieren Sie dieses.

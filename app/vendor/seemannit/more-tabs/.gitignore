@@ -1,0 +1,6 @@
+build/article_moretabs_v*/
+build/article_moretabs-v*/
+build/article_moretabs*/
+build/package
+build/productive/
+build/*.zip

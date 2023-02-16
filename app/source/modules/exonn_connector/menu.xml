@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<OX>
+    <OXMENU id="EXONN">
+        <MAINMENU id="exonnconnectormainmenu">
+            <SUBMENU id="connectormain" cl="exonn_connector_main" />
+        </MAINMENU>
+    </OXMENU>
+</OX>

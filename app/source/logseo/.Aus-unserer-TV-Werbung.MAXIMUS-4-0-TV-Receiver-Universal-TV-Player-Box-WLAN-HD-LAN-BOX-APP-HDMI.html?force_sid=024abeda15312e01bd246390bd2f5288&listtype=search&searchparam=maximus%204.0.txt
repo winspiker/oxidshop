@@ -1,0 +1,51 @@
+15:04:37
+82.113.121.29
+Array
+(
+    [language] => 0
+    [sid] => 024abeda15312e01bd246390bd2f5288
+    [sid_key] => oxid
+    [_ga] => GA1.2.1166837436.1637157823
+    [_gid] => GA1.2.1394664363.1637157823
+    [_gac_UA-88088936-5] => 1.1637157823.CjwKCAiA7dKMBhBCEiwAO_crFIxQMbBR9v9I12Yga83uIBiALtEP299L738yniIxXDKGh955LGzRVRoCpfYQAvD_BwE
+    [_gcl_aw] => GCL.1637157823.CjwKCAiA7dKMBhBCEiwAO_crFIxQMbBR9v9I12Yga83uIBiALtEP299L738yniIxXDKGh955LGzRVRoCpfYQAvD_BwE
+    [_gcl_au] => 1.1.1403222825.1637157823
+    [_gat] => 1
+    [_gat_UA-88088936-5] => 1
+    [_fbp] => fb.1.1637157823605.1625316134
+    [_derived_epik] => dj0yJnU9cDhJZzE0QWJROVE0cDdvZUlFQkRxUlZzczBkcV92amQmbj1LUDM0TzdGWlBNYzZhVGZYRUE5eVBBJm09MSZ0PUFBQUFBR0dWQzhBJnJtPTEmcnQ9QUFBQUFHR1ZDOEE
+    [_pin_unauth] => dWlkPVlUTTVZemhpTldRdE5UUXlNaTAwTmpJNExXRXhNakF0WlRFME1EaG1ObUl6WXpneg
+    [prism_1000428378] => 79f1402a-7505-49d1-b5c3-59153093a65d
+    [_omappvp] => CZzEb0BXPBMf2yIUdqshK6YnhV8J5MCtZzSP2IsJeTbBKWufTDrOw5hcaxqjdBNqPG4AoLvCsXkgQ9zTufQOPcOCRNKqBm1R
+    [_omappvs] => 1637157825071
+    [displayedCookiesNotification] => 1
+)
+
+Array
+(
+    [force_sid] => 024abeda15312e01bd246390bd2f5288
+    [listtype] => search
+    [searchparam] => maximus 4.0
+    [language] => 0
+    [sid] => 024abeda15312e01bd246390bd2f5288
+    [sid_key] => oxid
+    [_ga] => GA1.2.1166837436.1637157823
+    [_gid] => GA1.2.1394664363.1637157823
+    [_gac_UA-88088936-5] => 1.1637157823.CjwKCAiA7dKMBhBCEiwAO_crFIxQMbBR9v9I12Yga83uIBiALtEP299L738yniIxXDKGh955LGzRVRoCpfYQAvD_BwE
+    [_gcl_aw] => GCL.1637157823.CjwKCAiA7dKMBhBCEiwAO_crFIxQMbBR9v9I12Yga83uIBiALtEP299L738yniIxXDKGh955LGzRVRoCpfYQAvD_BwE
+    [_gcl_au] => 1.1.1403222825.1637157823
+    [_gat] => 1
+    [_gat_UA-88088936-5] => 1
+    [_fbp] => fb.1.1637157823605.1625316134
+    [_derived_epik] => dj0yJnU9cDhJZzE0QWJROVE0cDdvZUlFQkRxUlZzczBkcV92amQmbj1LUDM0TzdGWlBNYzZhVGZYRUE5eVBBJm09MSZ0PUFBQUFBR0dWQzhBJnJtPTEmcnQ9QUFBQUFHR1ZDOEE
+    [_pin_unauth] => dWlkPVlUTTVZemhpTldRdE5UUXlNaTAwTmpJNExXRXhNakF0WlRFME1EaG1ObUl6WXpneg
+    [prism_1000428378] => 79f1402a-7505-49d1-b5c3-59153093a65d
+    [_omappvp] => CZzEb0BXPBMf2yIUdqshK6YnhV8J5MCtZzSP2IsJeTbBKWufTDrOw5hcaxqjdBNqPG4AoLvCsXkgQ9zTufQOPcOCRNKqBm1R
+    [_omappvs] => 1637157825071
+    [displayedCookiesNotification] => 1
+)
+
+time: 1.27842712402
+
+
+

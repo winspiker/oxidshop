@@ -1,0 +1,84 @@
+﻿﻿[dg] Weiterleitungen
+Lexicon
+
+Vielen Dank für Ihre Bestellung bei draufgeschaut.de.
+
+Zum Betrieb des Moduls muss der IonCube loader installiert sein.
+Ob dieser bei Ihnen installiert ist können Sie im OXID Admin unter Service => Systeminfo einsehen.
+
+Sollte diese Systemvorraussetzung nicht gegeben sein installieren Sie das Modul NICHT. 
+Kontaktieren Sie ihren Provider um die entsprechenden Systemvorraussetzung mit Ihren Provider herzustellen.
+
+Beim Update von einer OXID Version kleiner 6.0 ist es wichtig, dass Sie unter Module das alte Modul deaktivieren.
+Vor dem kopieren der neuen Daten müssen die alten Dateien entfernt werden.
+
+Sie können gefahrlos alle Dateien die mit dgredirect* beginnen löschen, alle Dateien für das Modul sind im dgredirect.zip enthalten.
+ 
+Zur Installation führen Sie folgende Schritte durch:
+
+ - Erstinstallation:
+ 
+ - - Produktivsystem:
+     composer config repositories.draufgeschaut composer https://update.draufgeschaut.de
+     composer require --update-no-dev draufgeschaut/dgredirect
+     
+ - - Testsystem/Entwicklungssystem:
+     composer config repositories.draufgeschaut composer https://update.draufgeschaut.de
+     composer require draufgeschaut/dgredirect
+     
+ - Modulupdate:
+ 
+ - - Produktivsystem:
+     composer config repositories.draufgeschaut composer https://update.draufgeschaut.de
+     composer require --no-dev draufgeschaut/dgredirect
+     
+ - - Testsystem/Entwicklungssystem:
+     composer config repositories.draufgeschaut composer https://update.draufgeschaut.de 
+     composer update draufgeschaut/dgredirect
+ 
+
+4. Aktivieren Sie das Modul unter Erweiterungen => Module => [dg] Weiterleitungen
+
+
+
+Bei Modulen mit Konfiguration nehmen Sie unter [dg] Module => Tools => Weiterleitungen die weiteren Einstellungen vor.
+
+
+Nach der Installation aktualisieren sie unter Service => Tools die Views und Leeren Sie bitte noch das Verzeichnis /tmp im Shop, außer der Datei ".htaccess".
+
+
+Bitte nutzen Sie falls im Modul vorhanden den Support-Reiter für Supportanfragen, Vielen Dank.
+
+Falls Sie die Installation nicht selbst ausführen möchten können Sie unter www.volker-doerk.de die Installation bestellen.
+
+draufgeschaut.de
+E-Mail: support@draufgeschaut.de 
+URL: http://www.volker-doerk.de
+
+Dateiliste:
+ - modules\dgredirect\Application\Controller\Admin\dgredirect_admin.php
+ - modules\dgredirect\Application\Controller\Admin\dgredirect_export.php
+ - modules\dgredirect\Application\Controller\Admin\dgredirect_import.php
+ - modules\dgredirect\Application\Controller\Admin\dgredirect_list.php
+ - modules\dgredirect\Application\Controller\Admin\dgredirect_main.php
+ - modules\dgredirect\Application\Model\dgredirect.php
+ - modules\dgredirect\Application\Model\dgredirectconfig.php
+ - modules\dgredirect\Application\Model\dgredirectevents.php
+ - modules\dgredirect\Application\Model\dgredirecthelper.php
+ - modules\dgredirect\Application\Model\dgredirectlist.php
+ - modules\dgredirect\Application\Model\dgredirectupdate.php
+ - modules\dgredirect\Application\translations\de\dgredirect_lang.php
+ - modules\dgredirect\Application\translations\en\dgredirect_lang.php
+ - modules\dgredirect\Application\views\admin\de\dgredirect_lang.php
+ - modules\dgredirect\Application\views\admin\en\dgredirect_lang.php
+ - modules\dgredirect\Application\views\admin\tpl\dgredirect_admin.tpl
+ - modules\dgredirect\Application\views\admin\tpl\dgredirect_exception.tpl
+ - modules\dgredirect\Application\views\admin\tpl\dgredirect_export.tpl
+ - modules\dgredirect\Application\views\admin\tpl\dgredirect_import.tpl
+ - modules\dgredirect\Application\views\admin\tpl\dgredirect_list.tpl
+ - modules\dgredirect\Application\views\admin\tpl\dgredirect_main.tpl
+ - modules\dgredirect\Modul\dgredirect_navigation.php
+ - modules\dgredirect\Modul\dgredirect_oxlang.php
+ - modules\dgredirect\Modul\dgredirect_oxseodecoder.php
+ - modules\dgredirect\Modul\dgredirect_oxutils.php
+ - modules\dgredirect\out\admin\img\dgmute.gif

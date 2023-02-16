@@ -1,0 +1,21 @@
+15:08:09
+54.36.149.25
+Array
+(
+)
+
+Array
+(
+    [ldtype] => grid
+    [_artperpage] => 32
+    [listorderby] => oxvarminprice
+    [listorder] => asc
+    [pgNr] => 0
+    [cl] => alist
+    [searchparam] => 
+)
+
+time: 1.13701581955
+
+
+

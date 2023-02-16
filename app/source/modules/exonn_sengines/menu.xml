@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<OX>
+    <!--OXMENU id="EXONN">
+        <MAINMENU id="exonnsenginesmainmenu">
+            <SUBMENU id="senginesinstall" cl="exonn_sengines_install" />
+        </MAINMENU>
+    </OXMENU-->
+    <OXMENU id="NAVIGATION_ESHOPADMIN">
+        <MAINMENU id="mxmanageprod">
+            <SUBMENU id="mxcategories">
+                <TAB id="tbclcategory_sengines" cl="category_sengines"/>
+            </SUBMENU>
+            <SUBMENU id="mxarticles">
+                <TAB id="tbclarticle_sengines" cl="article_sengines"/>
+            </SUBMENU>
+        </MAINMENU>
+    </OXMENU>
+</OX>

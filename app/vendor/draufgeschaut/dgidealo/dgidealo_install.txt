@@ -1,0 +1,153 @@
+﻿﻿Idealo Artikelexport und Bestellimport
+
+
+Vielen Dank für Ihre Bestellung bei draufgeschaut.de.
+
+Zum Betrieb des Moduls muss der IonCube loader installiert sein.
+Ob dieser bei Ihnen installiert ist können Sie im OXID Admin unter Service => Systeminfo einsehen.
+
+Sollte diese Systemvorraussetzung nicht gegeben sein installieren Sie das Modul NICHT. 
+Kontaktieren Sie ihren Provider um die entsprechenden Systemvorraussetzung mit Ihren Provider herzustellen.
+
+Beim Update von einer OXID Version kleiner 6.0 ist es wichtig, dass Sie unter Module das alte Modul deaktivieren.
+Vor dem kopieren der neuen Daten müssen die alten Dateien entfernt werden.
+
+Sie können gefahrlos alle Dateien die mit dgidealo* beginnen löschen, alle Dateien für das Modul sind im dgidealo.zip enthalten.
+ 
+Zur Installation führen Sie folgende Schritte durch:
+
+ - Erstinstallation:
+ 
+ - - Produktivsystem:
+     composer config repositories.draufgeschaut composer https://update.draufgeschaut.de
+     composer require --update-no-dev draufgeschaut/dgidealo
+     
+ - - Testsystem/Entwicklungssystem:
+     composer config repositories.draufgeschaut composer https://update.draufgeschaut.de
+     composer require draufgeschaut/dgidealo
+     
+ - Modulupdate:
+ 
+ - - Produktivsystem:
+     composer config repositories.draufgeschaut composer https://update.draufgeschaut.de
+     composer require --no-dev draufgeschaut/dgidealo
+     
+ - - Testsystem/Entwicklungssystem:
+     composer config repositories.draufgeschaut composer https://update.draufgeschaut.de 
+     composer update draufgeschaut/dgidealo
+ 
+
+4. Aktivieren Sie das Modul unter Erweiterungen => Module => Idealo Artikelexport und Bestellimport
+
+
+
+Bei Modulen mit Konfiguration nehmen Sie unter [dg] Module => Marktplätze => Idealo Artikelexport und Bestellimport die weiteren Einstellungen vor.
+
+
+Nach der Installation aktualisieren sie unter Service => Tools die Views und Leeren Sie bitte noch das Verzeichnis /tmp im Shop, außer der Datei ".htaccess".
+
+
+Bitte nutzen Sie falls im Modul vorhanden den Support-Reiter für Supportanfragen, Vielen Dank.
+
+Falls Sie die Installation nicht selbst ausführen möchten können Sie unter www.volker-doerk.de die Installation bestellen.
+
+draufgeschaut.de
+E-Mail: support@draufgeschaut.de 
+URL: http://www.volker-doerk.de
+
+Dateiliste:
+ - modules\dgidealo\Application\Controller\Admin\dgidealo_admin.php
+ - modules\dgidealo\Application\Controller\Admin\dgidealo_article.php
+ - modules\dgidealo\Application\Controller\Admin\dgidealo_export.php
+ - modules\dgidealo\Application\Controller\Admin\dgidealo_list.php
+ - modules\dgidealo\Application\Controller\Admin\dgidealo_localinventar.php
+ - modules\dgidealo\Application\Controller\Admin\dgidealo_main.php
+ - modules\dgidealo\Application\Controller\Admin\dgidealo_order.php
+ - modules\dgidealo\Application\Controller\Admin\dgidealo_pwsdo.php
+ - modules\dgidealo\Application\Controller\Admin\dgidealo_pwsexport.php
+ - modules\dgidealo\Application\Controller\Admin\dgidealo_setup.php
+ - modules\dgidealo\Application\Controller\Admin\dgidealo_support.php
+ - modules\dgidealo\Application\Controller\Admin\dgidealo_test.php
+ - modules\dgidealo\Application\Controller\Admin\dgidealoactiv_ajax.php
+ - modules\dgidealo\Application\Controller\Admin\dgidealoart2local_ajax.php
+ - modules\dgidealo\Application\Controller\Admin\dgidealodeliveryart_ajax.php
+ - modules\dgidealo\Application\Controller\Admin\dgidealodirectpurchaserelease_ajax.php
+ - modules\dgidealo\Application\Controller\dgidealo_cronjob.php
+ - modules\dgidealo\Application\Controller\dgidealo_pswcronjob.php
+ - modules\dgidealo\Application\Model\dgidealo.php
+ - modules\dgidealo\Application\Model\dgidealoactiv.php
+ - modules\dgidealo\Application\Model\dgidealoapi.php
+ - modules\dgidealo\Application\Model\dgidealoapiclient.php
+ - modules\dgidealo\Application\Model\dgidealoart2local.php
+ - modules\dgidealo\Application\Model\dgidealobranch.php
+ - modules\dgidealo\Application\Model\dgidealobranchlist.php
+ - modules\dgidealo\Application\Model\dgidealoclickreportapi.php
+ - modules\dgidealo\Application\Model\dgidealocontroll.php
+ - modules\dgidealo\Application\Model\dgidealocronjob.php
+ - modules\dgidealo\Application\Model\dgidealodirectpurchaserelease.php
+ - modules\dgidealo\Application\Model\dgidealoevents.php
+ - modules\dgidealo\Application\Model\dgidealoexport.php
+ - modules\dgidealo\Application\Model\dgidealomerchantorderapi.php
+ - modules\dgidealo\Application\Model\dgidealoorder.php
+ - modules\dgidealo\Application\Model\dgidealoorderarticle.php
+ - modules\dgidealo\Application\Model\dgidealoorderarticlelist.php
+ - modules\dgidealo\Application\Model\dgidealoordermarge.php
+ - modules\dgidealo\Application\Model\dgidealopersonalwebservice.php
+ - modules\dgidealo\Application\Model\dgidealoproduct.php
+ - modules\dgidealo\Application\Model\dgidealopswcronjob.php
+ - modules\dgidealo\Application\Model\dgidealopws2send.php
+ - modules\dgidealo\Application\Model\dgidealopws2sendlist.php
+ - modules\dgidealo\Application\Model\dgidealopwsclient.php
+ - modules\dgidealo\Application\Model\dgidealopwsexport.php
+ - modules\dgidealo\Application\Model\dgidealopwsexportlist.php
+ - modules\dgidealo\Application\Model\dgidealopwshistory.php
+ - modules\dgidealo\Application\Model\dgidealopwshistorylist.php
+ - modules\dgidealo\Application\Model\dgidealorestapi.php
+ - modules\dgidealo\Application\Model\dgidealostart.php
+ - modules\dgidealo\Application\Model\dgidealotracking.php
+ - modules\dgidealo\Application\Model\dgidealoupdate.php
+ - modules\dgidealo\Application\Model\dgidealouser.php
+ - modules\dgidealo\Application\Model\dgidealovalues.php
+ - modules\dgidealo\Application\translations\de\dgidealo_lang.php
+ - modules\dgidealo\Application\translations\en\dgidealo_lang.php
+ - modules\dgidealo\Application\views\admin\de\dgidealo_lang.php
+ - modules\dgidealo\Application\views\admin\en\dgidealo_lang.php
+ - modules\dgidealo\Application\views\admin\tpl\dgidealo_actionslist.tpl
+ - modules\dgidealo\Application\views\admin\tpl\dgidealo_admin.tpl
+ - modules\dgidealo\Application\views\admin\tpl\dgidealo_article.tpl
+ - modules\dgidealo\Application\views\admin\tpl\dgidealo_exception.tpl
+ - modules\dgidealo\Application\views\admin\tpl\dgidealo_export.tpl
+ - modules\dgidealo\Application\views\admin\tpl\dgidealo_list.tpl
+ - modules\dgidealo\Application\views\admin\tpl\dgidealo_localinventar.tpl
+ - modules\dgidealo\Application\views\admin\tpl\dgidealo_main.tpl
+ - modules\dgidealo\Application\views\admin\tpl\dgidealo_order.tpl
+ - modules\dgidealo\Application\views\admin\tpl\dgidealo_pwsdo.tpl
+ - modules\dgidealo\Application\views\admin\tpl\dgidealo_pwsexport.tpl
+ - modules\dgidealo\Application\views\admin\tpl\dgidealo_setup.tpl
+ - modules\dgidealo\Application\views\admin\tpl\dgidealo_support.tpl
+ - modules\dgidealo\Application\views\admin\tpl\dgidealoactiv_ajax.tpl
+ - modules\dgidealo\Application\views\admin\tpl\dgidealoart2local_ajax.tpl
+ - modules\dgidealo\Application\views\admin\tpl\dgidealodeliveryart_ajax.tpl
+ - modules\dgidealo\Application\views\admin\tpl\dgidealodirectpurchaserelease_ajax.tpl
+ - modules\dgidealo\Modul\dgidealo_article_list.php
+ - modules\dgidealo\Modul\dgidealo_article_main.php
+ - modules\dgidealo\Modul\dgidealo_navigation.php
+ - modules\dgidealo\Modul\dgidealo_order_list.php
+ - modules\dgidealo\Modul\dgidealo_order_overview.php
+ - modules\dgidealo\Modul\dgidealo_oxorder.php
+ - modules\dgidealo\Modul\dgidealo_oxutilsview.php
+ - modules\dgidealo\Modul\dgidealo_oxviewconfig.php
+ - modules\dgidealo\out\admin\img\dgmute.gif
+ - modules\dgidealo\out\blocks\dgidealo_admin_article_main_form.tpl
+ - modules\dgidealo\out\blocks\dgidealo_admin_headitem_js.tpl
+ - modules\dgidealo\out\blocks\dgidealo_admin_order_overview_status.tpl
+ - modules\dgidealo\out\blocks\dgidealo_article_list_colgroup.tpl
+ - modules\dgidealo\out\blocks\dgidealo_article_list_filter.tpl
+ - modules\dgidealo\out\blocks\dgidealo_article_list_items.tpl
+ - modules\dgidealo\out\blocks\dgidealo_article_list_sorting.tpl
+ - modules\dgidealo\out\blocks\dgidealo_base_js.tpl
+ - modules\dgidealo\out\blocks\dgidealo_checkout_thankyou_main.tpl
+ - modules\dgidealo\out\blocks\dgidealo_list_colgroup_actions.tpl
+ - modules\dgidealo\out\blocks\dgidealo_list_filter_actions.tpl
+ - modules\dgidealo\out\blocks\dgidealo_list_items_actions.tpl
+ - modules\dgidealo\out\blocks\dgidealo_list_sorting_actions.tpl

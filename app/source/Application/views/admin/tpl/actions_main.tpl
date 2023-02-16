@@ -9,7 +9,7 @@
 [{/if}]
 
 <script type="text/javascript">
-
+<!--
 
 function DeletePic(sField)
 {
@@ -100,6 +100,8 @@ function DeletePic(sField)
                   <option value="1">[{oxmultilang ident="PROMOTIONS_MAIN_TYPE_ACTION"}]</option>
                   <option value="2">[{oxmultilang ident="PROMOTIONS_MAIN_TYPE_PROMO"}]</option>
                   <option value="3">[{oxmultilang ident="PROMOTIONS_MAIN_TYPE_BANNER"}]</option>
+                    <option value="4">badge</option>
+                    <option value="5">Timer</option>
                 </select>
               </td>
             </tr>
@@ -120,7 +122,29 @@ function DeletePic(sField)
             <input type="text" class="editinput" size="32" maxlength="[{$edit->oxactions__oxsort->fldmax_length}]" name="editval[oxactions__oxsort]" value="[{$edit->oxactions__oxsort->value}]" [{$readonly}]>
             [{oxinputhelp ident="HELP_GENERAL_SORT"}]
             </td>
-        [{/if}]
+            [{elseif $edit->oxactions__oxtype->value == 4 }]
+            <tr>
+                <td class="edittext" width="120">
+                    HTML:
+                </td>
+                <td class="edittext">
+                    <textarea class="editinput" name="editval[oxactions__badge_html]" >[{$edit->oxactions__badge_html->value}]</textarea>
+                </td>
+            </tr>
+            <tr>
+
+                <td class="edittext" width="120">
+                    CSS:
+                </td>
+                <td class="edittext">
+                    <textarea class="editinput" name="editval[oxactions__badge_css]" >[{$edit->oxactions__badge_css->value}]</textarea>
+                </td>
+            </tr>
+            [{/if}]
+
+
+
+
         <tr>
             <td class="edittext">
             </td>
@@ -137,10 +161,10 @@ function DeletePic(sField)
 
             [{if $oxid != "-1"}]
 
-                [{if $edit->oxactions__oxtype->value < 2}]
-                   <input type="button" value="[{oxmultilang ident="GENERAL_ASSIGNARTICLES"}]" class="edittext" onclick="JavaScript:showDialog('&cl=actions_main&aoc=1&oxid=[{$oxid}]');" [{$readonly}]>
+                [{if $edit->oxactions__oxtype->value < 2 || $edit->oxactions__oxtype->value == 4 || $edit->oxactions__oxtype->value == 5}]
+            <input type="button" value="[{ oxmultilang ident="GENERAL_ASSIGNARTICLES" }]" class="edittext" onclick="JavaScript:showDialog('&cl=actions_main&aoc=1&oxid=[{ $oxid }]');" [{ $readonly }]>
                 [{else}]
-                    <input type="button" value="[{oxmultilang ident="GENERAL_ASSIGNGROUPS"}]" class="edittext" onclick="JavaScript:showDialog('&cl=actions_main&oxpromotionaoc=groups&oxid=[{$oxid}]');" [{$readonly}]>
+            <input type="button" value="[{ oxmultilang ident="GENERAL_ASSIGNGROUPS" }]" class="edittext" onclick="JavaScript:showDialog('&cl=actions_main&oxpromotionaoc=groups&oxid=[{ $oxid }]');" [{ $readonly }]>
                 [{/if}]
 
             [{/if}]

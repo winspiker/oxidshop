@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OX>
+	<OXMENU id="SIT_MENU">
+		<MAINMENU id="SIT_MODULE_FRAMEWORK">
+			<SUBMENU id="SIT_MODULE_FRAMEWORK_MAIN" cl="sit_module_framework" />
+			<SUBMENU id="SIT_MODULE_FRAMEWORK_SHOP" cl="sit_module_framework_shop" />
+		</MAINMENU>
+	</OXMENU>
+</OX>

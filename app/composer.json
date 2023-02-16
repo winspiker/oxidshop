@@ -1,102 +1,122 @@
 {
-    "name": "oxid-esales/oxideshop-ce",
-    "description": "This package contains OXID eShop CE source code.",
-    "type": "oxideshop",
-    "keywords": ["oxid", "modules", "eShop"],
-    "homepage": "https://www.oxid-esales.com/en/home.html",
-    "license": "GPL-3.0-only",
-    "require": {
-        "php": "^7.4 || ^8.0",
-        "ext-pdo": "*",
-        "ext-json": "*",
-        "phpmailer/phpmailer": "^v6.5.0",
-        "smarty/smarty": "^v2.6.31",
-        "doctrine/dbal": "<=2.12.1",
-        "doctrine/collections": "^1.4.0",
-        "monolog/monolog": "^v1.23.0",
-        "psr/container": "1.0.*",
-        "symfony/event-dispatcher": "^3.4",
-        "symfony/dependency-injection": "^3.4.26",
-        "symfony/config": "~3.3 || ~4.0",
-        "symfony/yaml": "~3.4 || ~4.0",
-        "symfony/expression-language": "^4.4.30",
-        "symfony/lock": "^3.4",
-        "symfony/console": "^v3.4.15",
-        "webmozart/path-util": "^2.3",
-        "symfony/finder": "^3.4",
-        "symfony/filesystem": "^4.4.17",
-        "oxid-esales/flow-theme": "^v3.8.0",
-        "oxid-esales/oxideshop-doctrine-migration-wrapper": "^v3.3.0",
-        "oxid-esales/oxideshop-db-views-generator": "^v1.3.0",
-        "oxid-esales/oxideshop-demodata-installer": "^v1.3.0",
-        "oxid-esales/oxideshop-composer-plugin": "^v5.2.0",
-        "oxid-esales/oxideshop-unified-namespace-generator": "^v2.2.0",
-        "oxid-esales/oxideshop-facts": "^v2.4.0",
-        "oxid-esales/oxideshop-demodata-ce": "dev-b-6.0"
+  "name": "oxid-esales/oxideshop-project",
+  "type": "project",
+  "description": "This file should be used as an OXID eShop project root composer.json file. Entries provided here intended to be examples and could be changed to your specific needs.",
+  "license": [
+    "GPL-3.0-only"
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "oxid-esales/oxideshop-metapackage-ce": "v6.1.5",
+    "oxid-projects/tags-module": "^2.3",
+    "draufgeschaut/dggoogleanalytics": "^5.20",
+    "netensio/net_redirect_manager": "*",
+    "ecs/adminrights": "^2.0",
+    "netensio/net_robots_txt_editor": "^1.0",
+    "netensio/net_sitemap": "^1.0",
+    "oxid-professional-services/countryvatadministration": "^1.0",
+    "draufgeschaut/dgidealo": "^6.20",
+    "exonn/mlsearch": "^1.0",
+    "exonn/livesearch": "^2.0",
+    "tabsl/tabslimagetags": "^3.0",
+    "seemannit/more-tabs": "^4.0",
+    "exonn/seoadaptations": "^1.0",
+    "draufgeschaut/dgotto": "^1.30",
+    "mollie/mollie-oxid": "^1.0",
+    "exonn/exonn_asum": "^1.1"
+  },
+  "require-dev": {
+    "oxid-esales/testing-library": "^v5.0.4",
+    "oxid-esales/coding-standards": "^v3.0.5",
+    "incenteev/composer-parameter-handler": "~v2.0",
+    "oxid-esales/oxideshop-ide-helper": "^v3.1.2",
+    "oxid-esales/azure-theme": "^v1.4.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "Mollie\\Payment\\": "./source/modules/mollie/molliepayment"
     },
-    "require-dev": {
-        "oxid-esales/testing-library": "^v8.1.0",
-        "incenteev/composer-parameter-handler": "~v2.0",
-        "oxid-esales/oxideshop-ide-helper": "^v4.1.0",
-        "oxid-esales/azure-theme": "^v1.4.1",
-        "squizlabs/php_codesniffer": "^3.5.4"
-    },
-    "autoload": {
-        "psr-4": {
-            "OxidEsales\\EshopCommunity\\": "./source"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "OxidEsales\\EshopCommunity\\Tests\\": "./tests"
-        }
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
-    "bin": ["bin/oe-console"],
-    "scripts": {
-        "post-install-cmd": [
-            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
-            "@oe:ide-helper:generate"
-        ],
-        "post-update-cmd": [
-            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
-            "@oe:ide-helper:generate"
-        ],
-        "oe:ide-helper:generate": [
-            "if [ -f ./vendor/bin/oe-eshop-ide_helper ]; then oe-eshop-ide_helper; fi"
-        ]
-    },
-    "extra": {
-        "oxideshop": {
-            "blacklist-filter": [
-                "Application/Component/**/*",
-                "Application/Controller/**/*",
-                "Application/Model/**/*",
-                "Core/**/*",
-                "Internal/**/*"
-            ]
-        },
-        "incenteev-parameters": {
-            "file": "test_config.yml",
-            "dist-file": "vendor/oxid-esales/testing-library/test_config.yml.dist",
-            "parameter-key": "mandatory_parameters",
-            "env-map": {
-                "shop_path": "SHOP_PATH",
-                "shop_tests_path": "SHOP_TESTS_PATH",
-                "partial_module_paths": "PARTIAL_MODULE_PATHS"
-            }
-        },
-        "branch-alias": {
-            "dev-b-7.0.x": "7.0.x-dev",
-            "dev-b-6.5.x": "6.5.x-dev",
-            "dev-b-6.4.x": "6.4.x-dev"
-        }
-    },
-    "config": {
-        "allow-plugins": {
-            "oxid-esales/oxideshop-composer-plugin": true,
-            "oxid-esales/oxideshop-unified-namespace-generator": true
-        }
+    "files": ["./source/modules/mollie/molliepayment/lib/mollie-api-php/vendor/autoload.php"]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "OxidEsales\\EshopCommunity\\Tests\\": "./vendor/oxid-esales/oxideshop-ce/tests"
     }
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
+      "@oe:ide-helper:generate"
+    ],
+    "post-update-cmd": [
+      "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
+      "@oe:ide-helper:generate"
+    ],
+    "oe:ide-helper:generate": [
+      "if [ -f ./vendor/bin/oe-eshop-ide_helper ]; then oe-eshop-ide_helper; fi"
+    ]
+  },
+  "config": {
+    "preferred-install": {
+      "*": "dist"
+    }
+  },
+  "extra": {
+    "incenteev-parameters": {
+      "file": "test_config.yml",
+      "dist-file": "vendor/oxid-esales/testing-library/test_config.yml.dist",
+      "parameter-key": "mandatory_parameters",
+      "env-map": {
+        "shop_path": "SHOP_PATH",
+        "shop_tests_path": "SHOP_TESTS_PATH",
+        "partial_module_paths": "PARTIAL_MODULE_PATHS"
+      }
+    }
+  },
+  "repositories": {
+    "draufgeschaut": {
+      "type": "composer",
+      "url": "https://update.draufgeschaut.de"
+    },
+    "netensio/net_redirect_manager": {
+      "type": "path",
+      "url": "module_install/net_redirect_manager"
+    },
+    "adminrights": {
+      "type": "path",
+      "url": "./module_install/AdminRights"
+    },
+    "netensio/net_robots_txt_editor": {
+      "type": "path",
+      "url": "module_install/net_robots_txt_editor"
+    },
+    "netensio/net_sitemap": {
+      "type": "path",
+      "url": "module_install/net_sitemap"
+    },
+    "exonn/livesearch": {
+      "type": "path",
+      "url": "module_install/exonn/livesearch/"
+    },
+    "exonn/mlsearch": {
+      "type": "path",
+      "url": "module_install/exonn/mlsearch/"
+    },
+    "tabsl": {
+      "type": "artifact",
+      "url": "./vendor/tabsl"
+    },
+    "article_moretabs": {
+      "type": "path",
+      "url": "module_install/oxid_moretabs-master"
+    },
+    "exonn/seoadaptations": {
+      "type": "path",
+      "url": "./module_install/seoadaptations/"
+    },
+    "exonn/exonn_asum": {
+      "type": "path",
+      "url": "./module_install/exonn_asum/"
+    }
+  }
 }

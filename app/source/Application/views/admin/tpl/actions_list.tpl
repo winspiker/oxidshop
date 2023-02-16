@@ -97,8 +97,12 @@ window.onload = function ()
                 [{oxmultilang ident="PROMOTIONS_MAIN_TYPE_BANNER"}]
             [{elseif $listitem->oxactions__oxtype->value == 2}]
                 [{oxmultilang ident="PROMOTIONS_MAIN_TYPE_PROMO"}]
+            [{elseif $listitem->oxactions__oxtype->value == 4 }]
+                Badge
+            [{elseif $listitem->oxactions__oxtype->value == 5 }]
+                Timer
             [{else}]
-                [{oxmultilang ident="PROMOTIONS_MAIN_TYPE_ACTION"}]
+                [{ oxmultilang ident="PROMOTIONS_MAIN_TYPE_ACTION" }]
             [{/if}]
         </a></div></td>
     <td class="[{$listclass}]">[{if !$listitem->isOx() && !$readonly && $listitem->oxactions__oxtype->value > 0}]<a href="Javascript:top.oxid.admin.deleteThis('[{$listitem->oxactions__oxid->value}]');" class="delete" id="del.[{$_cnt}]" [{include file="help.tpl" helpid=item_delete}]></a>[{/if}]</td>

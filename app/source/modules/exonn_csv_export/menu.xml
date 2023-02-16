@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<OX>
+    <OXMENU id="EXONN">
+        <MAINMENU id="exonncsvexportmainmenu" cl="csv_export_main">
+            <SUBMENU id="csv_export_main" cl="csv_export_main" />
+        </MAINMENU>
+    </OXMENU>
+</OX>

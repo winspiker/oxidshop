@@ -1,0 +1,29 @@
+{
+  "name": "exonn/livesearch",
+  "version": "2.0.2",
+  "description": "The livesearch module simplifies searching for the desired product",
+  "type": "oxideshop-module",
+  "keywords": ["oxid", "modules", "eShop"],
+  "homepage": "https://www.exonn.de",
+  "license": [
+    "proprietary"
+  ],
+  "extra": {
+    "oxideshop": {
+      "target-directory": "exonn/livesearch",
+      "blacklist-filter": [
+        "documentation/**/*.*"
+      ]
+    }
+  },
+  "require": {
+    "php": ">=7.1",
+    "oxid-esales/oxideshop-metapackage-ce":  "~6.2",
+    "exonn/connector": "^2"
+  },
+  "autoload": {
+    "psr-4": {
+      "Exonn\\LiveSearch\\": "../../../source/modules/exonn/livesearch"
+    }
+  }
+}

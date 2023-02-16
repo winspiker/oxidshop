@@ -1,0 +1,165 @@
+﻿﻿Otto Market Anbindung
+Otto Market Anbindung, Bestellimport und Artikel Übertragung
+
+Vielen Dank für Ihre Bestellung bei draufgeschaut.de.
+
+Zum Betrieb des Moduls muss der IonCube loader installiert sein.
+Ob dieser bei Ihnen installiert ist können Sie im OXID Admin unter Service => Systeminfo einsehen.
+
+Sollte diese Systemvorraussetzung nicht gegeben sein installieren Sie das Modul NICHT. 
+Kontaktieren Sie ihren Provider um die entsprechenden Systemvorraussetzung mit Ihren Provider herzustellen.
+
+Beim Update von einer OXID Version kleiner 6.0 ist es wichtig, dass Sie unter Module das alte Modul deaktivieren.
+Vor dem kopieren der neuen Daten müssen die alten Dateien entfernt werden.
+
+Sie können gefahrlos alle Dateien die mit dgotto* beginnen löschen, alle Dateien für das Modul sind im dgotto.zip enthalten.
+ 
+Zur Installation führen Sie folgende Schritte durch:
+
+ - Erstinstallation:
+ 
+ - - Produktivsystem:
+     composer config repositories.draufgeschaut composer https://update.draufgeschaut.de
+     composer require --update-no-dev draufgeschaut/dgotto
+     
+ - - Testsystem/Entwicklungssystem:
+     composer config repositories.draufgeschaut composer https://update.draufgeschaut.de
+     composer require draufgeschaut/dgotto
+     
+ - Modulupdate:
+ 
+ - - Produktivsystem:
+     composer config repositories.draufgeschaut composer https://update.draufgeschaut.de
+     composer require --no-dev draufgeschaut/dgotto
+     
+ - - Testsystem/Entwicklungssystem:
+     composer config repositories.draufgeschaut composer https://update.draufgeschaut.de 
+     composer update draufgeschaut/dgotto
+ 
+
+4. Aktivieren Sie das Modul unter Erweiterungen => Module => Otto Market Anbindung
+
+
+
+Bei Modulen mit Konfiguration nehmen Sie unter [dg] Module => Marketing => Otto Market Anbindung die weiteren Einstellungen vor.
+
+
+Nach der Installation aktualisieren sie unter Service => Tools die Views und Leeren Sie bitte noch das Verzeichnis /tmp im Shop, außer der Datei ".htaccess".
+
+
+Bitte nutzen Sie falls im Modul vorhanden den Support-Reiter für Supportanfragen, Vielen Dank.
+
+Falls Sie die Installation nicht selbst ausführen möchten können Sie unter www.volker-doerk.de die Installation bestellen.
+
+draufgeschaut.de
+E-Mail: support@draufgeschaut.de 
+URL: http://www.volker-doerk.de
+
+Dateiliste:
+ - modules\dgotto\Application\Controller\Admin\dgotto_admin.php
+ - modules\dgotto\Application\Controller\Admin\dgotto_article.php
+ - modules\dgotto\Application\Controller\Admin\dgotto_category.php
+ - modules\dgotto\Application\Controller\Admin\dgotto_do.php
+ - modules\dgotto\Application\Controller\Admin\dgotto_error.php
+ - modules\dgotto\Application\Controller\Admin\dgotto_export.php
+ - modules\dgotto\Application\Controller\Admin\dgotto_list.php
+ - modules\dgotto\Application\Controller\Admin\dgotto_main.php
+ - modules\dgotto\Application\Controller\Admin\dgotto_manufacturer.php
+ - modules\dgotto\Application\Controller\Admin\dgotto_order.php
+ - modules\dgotto\Application\Controller\Admin\dgotto_service.php
+ - modules\dgotto\Application\Controller\Admin\dgotto_setup.php
+ - modules\dgotto\Application\Controller\Admin\dgotto_support.php
+ - modules\dgotto\Application\Controller\Admin\dgotto_vendor.php
+ - modules\dgotto\Application\Controller\Admin\dgottocategory_search.php
+ - modules\dgotto\Application\Controller\Admin\dgottomanufacturer_search.php
+ - modules\dgotto\Application\Controller\Admin\dgottomatching_admin.php
+ - modules\dgotto\Application\Controller\Admin\dgottomatching_list.php
+ - modules\dgotto\Application\Controller\Admin\dgottomatching_main.php
+ - modules\dgotto\Application\Controller\dgotto_cronjob.php
+ - modules\dgotto\Application\Model\dgotto.php
+ - modules\dgotto\Application\Model\dgotto2attribute.php
+ - modules\dgotto\Application\Model\dgotto2brands.php
+ - modules\dgotto\Application\Model\dgotto2category.php
+ - modules\dgotto\Application\Model\dgotto2sendlog.php
+ - modules\dgotto\Application\Model\dgottoattributes.php
+ - modules\dgotto\Application\Model\dgottoattributeslist.php
+ - modules\dgotto\Application\Model\dgottobrands.php
+ - modules\dgotto\Application\Model\dgottocategories.php
+ - modules\dgotto\Application\Model\dgottocleanoutput.php
+ - modules\dgotto\Application\Model\dgottoconfig.php
+ - modules\dgotto\Application\Model\dgottocronjob.php
+ - modules\dgotto\Application\Model\dgottocronlog.php
+ - modules\dgotto\Application\Model\dgottoerror.php
+ - modules\dgotto\Application\Model\dgottoerrorlist.php
+ - modules\dgotto\Application\Model\dgottoerrorurls.php
+ - modules\dgotto\Application\Model\dgottoevents.php
+ - modules\dgotto\Application\Model\dgottoexport.php
+ - modules\dgotto\Application\Model\dgottoexportarticle.php
+ - modules\dgotto\Application\Model\dgottohistory.php
+ - modules\dgotto\Application\Model\dgottomatching.php
+ - modules\dgotto\Application\Model\dgottomatchinglist.php
+ - modules\dgotto\Application\Model\dgottoorder.php
+ - modules\dgotto\Application\Model\dgottoorderarticle.php
+ - modules\dgotto\Application\Model\dgottoorderarticlelist.php
+ - modules\dgotto\Application\Model\dgottoordermarge.php
+ - modules\dgotto\Application\Model\dgottopictures.php
+ - modules\dgotto\Application\Model\dgottoprice.php
+ - modules\dgotto\Application\Model\dgottoreceipts.php
+ - modules\dgotto\Application\Model\dgottoreceiptslist.php
+ - modules\dgotto\Application\Model\dgottoservice.php
+ - modules\dgotto\Application\Model\dgottostart.php
+ - modules\dgotto\Application\Model\dgottostock.php
+ - modules\dgotto\Application\Model\dgottotracking.php
+ - modules\dgotto\Application\Model\dgottotransportlog.php
+ - modules\dgotto\Application\Model\dgottoupdate.php
+ - modules\dgotto\Application\Model\dgottouser.php
+ - modules\dgotto\Application\Model\dgottoutils.php
+ - modules\dgotto\Application\Model\dgottovalues.php
+ - modules\dgotto\Application\translations\de\dgotto_lang.php
+ - modules\dgotto\Application\translations\en\dgotto_lang.php
+ - modules\dgotto\Application\views\admin\de\dgotto_lang.php
+ - modules\dgotto\Application\views\admin\en\dgotto_lang.php
+ - modules\dgotto\Application\views\admin\tpl\dgotto2attribute.tpl
+ - modules\dgotto\Application\views\admin\tpl\dgotto_admin.tpl
+ - modules\dgotto\Application\views\admin\tpl\dgotto_article.tpl
+ - modules\dgotto\Application\views\admin\tpl\dgotto_articleerrorbox.tpl
+ - modules\dgotto\Application\views\admin\tpl\dgotto_articleline.tpl
+ - modules\dgotto\Application\views\admin\tpl\dgotto_attribute.tpl
+ - modules\dgotto\Application\views\admin\tpl\dgotto_category.tpl
+ - modules\dgotto\Application\views\admin\tpl\dgotto_customfields.tpl
+ - modules\dgotto\Application\views\admin\tpl\dgotto_do.tpl
+ - modules\dgotto\Application\views\admin\tpl\dgotto_error.tpl
+ - modules\dgotto\Application\views\admin\tpl\dgotto_exception.tpl
+ - modules\dgotto\Application\views\admin\tpl\dgotto_export.tpl
+ - modules\dgotto\Application\views\admin\tpl\dgotto_head.tpl
+ - modules\dgotto\Application\views\admin\tpl\dgotto_list.tpl
+ - modules\dgotto\Application\views\admin\tpl\dgotto_main.tpl
+ - modules\dgotto\Application\views\admin\tpl\dgotto_manufacturer.tpl
+ - modules\dgotto\Application\views\admin\tpl\dgotto_object.tpl
+ - modules\dgotto\Application\views\admin\tpl\dgotto_object2brand.tpl
+ - modules\dgotto\Application\views\admin\tpl\dgotto_object2category.tpl
+ - modules\dgotto\Application\views\admin\tpl\dgotto_order.tpl
+ - modules\dgotto\Application\views\admin\tpl\dgotto_product.tpl
+ - modules\dgotto\Application\views\admin\tpl\dgotto_service.tpl
+ - modules\dgotto\Application\views\admin\tpl\dgotto_setup.tpl
+ - modules\dgotto\Application\views\admin\tpl\dgotto_support.tpl
+ - modules\dgotto\Application\views\admin\tpl\dgotto_vendor.tpl
+ - modules\dgotto\Application\views\admin\tpl\dgottomatching_admin.tpl
+ - modules\dgotto\Application\views\admin\tpl\dgottomatching_list.tpl
+ - modules\dgotto\Application\views\admin\tpl\dgottomatching_main.tpl
+ - modules\dgotto\Modul\dgotto_article_list.php
+ - modules\dgotto\Modul\dgotto_category_main.php
+ - modules\dgotto\Modul\dgotto_manufacturer_main.php
+ - modules\dgotto\Modul\dgotto_navigation.php
+ - modules\dgotto\Modul\dgotto_order_list.php
+ - modules\dgotto\out\admin\img\dgmute.gif
+ - modules\dgotto\out\blocks\dgotto_admin_headitem_js.tpl
+ - modules\dgotto\out\blocks\dgotto_admin_order_overview_status.tpl
+ - modules\dgotto\out\blocks\dgotto_article_list_colgroup.tpl
+ - modules\dgotto\out\blocks\dgotto_article_list_filter.tpl
+ - modules\dgotto\out\blocks\dgotto_article_list_items.tpl
+ - modules\dgotto\out\blocks\dgotto_article_list_sorting.tpl
+ - modules\dgotto\out\blocks\dgotto_order_list_colgroup.tpl
+ - modules\dgotto\out\blocks\dgotto_order_list_filter.tpl
+ - modules\dgotto\out\blocks\dgotto_order_list_items.tpl
+ - modules\dgotto\out\blocks\dgotto_order_list_sorting.tpl

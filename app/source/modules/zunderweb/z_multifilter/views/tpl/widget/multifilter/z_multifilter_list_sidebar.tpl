@@ -1,0 +1,25 @@
+[{assign var="pageNavigation" value=$oView->getPageNavigation()}]
+[{assign var="actCategory" value=$oView->getActiveCategory()}]
+    [{if $oView->getThemeName()=="azure"}]
+    <h1 class="pageHead">[{$oView->getTitle()}]
+        [{assign var='rsslinks' value=$oView->getRssLinks() }]
+        [{ if $rsslinks.activeCategory}]
+            <a class="rss js-external" id="rssActiveCategory" href="[{$rsslinks.activeCategory.link}]" title="[{$rsslinks.activeCategory.title}]"><img src="[{$oViewConf->getImageUrl('rss.png')}]" alt="[{$rsslinks.activeCategory.title}]"><span class="FXgradOrange corners glowShadow">[{$rsslinks.activeCategory.title}]</span></a>
+        [{/if }]
+    </h1>
+    [{/if }]
+    [{if $oView->getIsFiltered()}]
+         [{assign var="attributes" value=$oView->getAttributes()}]
+         [{if $attributes }]
+            [{assign var=showreset value=false}]
+            [{foreach from=$attributes item=oFilterAttr key=sAttrID name=testAttr}]
+                [{if $oFilterAttr->type == "searchterm"}][{assign var=showreset value=true}][{/if}]
+                [{foreach from=$oFilterAttr->aValues item=oValue name=testInput}]
+                    [{ if $oValue->blSelected }][{assign var=showreset value=true}][{/if}]
+                [{/foreach}]
+            [{/foreach}]
+        [{/if}]
+    [{/if}]
+    <div id="listcontent">
+    [{include file=$oViewConf->getModulePath('z_multifilter',"views/tpl/widget/multifilter/z_multifilter_listcontent.tpl")}]
+    </div>

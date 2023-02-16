@@ -1,0 +1,36 @@
+15:12:44
+37.4.249.92
+Array
+(
+    [_ga] => GA1.2.802191463.1637153192
+    [_gid] => GA1.2.494025243.1637153192
+    [_gac_UA-88088936-5] => 1.1637153192.CjwKCAiA7dKMBhBCEiwAO_crFPv4DycP4ImigyWlSWkjDOfo18LE7OMY1-nET2AtTFGGbxZIqI060hoCyYgQAvD_BwE
+    [_gcl_aw] => GCL.1637153192.CjwKCAiA7dKMBhBCEiwAO_crFPv4DycP4ImigyWlSWkjDOfo18LE7OMY1-nET2AtTFGGbxZIqI060hoCyYgQAvD_BwE
+    [_gcl_au] => 1.1.948911388.1637153192
+    [apay-session-set] => MFquC8Cv8+AXR0ncWhukSr0lV+A84P/EfWV/L5Y9w2idgO/OXAjG7HZqVn+n+b8=
+    [_fbp] => fb.1.1637153193721.2027894859
+    [prism_1000428378] => c13f18ed-2f92-4d91-9058-e95de98db122
+    [_pin_unauth] => dWlkPVlUUmlORFZsWTJJdE5XRXlPUzAwT0dZNUxUaGtPV1l0TmpFeU9UZGpPV0ppTWpnMw
+    [_omappvp] => ZIWz8Ocq5F2v4o2Y9fP4S0Xm5b4pSrv1FIoEoMpelzDE5OQnup6sMlmKTPbbhhXy5Em4Vn1XiLU2LFhC8us9ZNavxLNodmJd
+)
+
+Array
+(
+    [force_sid] => b7c33cf5593324a2631bcae61d0c1248
+    [gclid] => CjwKCAiA7dKMBhBCEiwAO_crFPv4DycP4ImigyWlSWkjDOfo18LE7OMY1-nET2AtTFGGbxZIqI060hoCyYgQAvD_BwE
+    [_ga] => GA1.2.802191463.1637153192
+    [_gid] => GA1.2.494025243.1637153192
+    [_gac_UA-88088936-5] => 1.1637153192.CjwKCAiA7dKMBhBCEiwAO_crFPv4DycP4ImigyWlSWkjDOfo18LE7OMY1-nET2AtTFGGbxZIqI060hoCyYgQAvD_BwE
+    [_gcl_aw] => GCL.1637153192.CjwKCAiA7dKMBhBCEiwAO_crFPv4DycP4ImigyWlSWkjDOfo18LE7OMY1-nET2AtTFGGbxZIqI060hoCyYgQAvD_BwE
+    [_gcl_au] => 1.1.948911388.1637153192
+    [apay-session-set] => MFquC8Cv8+AXR0ncWhukSr0lV+A84P/EfWV/L5Y9w2idgO/OXAjG7HZqVn+n+b8=
+    [_fbp] => fb.1.1637153193721.2027894859
+    [prism_1000428378] => c13f18ed-2f92-4d91-9058-e95de98db122
+    [_pin_unauth] => dWlkPVlUUmlORFZsWTJJdE5XRXlPUzAwT0dZNUxUaGtPV1l0TmpFeU9UZGpPV0ppTWpnMw
+    [_omappvp] => ZIWz8Ocq5F2v4o2Y9fP4S0Xm5b4pSrv1FIoEoMpelzDE5OQnup6sMlmKTPbbhhXy5Em4Vn1XiLU2LFhC8us9ZNavxLNodmJd
+)
+
+time: 1.44786190987
+
+
+

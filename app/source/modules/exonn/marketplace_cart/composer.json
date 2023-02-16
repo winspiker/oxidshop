@@ -1,0 +1,19 @@
+{
+  "name": "exonn/marketplace_cart",
+  "description": "Exonn: Marktplatz Warenkorb",
+  "type": "oxideshop-module",
+  "keywords": ["exonn", "erp", "marktplatz", "warenkorb", ",module", "oxid"],
+  "homepage": "https://www.exonn.de",
+  "extra": {
+    "oxideshop": {
+      "target-directory": "exonn/marketplace_cart"
+    }
+  },
+  "version": "1.0.0",
+  "require": {
+  },
+  "autoload": {
+    "psr-4": {
+    }
+  }
+}

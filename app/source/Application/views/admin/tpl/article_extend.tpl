@@ -130,7 +130,7 @@ function processUnitInput( oSelect, sInputId )
                   [{oxmultilang ident="ARTICLE_EXTEND_EXTURL"}]
                 </td>
                 <td class="edittext">
-                  <input type="text" class="editinput" size="40" maxlength="[{$edit->oxarticles__oxexturl->fldmax_length}]" name="editval[oxarticles__oxexturl]" value="[{$edit->oxarticles__oxexturl->value}]" [{$readonly}]>
+                  <input type="text" class="editinput" size="40" maxlength="[{$edit->oxarticles__oxexturl->fldmax_length}]" name="editval[oxarticles__oxexturl]" value="http://[{$edit->oxarticles__oxexturl->value}]" [{$readonly}]>
                   [{oxinputhelp ident="HELP_ARTICLE_EXTEND_EXTURL"}]
                 </td>
               </tr>
@@ -230,6 +230,18 @@ function processUnitInput( oSelect, sInputId )
                   [{oxinputhelp ident="HELP_ARTICLE_EXTEND_FREESHIPPING"}]
                 </td>
               </tr>
+
+            <tr>
+                <td class="edittext" width="120">
+                    [{oxmultilang ident="ARTICLE_EXTEND_ISNOTCOD"}]
+                </td>
+                <td class="edittext">
+                    <input class="edittext" type="hidden" name="editval[oxarticles__isnotcod]" value='0'>
+                    <input class="edittext" type="checkbox" name="editval[oxarticles__isnotcod]" value='1' [{if $edit->oxarticles__isnotcod->value == 1}]checked[{/if}] [{$readonly}] [{if $oxparentid}]readonly disabled[{/if}]>
+                    [{oxinputhelp ident="HELP_ARTICLE_EXTEND_ISNOTCOD"}]
+                </td>
+            </tr>
+
               <tr>
                 <td class="edittext">
                   [{oxmultilang ident="ARTICLE_EXTEND_BLFIXEDPRICE"}]

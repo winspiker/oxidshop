@@ -1,0 +1,42 @@
+{
+    "name":        "draufgeschaut/dgconnector",
+    "description": "Modul Connector, Installations und Update Assistent",
+    "type":        "oxideshop-module",
+    "keywords":    [ "draufgeschaut", "oxid", "modul", "eshop", "connector" ],
+    "homepage":    "https://www.volker-doerk.de",
+    "time":        "2020-09-09",
+    "license":     "Commercial",
+    "authors":     [
+        {
+            "name":  "Volker Doerk",
+            "email": "info@draufgeschaut.de",
+            "homepage": "https://www.volker-doerk.de",
+            "role": [ "Developer", "Owner" ]
+        }
+    ],
+    "support": {
+        "email": "support@draufgeschaut.de"
+    },
+    "extra":  {
+        "oxideshop": {
+            "target-directory": "dgconnector",
+            "source-directory": "modules/dgconnector",
+            "blacklist-filter": [
+                "*.json",
+				"*dgconnector_install.txt",
+                "metadate.php"
+            ]
+        }
+    },
+    "version": "1.20",    
+    "require": {
+        "ext-ioncube-loader": "*",
+        "oxid-esales/oxideshop-metapackage-ce": "6.0.0 - 6.2.2",
+        "php": "5.6.* - 7.4.*"
+    },
+    "autoload":    {
+        "psr-4": {
+            "dgModule\\dgConnectorModul\\": "../../../source/modules/dgconnector"             
+        }
+    }
+}

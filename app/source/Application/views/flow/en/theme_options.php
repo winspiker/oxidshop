@@ -64,9 +64,6 @@ $aLang = array(
     'SHOP_THEME_sCatPromotionsize'                  => 'Category picture size for promotion on startpage (width*height)',
     'HELP_SHOP_THEME_sCatPromotionsize'             => 'Category promotion on start page needs special size for category pictures. Define size of those pictures here.',
 
-    'SHOP_THEME_stickyHeader'                       => 'Use sticky header',
-    'HELP_SHOP_THEME_stickyHeader'                  => 'The header sticks on the top when scrolling down the page.',
-
     'SHOP_THEME_blFooterShowHelp'                   => 'Use help link',
     'SHOP_THEME_blFooterShowLinks'                  => 'Use Links link',
     'SHOP_THEME_blFooterShowNewsletter'             => 'Use newsletter link',
@@ -170,7 +167,6 @@ $aLang = array(
     'SHOP_THEME_sBackgroundSize_contain'            => 'cover (full width)',
     'SHOP_THEME_sBackgroundSize_normal'             => 'Keep original size',
     'SHOP_THEME_blBackgroundAttachment'             => 'Fix background while scrolling?',
-    'SHOP_THEME_bl_showPriceAlarm'                  => 'Use wished price',
 
     'SHOP_THEME_blUseGoogleTS'                      => 'Use Google Trusted Stores',
     'SHOP_THEME_sGoogleVendorId'                    => 'Google Store-ID',
@@ -195,6 +191,8 @@ $aLang = array(
     'SHOP_THEME_blSliderShowImageCaption'           => 'Activate captions for slider on home page',
     'HELP_SHOP_THEME_blSliderShowImageCaption'      => 'A caption is visible, when the active slide has an assigned product.',
 
+    'SHOP_THEME_sEcondaAccountId'                   => 'econda-ID',
+    'HELP_SHOP_THEME_sEcondaAccountId'              => 'Please enter your econda ID.<br>Format: XXXXXXXX-XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX-X.<br>Please keep in mind to activate the econda Webshop Controlling in your shop.',
     'SHOP_THEME_blEcondaRecommendationsStart'       => 'Show recommendations on home page',
     'SHOP_THEME_sEcondaWidgetIdStart'               => 'Recommendation-Widget-ID für Startseite',
     'SHOP_THEME_blEcondaRecommendationsList'        => 'Show recommendations in listings',
@@ -207,4 +205,13 @@ $aLang = array(
     'SHOP_THEME_blFullwidthLayout'                  => 'Activate full width layout',
 
     'SHOP_THEME_blEmailsShowProductPictures'        => 'Show product pictures in emails',
+
+    'SHOP_THEME_GROUP_holiday'        => 'Holiday design',
+    'SHOP_THEME_blHolidaySelect_none'        => 'None',
+    'SHOP_THEME_blHolidaySelect_spring'        => 'Spring',
+    'SHOP_THEME_blHolidaySelect_newyear'        => 'New Year',
+    'SHOP_THEME_blHolidaySelect_winter'        => 'Winter',
+    'SHOP_THEME_blHolidaySelect_blackfriday'        => 'Black Friday',
+    'SHOP_THEME_blHolidaySelect'        => 'Select design for holiday',
+
 );

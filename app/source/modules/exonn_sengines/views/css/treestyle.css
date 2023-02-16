@@ -1,0 +1,49 @@
+
+  table.children { border-top : 0; border-left: 0; border-bottom: 0; border-left: 5px solid #CCCCCC; border-collapse: collapse; padding : 0; margin : 0 0 0 0.6em; }
+  td.childrenholder { border : 0; border-collapse: collapse; padding : 0; margin : 0; }
+  tr.childrow { border-collapse: collapse; padding : 0; margin : 0; }
+  td.childspacer { width : 0.6em; border : 0; border-collapse : collapse; padding : 0; margin-left : 12px; }
+  td.childvalue { border : 0; border-collapse : collapse; padding : 0; margin : 0; }
+
+  table.expanded { border : 0; border-collapse : collapse; padding : 0; margin : 0 0 4 0; }
+  tr.childtitle { border : 0; border-collapse : collapse; padding : 0; margin : 0; }
+  th.childtitle { border : 0; border-collapse : collapse; padding : 0; margin : 0; }
+
+  .expandall { text-decoration : underline; cursor : pointer; }
+
+  td.elipsis { border : 0; border-collapse : collapse; padding : 0; margin : 0; color : #AAAAAA;
+               cursor : pointer }
+
+  input.searchbox {
+   font : bold 13px Verdana,Helvetica,sans-serif; padding : 2px; margin : 2px;
+   height:20px;
+   background:url(bg/ico_find.gif);
+   background-repeat : no-repeat;
+   background-position : center right;
+  }
+
+  span.tree_synonyms {
+    color : #888888
+  }
+
+  .childbrowse {
+    width : 300px; background: #FFFFF7;
+    position : absolute;
+    right : 1em;
+    top : 1em;
+    border : 1px solid #CCCCCC;
+    margin : 4px;
+    padding : 8 8 2 8
+  }
+
+  span.also {
+      font-style : italic;
+      font-size : 9px;
+      color : #AAAAAA;
+  }
+
+  span.rel {
+      font-style : italic;
+      font-size : 9px;
+      color : #AAAAAA;
+  }

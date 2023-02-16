@@ -1,0 +1,48 @@
+15:12:31
+92.209.83.112
+Array
+(
+    [_fbp] => fb.1.1637156368454.616413174
+    [_pin_unauth] => dWlkPU9ESTRZelk0WWpJdE1EUXlNQzAwTjJVeExUZzNOVEF0WVRBNE1ERTVPRE0wWkRKbQ
+    [prism_1000428378] => 43426be1-bfcf-43fe-9b89-9b796fa571fa
+    [_omappvp] => 6M6awchjJlj2G23hGbH8OmZT0DockixZtQ6AHmQiNBvtHqNYAITAOoKp3DLhxFSfde4YFX0MUhzv6DO42IRHlZjYLRzOxFKN
+    [_omappvs] => 1637158331443
+    [_ga] => GA1.2.485483127.1637156365
+    [_gac_UA-88088936-5] => 1.1637156366.EAIaIQobChMI19C5zMKf9AIVgvlRCh1JJw0mEAMYASAAEgLnivD_BwE
+    [_gat_UA-88088936-5] => 1
+    [_gcl_aw] => GCL.1637156366.EAIaIQobChMI19C5zMKf9AIVgvlRCh1JJw0mEAMYASAAEgLnivD_BwE
+    [_gid] => GA1.2.1155187253.1637156365
+    [language] => 0
+    [sid] => 70333cd561429663aacd680ba4324844
+    [_gat] => 1
+    [apay-session-set] => fJ2Yl/3k3ZePpZVhEivV8ludhKFj6hHeXlpMPiadPVHZoBhErrcytRXIPT/GBA8=
+    [displayedCookiesNotification] => 1
+    [_gcl_au] => 1.1.551947805.1637156366
+    [sid_key] => oxid
+)
+
+Array
+(
+    [_fbp] => fb.1.1637156368454.616413174
+    [_pin_unauth] => dWlkPU9ESTRZelk0WWpJdE1EUXlNQzAwTjJVeExUZzNOVEF0WVRBNE1ERTVPRE0wWkRKbQ
+    [prism_1000428378] => 43426be1-bfcf-43fe-9b89-9b796fa571fa
+    [_omappvp] => 6M6awchjJlj2G23hGbH8OmZT0DockixZtQ6AHmQiNBvtHqNYAITAOoKp3DLhxFSfde4YFX0MUhzv6DO42IRHlZjYLRzOxFKN
+    [_omappvs] => 1637158331443
+    [_ga] => GA1.2.485483127.1637156365
+    [_gac_UA-88088936-5] => 1.1637156366.EAIaIQobChMI19C5zMKf9AIVgvlRCh1JJw0mEAMYASAAEgLnivD_BwE
+    [_gat_UA-88088936-5] => 1
+    [_gcl_aw] => GCL.1637156366.EAIaIQobChMI19C5zMKf9AIVgvlRCh1JJw0mEAMYASAAEgLnivD_BwE
+    [_gid] => GA1.2.1155187253.1637156365
+    [language] => 0
+    [sid] => 70333cd561429663aacd680ba4324844
+    [_gat] => 1
+    [apay-session-set] => fJ2Yl/3k3ZePpZVhEivV8ludhKFj6hHeXlpMPiadPVHZoBhErrcytRXIPT/GBA8=
+    [displayedCookiesNotification] => 1
+    [_gcl_au] => 1.1.551947805.1637156366
+    [sid_key] => oxid
+)
+
+time: 0.738298892975
+
+
+

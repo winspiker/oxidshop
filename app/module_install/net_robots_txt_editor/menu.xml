@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<OX>
+    <OXMENU id="NETENSIO_NAVIGATION">
+        <MAINMENU id="netrobotstxteditor">
+            <SUBMENU id="robots_txt_editor" cl="robots_txt_editor" list="robots_txt_editor_list">
+                <TAB id="robots_txt_editor_main" cl="robots_txt_editor_main" />
+            </SUBMENU>
+        </MAINMENU>
+    </OXMENU>
+</OX>

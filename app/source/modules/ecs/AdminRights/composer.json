@@ -1,0 +1,26 @@
+{
+    "name": "ecs/adminrights",
+    "description": "Detailierte Rechteverwaltung fuer Admins.",
+    "type": "oxideshop-module",
+    "keywords": ["adminrechte", "rechteverwaltung", "rechtevergabe"],
+    "homepage": "https://ecomstyle.de/adminrights.html",
+    "version": "2.0.5",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name":  "Josef A. Puckl | eComStyle.de",
+            "email": "info@ecomstyle.de",
+            "role":  "Developer"
+        }
+    ],
+    "extra": {
+        "oxideshop": {
+            "target-directory": "ecs/AdminRights"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Ecs\\AdminRights\\": "../../../source/modules/ecs/AdminRights"
+        }
+    }
+}

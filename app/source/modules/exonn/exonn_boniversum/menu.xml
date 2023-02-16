@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<OX>
+    <OXMENU id="EXONN">
+        <MAINMENU id="exonnboniversummainmenu">
+            <SUBMENU id="exonnboniversumsicherpayment" cl="exonn_boniversum_securitypayment" />
+            <SUBMENU id="exonnboniversumpayment" cl="exonn_boniversum_payment" />
+        </MAINMENU>
+    </OXMENU>
+</OX>

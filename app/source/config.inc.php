@@ -1,206 +1,207 @@
 <?php
-
 /**
  * Copyright © OXID eSales AG. All rights reserved.
  * See LICENSE file for license details.
  */
 
-// Database connection information
-$this->dbType = 'pdo_mysql';
-$this->dbCharset = 'utf8';
-$this->dbHost = 'database'; // database host name
-$this->dbPort  = 3306; // tcp port to which the database is bound
-$this->dbName = 'main'; // database name
-$this->dbUser = 'main'; // database user name
-$this->dbPwd  = 'main'; // database user password
-$this->dbDriverOptions = []; // database driver options
-$this->dbUnixSocket = null; // unix domain socket, optional
-$this->sShopURL     = 'http://localhost:8080'; // eShop base url, required
-$this->sSSLShopURL  = null;            // eShop SSL url, optional
-$this->sAdminSSLURL = null;            // eShop Admin SSL url, optional
-$this->sShopDir     = '/app/source';
-$this->sCompileDir  = '/app/source/tmp';
 
-/**
- * Force shop edition. Even if enterprise or professional packages exists, shop edition can still be forced here.
- * Possible options: CE|PE|EE or left empty (will be determined automatically).
- */
-$this->edition = '';
 
-// File type whitelist for file upload
-$this->aAllowedUploadTypes = array('jpg', 'gif', 'png', 'pdf', 'mp3', 'avi', 'mpg', 'mpeg', 'doc', 'xls', 'ppt');
+    // Database connection information
+    $this->dbType = 'pdo_mysql';
+    $this->dbHost = 'database'; // database host name
+    $this->dbPort  = 3306; // tcp port to which the database is bound
+    $this->dbName = 'main_oxid'; // database name
+    $this->dbUser = 'main_oxid'; // database user name
+    $this->dbPwd  = 'main_oxid'; // database user password
+    $this->sShopURL     = 'http://localhost:8080'; // eShop base url, required
+    $this->sSSLShopURL  = '';            // eShop SSL url, optional
+    $this->sAdminSSLURL = '';            // eShop Admin SSL url, optional
+    $this->sShopDir     = '/app/source';
+    $this->sCompileDir  = '/app/source/tmp';
 
-// Timezone information
-date_default_timezone_set('Europe/Berlin');
+    /**
+     * Force shop edition. Even if enterprise or professional packages exists, shop edition can still be forced here.
+     * Possible options: CE|PE|EE or left empty (will be determined automatically).
+     */
+    $this->edition = '';
 
-/**
- * Search engine friendly URL processor.
- * After changing this value, you should rename oxid.php file as well
- * Always leave .php extension here unless you know what you are doing
- *
- * @deprecated (2018-03-05);
- */
-$this->sOXIDPHP = "oxid.php";
+    // File type whitelist for file upload
+    $this->aAllowedUploadTypes = array('jpg', 'gif', 'png', 'pdf', 'mp3', 'avi', 'mpg', 'mpeg', 'doc', 'xls', 'ppt');
 
-/**
- * String PSR3 log level Psr\Log\LogLevel
- */
-$this->sLogLevel = 'error';
+    // Timezone information
+    date_default_timezone_set('Europe/Berlin');
 
-/**
- * Log all modifications performed in Admin
- */
-$this->blLogChangesInAdmin = false;
+    /**
+     * Search engine friendly URL processor.
+     * After changing this value, you should rename oxid.php file as well
+     * Always leave .php extension here unless you know what you are doing
+     *
+     * @deprecated (2018-03-05);
+     */
+    $this->sOXIDPHP = "oxid.php";
 
-/**
- * Should requests, coming via stdurl and not redirected to seo url be logged to seologs db table?
- * Note: only active if in productive mode, as the eShop in non productive more will always log such urls
- */
-$this->blSeoLogging = false;
+    /**
+     * String PSR3 log level Psr\Log\LogLevel
+     */
+    $this->sLogLevel = 'error';
 
-/**
- * Enable debug mode for template development or bugfixing
- * -1 = Log more messages and throw exceptions on errors (not recommended for production)
- * 0 = off
- * 1 = smarty
- * 3 = smarty
- * 4 = smarty + shoptemplate data
- * 5 = Delivery Cost calculation info
- * 6 = SMTP Debug Messages
- * 8 = display smarty template names (requires /tmp cleanup)
- */
-$this->iDebug = 0;
+    /**
+     * Log all modifications performed in Admin
+     */
+    $this->blLogChangesInAdmin = false;
 
-/**
- * Should template blocks be highlighted in frontend?
- * This is mainly intended for module writers in non productive environment
- */
-$this->blDebugTemplateBlocks = false;
+    /**
+     * Should requests, coming via stdurl and not redirected to seo url be logged to seologs db table?
+     * Note: only active if in productive mode, as the eShop in non productive more will always log such urls
+     */
+    $this->blSeoLogging = false;
 
-// Force admin email. Offline warnings are sent with high priority to this address.
-$this->sAdminEmail = '';
+    /**
+     * Enable debug mode for template development or bugfixing
+     * -1 = Log more messages and throw exceptions on errors (not recommended for production)
+     * 0 = off
+     * 1 = smarty
+     * 3 = smarty
+     * 4 = smarty + shoptemplate data
+     * 5 = Delivery Cost calculation info
+     * 6 = SMTP Debug Messages
+     * 8 = display smarty template names (requires /tmp cleanup)
+     */
+    $this->iDebug = 0;
 
-// Defines the time interval in seconds warnings are sent during the shop is offline.
-$this->offlineWarningInterval = 60 * 5;
+    /**
+     * Should template blocks be highlighted in frontend?
+     * This is mainly intended for module writers in non productive environment
+     */
+    $this->blDebugTemplateBlocks = false;
 
-// In case session must be started on the very first user page visit (not only on session required action).
-$this->blForceSessionStart = false;
+    // Force admin email. Offline warnings are sent with high priority to this address.
+    $this->sAdminEmail = '';
 
-// Use browser cookies to store session id (no sid parameter in URL)
-$this->blSessionUseCookies = true;
+    // Defines the time interval in seconds warnings are sent during the shop is offline.
+    $this->offlineWarningInterval = 60 * 5;
 
-/**
- * The domain that the cookie is available: array(_SHOP_ID_ => _DOMAIN_);
- * Check setcookie() documentation for more details: http://php.net/manual/de/function.setcookie.php
- */
-$this->aCookieDomains = null;
+    // In case session must be started on the very first user page visit (not only on session required action).
+    $this->blForceSessionStart = false;
 
-/**
- * The path on the server in which the cookie will be available on: array(_SHOP_ID_ => _PATH_);
- * Check setcookie() documentation for more details: http://php.net/manual/de/function.setcookie.php
- */
-$this->aCookiePaths = null;
+    // Use browser cookies to store session id (no sid parameter in URL)
+    $this->blSessionUseCookies = true;
 
-// List of all Search-Engine Robots
-$this->aRobots = array(
-    'googlebot',
-    'ultraseek',
-    'crawl',
-    'spider',
-    'fireball',
-    'robot',
-    'slurp',
-    'fast',
-    'altavista',
-    'teoma',
-    'msnbot',
-    'bingbot',
-    'yandex',
-    'gigabot',
-    'scrubby'
-);
+    /**
+     * The domain that the cookie is available: array(_SHOP_ID_ => _DOMAIN_);
+     * Check setcookie() documentation for more details: http://php.net/manual/de/function.setcookie.php
+     */
+    $this->aCookieDomains = null;
 
-// Deactivate Static URL's for these Robots
-$this->aRobotsExcept = array();
+    /**
+     * The path on the server in which the cookie will be available on: array(_SHOP_ID_ => _PATH_);
+     * Check setcookie() documentation for more details: http://php.net/manual/de/function.setcookie.php
+     */
+    $this->aCookiePaths = null;
 
-// IP addresses for which session/cookie id match and user agent change checks are off
-$this->aTrustedIPs = array();
+    // List of all Search-Engine Robots
+    $this->aRobots = array(
+                        'googlebot',
+                        'ultraseek',
+                        'crawl',
+                        'spider',
+                        'fireball',
+                        'robot',
+                        'slurp',
+                        'fast',
+                        'altavista',
+                        'teoma',
+                        'msnbot',
+                        'bingbot',
+                        'yandex',
+                        'gigabot',
+                        'scrubby'
+                        );
 
-/**
- * Works only if basket reservations feature is enabled in admin.
- *
- * The number specifies how many expired basket reservations are
- * cleaned per one request (to the eShop).
- * Cleaning a reservation basically means returning the reserved
- * stock to the articles.
- *
- * Keeping this number too low may cause article stock being returned too
- * slowly, while too high value may have spiking impact on the performance.
- */
-$this->iBasketReservationCleanPerRequest = 200;
+    // Deactivate Static URL's for these Robots
+    $this->aRobotsExcept = array();
 
-/**
- * To override FrontendController::$_aUserComponentNames use this array option:
- * array keys are component(class) names and array values defines if component is cacheable (true/false)
- * E.g. array('user_class' => false);
- */
-$this->aUserComponentNames = null;
+    // IP addresses for which session/cookie id match and user agent change checks are off
+    $this->aTrustedIPs = array();
 
-// Additional multi language tables
-$this->aMultiLangTables = null;
+    /**
+     * Works only if basket reservations feature is enabled in admin.
+     *
+     * The number specifies how many expired basket reservations are
+     * cleaned per one request (to the eShop).
+     * Cleaning a reservation basically means returning the reserved
+     * stock to the articles.
+     *
+     * Keeping this number too low may cause article stock being returned too
+     * slowly, while too high value may have spiking impact on the performance.
+     */
+    $this->iBasketReservationCleanPerRequest = 200;
 
-// Instructs shop that price update is performed by cron (time based job sheduler)
-$this->blUseCron = false;
+    /**
+     * To override FrontendController::$_aUserComponentNames use this array option:
+     * array keys are component(class) names and array values defines if component is cacheable (true/false)
+     * E.g. array('user_class' => false);
+     */
+    $this->aUserComponentNames = null;
 
-// Do not disable module if class from extension path does not exist.
-// @deprecated since v6.3.2 (2018-12-19); This method and config variable will be removed completely.
-$this->blDoNotDisableModuleOnError = false;
+    // Additional multi language tables
+    $this->aMultiLangTables = null;
 
-// Enable temporarily in case you can't access the backend due to broken views
-$this->blSkipViewUsage = false;
+    // Instructs shop that price update is performed by cron (time based job sheduler)
+    $this->blUseCron = false;
 
-/**
- * Enterprise Edition related config options.
- * This options have no effect on Community/Professional Editions.
- */
+    // Do not disable module if class from extension path does not exist.
+    $this->blDoNotDisableModuleOnError = false;
 
-//Time limit in ms to be notified about slow queries
-$this->iDebugSlowQueryTime = 20;
+    // Enable temporarily in case you can't access the backend due to broken views
+    $this->blSkipViewUsage = false;
 
-/**
- * Enables Rights and Roles engine
- * 0 - off,
- * 1 - only in admin,
- * 2 - only in shop,
- * 3 - both
- */
-$this->blUseRightsRoles = 3;
+    /**
+     * Enterprise Edition related config options.
+     * This options have no effect on Community/Professional Editions.
+     */
 
-/**
- * Define oxarticles fields which could be edited individually in subshops.
- * Do not forget to add these fields to oxfield2shop table.
- * Note: The field names are case sensitive here.
- */
-$this->aMultishopArticleFields = array("OXPRICE", "OXPRICEA", "OXPRICEB", "OXPRICEC", "OXUPDATEPRICE", "OXUPDATEPRICEA", "OXUPDATEPRICEB", "OXUPDATEPRICEC", "OXUPDATEPRICETIME");
+    //Time limit in ms to be notified about slow queries
+    $this->iDebugSlowQueryTime = 20;
 
-// Show "Update Views" button in admin
-$this->blShowUpdateViews = true;
+    /**
+     * Enables Rights and Roles engine
+     * 0 - off,
+     * 1 - only in admin,
+     * 2 - only in shop,
+     * 3 - both
+     */
+    $this->blUseRightsRoles = 3;
 
-// If default 30 seconds is not enougth
-// @set_time_limit(3000);
+    /**
+     * Define oxarticles fields which could be edited individually in subshops.
+     * Do not forget to add these fields to oxfield2shop table.
+     * Note: The field names are case sensitive here.
+     */
+    $this->aMultishopArticleFields = array("OXPRICE", "OXPRICEA", "OXPRICEB", "OXPRICEC", "OXUPDATEPRICE", "OXUPDATEPRICEA", "OXUPDATEPRICEB", "OXUPDATEPRICEC", "OXUPDATEPRICETIME");
 
-/**
- * Database master-slave configuration:
- * aSlaveHosts - array of slave hosts: array('localhost', '10.2.3.12')
- */
-$this->aSlaveHosts = null;
+    // Show "Update Views" button in admin
+    $this->blShowUpdateViews = true;
 
-// Control the removal of Setup directory
-$this->blDelSetupDir = true;
+    // If default 30 seconds is not enougth
+    // @set_time_limit(3000);
 
-/**
- * Needed for backwards compatibility. Do not change the value of this property.
- *
- * @deprecated since v6.0 (2017-05-15); This property will be removed in the future as the shop will always use UTF-8.
- */
-$this->iUtfMode = 1;
+    /**
+     * Database master-slave configuration:
+     * aSlaveHosts - array of slave hosts: array('localhost', '10.2.3.12')
+     */
+    $this->aSlaveHosts = null;
+
+    // Control the removal of Setup directory
+    $this->blDelSetupDir = true;
+
+    /**
+     * Needed for backwards compatibility. Do not change the value of this property.
+     *
+     * @deprecated since v6.0 (2017-05-15); This property will be removed in the future as the shop will always use UTF-8.
+     */
+    $this->iUtfMode = 1;
+
+	$this->sRandNummerCreate = true;
+
+	$this->iPicCount = 12;

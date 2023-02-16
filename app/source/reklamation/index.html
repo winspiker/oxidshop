@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app-dist.js"></script>
+    <title>Reklamation form</title>
+</head>
+<body>
+    <form class="reklamation-form">
+        <div class="reklamation-form--notification">
+            <h2>REKLAMATIONSSCHEIN / RÜCKVERSAND</h2>
+            <p>Wir geben unser Bestes um Ihnen einen guten Service bieten zu können. <b>Bitte füllen Sie die entsprechenden Felder aus.</b> Damit tragen Sie zu einer raschen und reibungslosen Abwicklung des Rückverfahrens bei. </p><p><b>Von Widerrufsrecht ausgeschlossen sind versiegelte Waren, die aus Gründen des Gesundheitsschutzes oder der Hygiene nicht zur Rückgabe geeignet sind, wenn ihre Versiegelung von Ihnen entfernt wurde.</b></p>
+        </div>
+        <div class="reklamation-form--main-fields">
+            <div class="reklamation-form--field reklamation-form--field-half">
+                <input required type="number" name="form-client-number" id="form-client-number">
+                <label for="form-client-number">Kundennummer</label>
+            </div>
+            <div class="reklamation-form--field reklamation-form--field-half reklamation-form--field--last-in-row">
+                <input required type="number" name="form-order-number" id="form-order-number">
+                <label for="form-order-number">Bestellnummer</label>
+            </div>
+        </div>
+        <div class="reklamation-form--client">
+            <h2>ABSENDER / KUNDE</h2>
+            <div class="reklamation-form--field">
+                <input required type="text" name="form-name" id="form-name" required>
+                <label for="form-name">Name, Vorname</label>
+            </div>
+            <div class="reklamation-form--field">
+                <input type="text" name="form-firma" id="form-firma">
+                <label for="form-firma">Firma</label>
+            </div>
+            <div class="reklamation-form--field">
+                <label for="form-street-house-number">Straße, Haus Nr</label>
+                <input type="text" name="form-street-house-number" id="form-street-house-number">
+            </div>
+            <div class="reklamation-form--field reklamation-form--field-one-of-third">
+                <label for="form-plz">PLZ</label>
+                <input type="number" name="form-plz" id="form-plz">
+            </div>
+            <div class="reklamation-form--field reklamation-form--field-two-of-third reklamation-form--field--last-in-row">
+                <label for="form-ort">Ort</label>
+                <input type="text" name="form-ort" id="form-ort">
+            </div>
+        </div>
+        <div class="reklamation-form--list">
+            <h2>BESCHREIBUNG DER REKLAMATION</h2>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>ArtNr.</th>
+                        <th>Menge</th>
+                        <th>Artikelbezeichnung</th>
+                        <th></th>
+                    </tr>
+                    <tr class="reference-row">
+                        <td>
+                            <input type="text" name="list-artcle-number-1" class="list-artcle-number" id="list-artcle-number-1" required>
+                        </td>
+                        <td>
+                            <input type="number" name="list-menge-1" class="list-menge" id="list-menge-1" required>
+                        </td>
+                        <td>
+                            <input type="text" name="list-description-1" class="list-description" id="list-description-1">
+                        </td>
+                        <td><button class="remove-row" type="button" disabled style="opacity: 0;">X</button></td>
+                    </tr>
+                </tbody>
+                
+            </table>
+            <button type="button" id="add-row">Zeile hinzufügen</button>
+        </div>
+        <div class="reklamation-form--reason">
+            <h2>REKLAMATIONSGRUND</h2>
+            <ul>
+                <li><label><input type="checkbox" name="reklamation-reason[]" value="Falsche Ware">Falsche Ware<span></span></label></li>
+                <li><label><input type="checkbox" name="reklamation-reason[]" value="Falsche Liefermenge">Falsche Liefermenge<span></span></label></li>
+                <li><label><input type="checkbox" name="reklamation-reason[]" value="Material-, Verarbeitungsfehler">Material-, Verarbeitungsfehler*<span></span></label></li>
+                <li><label><input type="checkbox" name="reklamation-reason[]" value="Ware zu spät geliefert">Ware zu spät geliefert<span></span></label></li>
+                <li><label><input type="checkbox" name="reklamation-reason[]" value="Artikel gefällt mir nicht">Artikel gefällt mir nicht<span></span></label></li>
+                <li><label><input type="checkbox" name="reklamation-reason[]" value="zu groß / zu klein">zu groß / zu klein<span></span></label></li>
+                <li><label><input type="checkbox" name="reklamation-reason[]" value="Artikel ist defekt">Artikel ist defekt<span></span></label></li>
+                <li><label><input type="checkbox" name="reklamation-reason[]" value="Artikel unvollständig">Artikel unvollständig<span></span></label></li>
+                <li><label><input type="checkbox" name="reklamation-reason[]" value="Anders als beschrieben/abgebildet">Anders als beschrieben/abgebildet<span></span></label></li>
+                <li><label><input type="checkbox" name="reklamation-reason[]" value="Transportschaden">Transportschaden <small>(Bitte Schadenbestätigung von der Post)</small><span></span></label>
+                </li>
+                <li><label><input type="checkbox" name="reklamation-reason[]" value="Sonstiges">Sonstiges*<span></span></label><div class="sonstiges-additional-field"><input type="text" name="sontigest-description"><small>* Zur Erläuterung (Punkt 3 o. 11) bitte die Rückseite benutzen.</small></div></li>
+            </ul>
+        </div>
+        <div class="reklamation-form--wish">
+            <h2>ICH WÜNSCHE</h2>
+            <ul>
+                <li><label><input type="checkbox" name="reklamation-wish[]" value="Umtausch">Umtausch<small>(spätestens binnen 14 Tagen ab der Widerrufserklärung)</small><span></span></label></li>
+                <li><label><input type="checkbox" name="reklamation-wish[]" value="Ersatzlieferung">Ersatzlieferung <span></span></label></li>
+                <li><label><input type="checkbox" name="reklamation-wish[]" value="Rückerstattung">Rückerstattungsp <span></span></label></li>
+                <li><label><input type="checkbox" name="reklamation-wish[]" value="Nachlieferung">Nachlieferung <span></span> <small>Nur schrftlich einreichen!</small></label></li>
+            </ul>
+            <div>Reklamationsschein per eMail: <b><a href="mailto:post@kaufbei.tv" target="_blank">post@kaufbei.tv</a></b> oder Whatsapp zuschicken: <b><a href="tel:01579236017">0157 - 92 360 17</a></b></div>
+        </div>
+        <p>Senden Sie den Artikel immer in der Originalverpackung zurück. Bitte senden Sie uns bei Artikelbeschädigung oder Mängel immer den ganzen Artikel und keine Teile zurück. Die Verarbeitung Ihrer Retourenlieferung kann einige Tage in Anspruch nehmen. Bitte rechnen Sie mit einer Verzögerung bis zu 14 Tagen, die wir für die Abwicklung von Retouren benötigen. Vielen Dank für Ihr Verständnis.</p>
+        <div class="reklamation-form--bank">
+            <div class="reklamation-form--bank-fields">
+                <p>Die Erstattung für Ihre Rücksendung wird auf dem Weg geleistet, auf dem Sie gezahlt haben, z. B. Paypal Zahlungen werden auf Ihr Paypal Konto gutgeschrieben. Für eine Banküberweisung teilen Sie uns Ihre Bankdaten mit:</p>
+                <div class="reklamation-form--field">
+                    <label for="form-bank-name">Name</label>
+                    <input type="text" name="form-bank-name" id="form-bank-name">
+                </div>
+                <div class="reklamation-form--field">
+                    <label for="form-bank-iban">IBAN</label>
+                    <input type="text" name="form-bank-iban" id="form-bank-iban">
+                </div>
+                <div class="reklamation-form--field">
+                    <label for="form-bank-bic">BIC</label>
+                    <input type="text" name="form-bank-iban" id="form-bank-bic">
+                </div>
+            </div>
+            <div class="reklamation-form--bank-data">
+                <h3>Bitte senden Sie die Ware direkt an:</h3>
+                <h2>Kaufbei GmbH<br>RETOURE<br>Oeynhausener Str. 54<br>32584 Löhne</h2>
+            </div>
+        </div>
+        <div class="reklamation-form--agb">
+            <label><input type="checkbox" name="agb-regeln" value="AGB-Regeln" required><span></span>Ich stimme den <a href="https://www.kaufbei.tv/AGB/" target="_blank">AGB-Regeln</a> zu </label>
+            
+        </div>
+        <div><button type="submit">Senden</button></div>
+        <div class="reklamation-form--attention">
+            <h2>WICHTIGER HINWEIS!</h2>
+            <div class="reklamation-form--attention-desc">
+                <p><b>Artikel soll SAUBER und VOLLSTÄNDIG sein. Bei verschmutzten Artikeln Abzug der Reinigungskosten möglich!</b> Die Ware darf in einer üblichen Form getestet werden, wie Sie es aus einem Einkaufsladen kennen.</p>
+                <p>RÜCKSENDUNG: Senden Sie uns bitte die Ware FRANKIERT (nicht unfrei!)</p>
+            </div>
+        </div>
+        <div class="reklamation-form--small-text">
+            <h3>Widerrufsbelehrung</h3>
+            <p><b>Widerrufsrecht für Verbraucher</b> (Verbraucher ist jede natürliche Person, die ein Rechtsgeschäft zu Zwecken abschließt, die überwiegend weder ihrer gewerblichen noch ihrer werden kann.)</p>
+            <p><b>Widerrufsbelehrung</b></p>
+            <p><b>Widerrufsrecht</b><br>Sie haben das Recht, binnen vierzehn Tagen ohne Angabe von Gründen diesen Vertrag zu widerrufen.Die Widerrufsfrist beträgt vierzehn Tage ab dem Tag</p>
+            <ul>
+                <li>an dem Sie oder ein von Ihnen benannter Dritter, der nicht der Beförderer ist, die Waren in Besitz genommen haben bzw. hat, sofern Sie eine oder mehrere Waren im Rahmen einer einheitlichen Bestellung bestellt haben und diese einheitlich geliefert wird bzw. werden;</li>
+                <li>an dem Sie oder ein von Ihnen benannter Dritter, der nicht der Beförderer ist, die letzte Ware in Besitz genommen haben bzw. hat, sofern Sie mehrere Waren im Rahmen einer einheitlichen Bestellung bestellt haben und diese getrennt geliefert werden;</li>
+                <li>an dem Sie oder ein von Ihnen benannter Dritter, der nicht der Beförderer ist, die letzte Teilsendung oder das letzte Stück in Besitz genommen haben bzw. hat, sofern Sie eine Ware bestellt haben, die in mehreren Teilsendungen oder Stücken geliefert wird;</li>
+                <li>an dem Sie oder ein von Ihnen benannter Dritter, der nicht der Beförderer ist, die erste Ware in Besitz genommen haben bzw. hat, sofern im Rahmen einer Bestellung Waren zur regelmäßigen Lieferung über einen festgelegten Zeitraum hinweg geliefert werden.</li>
+            </ul>
+                
+            <p><b>Um Ihr Widerrufsrecht auszuüben, müssen Sie uns (Kaufbei GmbH, Oeynhausener Str. 54, 32584 Löhne, Telefonnummer: 05731-2451510, Fax: 05731- 2451582, E-Mail-Adresse: post@kaufbei.tv)</b> mittels einer eindeutigen Erklärung (z.B. ein mit der Post versandter Brief, Telefax oder E-Mail) über Ihren Entschluss, diesen Vertrag zu widerrufen, informieren. Sie können dafür das beigefügte Muster-Widerrufsformular verwenden, das jedoch nicht vorgeschrieben ist. Zur Wahrung der Widerrufsfrist reicht es aus, dass Sie die Mitteilung über die Ausübung des Widerrufsrechts vor Ablauf der Widerrufsfrist absenden.</p>
+            <p><b>Folgen des Widerrufs</b> Wenn Sie diesen Vertrag widerrufen, haben wir Ihnen alle Zahlungen, die wir von Ihnen erhalten haben, einschließlich der Lieferkosten (mit Ausnahme der zusätzlichen Kosten, die sich daraus ergeben, dass Sie eine andere Art der Lieferung als die von uns angebotene, günstigste Standardlieferung gewählt haben), unverzüglich und spätestens binnen vierzehn Tagen ab dem Tag zurückzuzahlen, andem die Mitteilung über Ihren Widerruf dieses Vertrags bei uns eingegangen ist. Für diese Rückzahlung verwenden wir dasselbe Zahlungsmittel, das Sie bei der ursprünglichen Transaktion eingesetzt haben, es sei denn, mit Ihnen wurde ausdrücklich etwas anderes vereinbart; in keinem Fall werden Ihnen wegen dieser Rückzahlung Entgelte berechnet. Wir können die Rückzahlung verweigern, bis wir die Waren wieder zurückerhalten haben oder bis Sie den Nachweis erbracht haben, dass Sie die Waren zurückgesandt haben, je nachdem, welches der frühere Zeitpunkt ist. Sie haben die Waren unverzüglich und in jedem Fall spätestens binnen vierzehn Tagen ab dem Tag, an dem Sie uns über den Widerruf dieses Vertrags unterrichten, an uns zurückzusenden oder zu übergeben. Die Frist ist gewahrt, wenn Sie die Waren vor Ablauf der Frist von vierzehn Tagen absenden. Sie tragen die unmittelbaren Kosten der Rücksendung der Waren. Sie müssen für einen etwaigen Wertverlust der Waren nur aufkommen, wenn dieser Wertverlust auf einen zur Prüfung der Beschaffenheit, Eigenschaften und Funktionsweise der Waren nicht notwendigen Umgang mit ihnen zurückzuführen ist.</p>
+            <p><b>Ausschluss- bzw. Erlöschensgründe</b><br> Das Widerrufsrecht besteht nicht bei Verträgen</p>
+            <ul>
+                <li>zur Lieferung von Waren, die nicht vorgefertigt sind und für deren Herstellung eine individuelle Auswahl oder Bestimmung durch den Verbraucher maßgeblich ist oder die eindeutig auf die persönlichen Bedürfnisse des Verbrauchers zugeschnitten sind;</li>
+                <li>zur Lieferung von Waren, die schnell verderben können (diese Artikel sind gemäß § 312g Abs. 2 Nr. 2 BGB und § 2 Abs.2 LMHV vom Widerrufsrecht ausgeschlossen) oder deren Verfallsdatum schnell überschritten würde; - zur Lieferung alkoholischer Getränke, deren Preis bei Vertragsschluss vereinbart wurde, die aber frühestens 30 Tage nach Vertragsschluss geliefert werden können und deren aktueller Wert von Schwankungen auf dem Markt abhängt,</li> <li>zur Lieferung von Zeitungen, Zeitschriften oder Illustrierten mit Ausnahme von Abonnement-Verträgen. Das Widerrufsrecht erlischt vorzeitig bei Verträgen</li>
+                <li>zur Lieferung versiegelter Waren, die aus Gründen des Gesundheitsschutzes oder der Hygiene nicht zur Rückgabe geeignet sind, wenn ihre Versiegelung nach der Lieferung entfernt wurde;</li>
+                <li>zur Lieferung von Waren, wenn diese nach der Lieferung aufgrund ihrer Beschaffenheit untrennbar mit anderen Gütern vermischt wurden;</li>
+                <li>zur Lieferung von Ton- oder Videoaufnahmen oder Computersoftware in einer versiegelten Packung, wenn die Versiegelung nach der Lieferung entfernt wurde.</li>
+            </ul>
+        </div>
+        
+    </form>
+</body>
+</html>

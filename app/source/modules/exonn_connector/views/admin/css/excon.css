@@ -1,0 +1,293 @@
+table.moduleslidt {
+  border: 1px solid #aaa;
+}
+
+table.moduleslist td, table.moduleslist th {
+  border: 1px solid #aaa;
+  border-spacing: 0;
+  padding: 3px;
+}
+
+table.moduleslist td {
+  background: #ddd;
+}
+
+table.moduleslist td {
+  background: #eee;
+}
+
+
+/*
+table.moduleslist td {
+  background: #fff;
+}
+
+table.moduleslist tr.modok td {
+  background-color: #fbfffb;
+}
+
+table.moduleslist tr.moderr td {
+  background-color: #fffdf7;
+}
+
+table.moduleslist tr.mowait td {
+  background-color: #fbfbe7;
+}
+
+table.moduleslist tr.modup td {
+  background-color: #fafaff;
+}
+*/
+
+table.moduleslist {
+  border-collapse: collapse;
+}
+
+.extab {
+  float: left;
+  padding: 5px;
+  padding-top: 3px;
+  margin-top: 2px;
+  list-style: none;
+  background: none;
+  border: 1px solid #999;
+}
+
+.extab.active {
+  padding: 5px;
+  margin-top: 0;
+  background: #efefef;
+}
+
+.status_btn {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding-right: 40px;
+  background-position: center right;
+  background-repeat: no-repeat;
+  height: 28px;
+  line-height: 28px;
+  margin: 0;
+  display: inline-block;
+  padding-left: 5px;
+
+  font-size: 14px;
+  min-width: 130px;
+  transition: background 0.2s ease-in-out;
+}
+
+.status_btn:hover {
+  cursor: pointer;
+  background-color: #3cb0fd;
+}
+
+div.topinfo {
+  max-width: 900px;
+  border: 1px solid #f0f0f0;
+  border-left: 5px solid #3cb0fd;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+label.succ {
+  max-width: 900px;
+  border: 1px solid #f0f0f0;
+  border-left: 5px solid #00cc00;
+  padding: 5px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+label.err {
+  max-width: 900px;
+  border: 1px solid #ff0000;
+  border-left: 5px solid #ff0000;
+  padding: 5px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+div.topinfo .update {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: url("../img/update.png");
+  background-size: 18px;
+  vertical-align: middle;
+}
+
+div.topinfo .restore {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: url("../img/restore.png");
+  vertical-align: middle;
+  background-size: 18px;
+}
+
+div.topinfo .demoinstall {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: url("../img/install.png");
+  vertical-align: middle;
+  background-size: 18px;
+}
+
+div.topinfo .basket, .inlinebasket {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: url("../img/basket.png");
+  vertical-align: middle;
+  background-size: 18px;
+}
+
+.status_btn.demo, .status_btn.wait, .status_btn.ok {
+  background-color: #3498db;
+  cursor: auto;
+}
+
+.status_btn.update {
+  background-image: url("../img/update.png");
+  min-width: 175px;
+}
+
+.status_btn.install {
+  background-image: url("../img/install.png");
+  min-width: 175px;
+}
+
+.status_btn.installdemo {
+  background-image: url("../img/install.png");
+}
+
+.status_btn.ok {
+  background-image: url("../img/ok.png");
+}
+
+.status_btn.demo {
+  background-image: url("../img/demo.png");
+}
+
+.status_btn.docs {
+  background-image: url("../img/docs.png");
+}
+
+.status_btn.installed {
+  background-color: #66cc00;
+}
+
+.status_btn.demooff {
+  background-color: #ff6666;
+}
+
+.status_btn.request {
+  background-image: url("../img/request.png");
+  min-width: 175px;
+}
+
+.status_btn.restore {
+  background-image: url("../img/restore.png");
+  background-position: center;
+  min-width: 28px;
+  width: 28px;
+  padding: 0;
+  margin-top: 4px;
+}
+
+.status_btn.notactive {
+  background-color: gray;
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+#no_modules {
+  color: #3498db;
+  display: inline-block;
+  padding: 15px;
+}
+.status_btn.request.ok {
+  background-image: url("../img/requestok.png");
+}
+
+.status_btn.extend {
+  background-image: url("../img/extend.png");
+}
+
+.status_btn.wait {
+  background-image: url("../img/wait.png");
+}
+
+.status_btn.link {
+  background-image: url("../img/link.png");
+}
+
+.status_btn.basket {
+  background-image: url("../img/basket.png");
+}
+
+.status_btn.version {
+  background-image: url("../img/version.png");
+  width: auto;
+  min-width: inherit;
+  padding: 0 2px;
+  background-position: center right 4px;
+  padding-right: 35px;
+}
+
+.status_btn.send_error {
+  background-image: url("../img/support.png");
+  background-color: #f45050;
+  float: right;
+}
+
+#liste td.active, .box td.active {
+  background-image: none;
+}
+.status_btn.send_error:hover {
+  background-color: #fc2222;
+}
+
+label.new_version {
+  color: #2d79da;
+  font-weight: bold;
+}
+
+td.new_version {
+  border: 1px solid #2d79da;
+}
+
+table.moduleslist tr td {
+  background: #fcfcfc;
+  border: 1px solid #fff;
+  border-bottom: 2px solid #fff;
+}
+
+table.moduleslist tr th {
+  border: 1px solid #fff;
+  background: #eaeaea;
+}
+
+table.moduleslist tr:nth-child(2n+1) td {
+  background: #f0f0f0;
+}
+
+table.moduleslist {
+  border: 2px solid #f0f0f0;
+}
+
+table.moduleslist tr td:first-child,
+table.moduleslist tr th:first-child {
+  border-left: 4px solid #EAEAEA;
+  padding-left: 5px;
+}
+
+table.moduleslist tr td:first-child.active {
+  border-left: 4px solid #66cc00;
+}
+
+table.moduleslist tr td:first-child.inactive {
+  border-left: 4px solid #a3d9b8;
+}

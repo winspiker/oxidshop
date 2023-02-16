@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OX>
+	<OXMENU id="SIT_MENU">
+		<MAINMENU id="SIT_MODULE_FRAMEWORK">
+			<SUBMENU id="sit_multifilter" cl="sit_module_framework&amp;moduleId=sit_multifilter" />
+		</MAINMENU>
+	</OXMENU>
+</OX>

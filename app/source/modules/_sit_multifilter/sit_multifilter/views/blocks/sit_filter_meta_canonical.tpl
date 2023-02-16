@@ -1,0 +1,5 @@
+[{if $smarty.get.setFilter == 1}]
+	[{* No canonical for filter url *}]
+[{else}]
+	[{$smarty.block.parent}]
+[{/if}]

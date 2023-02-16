@@ -1,0 +1,120 @@
+15:05:01
+85.13.143.106
+Array
+(
+)
+
+Array
+(
+    [cl] => communication_cron
+    [fnc] => send_post
+)
+
+15:06:01
+85.13.143.106
+Array
+(
+)
+
+Array
+(
+    [cl] => communication_cron
+    [fnc] => send_post
+)
+
+15:07:01
+85.13.143.106
+Array
+(
+)
+
+Array
+(
+    [cl] => communication_cron
+    [fnc] => send_post
+)
+
+15:08:01
+85.13.143.106
+Array
+(
+)
+
+Array
+(
+    [cl] => communication_cron
+    [fnc] => send_post
+)
+
+15:09:01
+85.13.143.106
+Array
+(
+)
+
+Array
+(
+    [cl] => communication_cron
+    [fnc] => send_post
+)
+
+15:10:01
+85.13.143.106
+Array
+(
+)
+
+Array
+(
+    [cl] => communication_cron
+    [fnc] => send_post
+)
+
+15:11:02
+85.13.143.106
+Array
+(
+)
+
+Array
+(
+    [cl] => communication_cron
+    [fnc] => send_post
+)
+
+15:12:02
+85.13.143.106
+Array
+(
+)
+
+Array
+(
+    [cl] => communication_cron
+    [fnc] => send_post
+)
+
+15:13:01
+85.13.143.106
+Array
+(
+)
+
+Array
+(
+    [cl] => communication_cron
+    [fnc] => send_post
+)
+
+15:14:01
+85.13.143.106
+Array
+(
+)
+
+Array
+(
+    [cl] => communication_cron
+    [fnc] => send_post
+)
+

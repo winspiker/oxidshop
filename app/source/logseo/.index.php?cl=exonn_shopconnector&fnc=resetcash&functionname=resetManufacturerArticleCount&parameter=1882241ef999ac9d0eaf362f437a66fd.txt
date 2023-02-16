@@ -1,0 +1,14 @@
+15:07:08
+85.13.128.239
+Array
+(
+)
+
+Array
+(
+    [cl] => exonn_shopconnector
+    [fnc] => resetcash
+    [functionname] => resetManufacturerArticleCount
+    [parameter] => 1882241ef999ac9d0eaf362f437a66fd
+)
+

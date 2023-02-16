@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<OX>
+    <OXMENU id="NETENSIO_NAVIGATION">
+        <MAINMENU id="netredirectmanager">
+            <SUBMENU id="redirectmanager" cl="redirectmanager" list="redirectmanager_list">
+                <TAB id="redirectmanager_main" cl="redirectmanager_main" />
+            </SUBMENU>
+        </MAINMENU>
+    </OXMENU>
+</OX>

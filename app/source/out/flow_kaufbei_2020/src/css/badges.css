@@ -1,0 +1,327 @@
+.badge-12spiebe {
+  background: url("../../img/star_с.svg") center no-repeat;
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  right: 10%;
+  bottom: 0;
+  z-index: 9;
+}
+
+.detailsInfo .badge-12spiebe {
+  background: url("../../img/star_с.svg") center no-repeat;
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  right: 120px;
+  bottom: 60px;
+}
+
+@media (max-width: 550px) {
+  .detailsInfo .badge-12spiebe {
+    background: url("../../img/star_с.svg") center no-repeat;
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    right: 10%;
+    bottom: 0;
+  }
+}
+
+.badge_Fruhlings {
+  background: url("../../img/fruhlings.svg") center no-repeat;
+  position: absolute;
+  width: 50%;
+  height: 28%;
+  right: 0;
+  top: -10px;
+  z-index: 9;
+}
+
+.detailsInfo .badge_Fruhlings {
+  background: url("../../img/fruhlings.svg") center no-repeat;
+  position: absolute;
+  width: 210px;
+  height: 137px;
+  right: 10px;
+  top: -32px;
+}
+
+@media (max-width: 550px) {
+  .detailsInfo .badge_Fruhlings {
+    background: url("../../img/fruhlings.svg") center no-repeat;
+    position: absolute;
+    width: 50%;
+    height: 28%;
+    right: 0;
+    top: -20px;
+  }
+}
+
+.badge_Sommer_Angebot_с {
+  background: url("../../img/badge_Sommer_Angebot_с.svg") center no-repeat;
+  position: absolute;
+  width: 50%;
+  height: 28%;
+  right: 0;
+  top: -10px;
+  z-index: 9;
+}
+
+.detailsInfo .badge_Sommer_Angebot_с {
+  background: url("../../img/badge_Sommer_Angebot_с.svg") center no-repeat;
+  position: absolute;
+  width: 210px;
+  height: 137px;
+  right: 10px;
+  top: -32px;
+}
+
+@media (max-width: 550px) {
+  .detailsInfo .badge_Sommer_Angebot_с {
+    background: url("../../img/badge_Sommer_Angebot_с.svg") center no-repeat;
+    position: absolute;
+    width: 50%;
+    height: 28%;
+    right: 0;
+    top: -20px;
+  }
+}
+
+
+
+.badge-winter-angebot {
+  background: url("../../img/bage_winter_angebot.svg") center no-repeat;
+  position: absolute;
+  width: 50%;
+  height: 28%;
+  right: 0;
+  top: -10px;
+  z-index: 9;
+}
+
+.detailsInfo .badge-winter-angebot {
+  background: url("../../img/bage_winter_angebot.svg") center no-repeat;
+  position: absolute;
+  width: 210px;
+  height: 137px;
+  right: 10px;
+  top: -32px;
+}
+
+@media (max-width: 550px) {
+  .detailsInfo .badge-winter-angebot {
+    background: url("../../img/bage_winter_angebot.svg") center no-repeat;
+    position: absolute;
+    width: 50%;
+    height: 28%;
+    right: 0;
+    top: -20px;
+  }
+}
+
+
+.badge_autumn_angebot {
+  background: url("../../img/badge_autumn_angebot.svg") center no-repeat;
+  position: absolute;
+  width: 50%;
+  height: 28%;
+  right: 0;
+  top: -10px;
+  z-index: 9;
+}
+
+.detailsInfo .badge_autumn_angebot {
+  background: url("../../img/badge_autumn_angebot.svg") center no-repeat;
+  position: absolute;
+  width: 210px;
+  height: 137px;
+  right: 10px;
+  top: -32px;
+}
+
+@media (max-width: 550px) {
+  .detailsInfo .badge_autumn_angebot {
+    background: url("../../img/badge_autumn_angebot.svg") center no-repeat;
+    position: absolute;
+    width: 50%;
+    height: 28%;
+    right: 0;
+    top: -20px;
+  }
+}
+
+.badge_gratis_07_2018 {
+  background: url("../../img/badge_gratis.svg") center no-repeat;
+  position: absolute;
+  width: 50%;
+  height: 41%;
+  right: 0;
+  bottom: -10px;
+  z-index: 9;
+      background-size: auto 100%;
+}
+
+.detailsInfo .badge_gratis_07_2018 {
+  background: url("../../img/badge_gratis.svg") center no-repeat;
+  position: absolute;
+  width: 210px;
+  height: 137px;
+  right: 10px;
+  bottom: -2px;
+}
+
+@media (max-width: 550px) {
+  .detailsInfo .badge_gratis_07_2018 {
+    background: url("../../img/badge_gratis.svg") center no-repeat;
+    position: absolute;
+    width: 50%;
+    height: 28%;
+    right: 0;
+    bottom: -20px;
+  }
+}
+
+
+.badge-10spiebe {
+  background: url("../../img/gratis-spiebe.svg") center no-repeat;
+  position: absolute;
+  width: 50%;
+  height: 41%;
+  right: 0;
+  bottom: -10px;
+  z-index: 9;
+      background-size: auto 100%;
+}
+@media (max-width: 768px) {
+  .badge-10spiebe {
+    width: 81%;
+  }
+}
+.detailsInfo .badge-10spiebe {
+  background: url("../../img/gratis-spiebe.svg") center no-repeat;
+  position: absolute;
+  width: 210px;
+  height: 137px;
+  right: 10px;
+  bottom: -2px;
+}
+
+@media (max-width: 550px) {
+  .detailsInfo .badge-10spiebe {
+    background: url("../../img/gratis-spiebe.svg") center no-repeat;
+    position: absolute;
+    width: 50%;
+    height: 28%;
+    right: 0;
+    bottom: -20px;
+  }
+}
+
+.badge-zufriedenheit {
+  background: url("../../img/badge-zufriedenheit.svg") center no-repeat;
+  position: absolute;
+    width: 36%;
+    height: 27%;
+    right: 0;
+    top: 6px;
+    z-index: 9;
+    background-size: auto 100%;
+}
+.bage_discount_10 {
+  background: url("../../img/bage_discount_10.svg") center no-repeat;
+  position: absolute;
+    width: 27%;
+    height: 27%;
+    right: 10px;
+    top: 6px;
+    z-index: 9;
+    background-size: auto 100%;
+}
+.bage_vorverkauf{
+  background: url("../../img/Vorverkauf_sticker.svg") center no-repeat;
+  position: absolute;
+width: 42%;
+    height: 27%;
+    right: 0;
+    top: 6px;
+    z-index: 9;
+    background-size: auto 100%;
+}
+
+@media (max-width: 1200px) {
+	.detailsInfo .badge-zufriedenheit {
+		height: 22%;
+	}
+	.detailsInfo .bage_discount_10 {
+		height: 22%;
+	}
+	.detailsInfo .bage_vorverkauf{
+	  height: 27%;
+	}
+}
+@media (max-width: 992px) {
+	.detailsInfo .badge-zufriedenheit {
+    	height: 16%;
+	}
+	.detailsInfo .bage_discount_10 {
+		height: 25%;
+	}
+		.detailsInfo .bage_vorverkauf{
+	  height: 20%;
+	}
+}
+@media (max-width: 767px) {
+	.detailsInfo .badge-zufriedenheit {
+        height: 27%;
+	}
+	.detailsInfo .bage_discount_10 {
+		height: 27%;
+	}
+		.detailsInfo .bage_vorverkauf{
+	  height: 27%;
+	}
+}
+@media (max-width: 550px) {
+	.detailsInfo .badge-zufriedenheit {
+        height: 17%;
+	}
+	.detailsInfo .bage_discount_10 {
+		height: 22%;
+	}
+	.detailsInfo .bage_vorverkauf{
+    height: 24%;
+	}
+}
+
+.badge-top-qualitat {
+  background: url("../../img/badge-top-qualitat.svg") center no-repeat;	
+  position: absolute;
+    width: 36%;
+    height: 27%;
+    right: 20px;
+    top: 6px;
+    z-index: 9;
+    background-size: auto 100%;
+}
+@media (max-width: 1200px) {
+	.detailsInfo .badge-top-qualitat {
+		height: 22%;
+	}
+}
+@media (max-width: 992px) {
+	.detailsInfo .badge-top-qualitat {
+    	height: 16%;
+	}
+}
+@media (max-width: 767px) {
+	.detailsInfo .badge-top-qualitat {
+        height: 27%;
+	}
+}
+@media (max-width: 550px) {
+	.detailsInfo .badge-top-qualitat {
+        height: 17%;
+	}
+}
+

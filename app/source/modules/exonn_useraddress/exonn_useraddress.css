@@ -1,0 +1,23 @@
+
+.search_data {
+    border: 1px solid #cccccc;
+/*    height: 250px;*/
+    padding: 5px;
+    /*overflow: scroll;*/
+    position: absolute;
+    background-color: #ffffff;
+    z-index: 1000;
+    margin-left: 150px;
+    margin-top: 25px;
+    width: 250px
+
+}
+
+.search_data_element{
+    cursor: pointer;
+
+}
+
+.search_data_element:hover{
+    background-color: #999999;
+}

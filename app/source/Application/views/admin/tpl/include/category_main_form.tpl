@@ -9,6 +9,10 @@
                 [{oxmultilang ident="CATEGORY_MAIN_HIDDEN"}]&nbsp;&nbsp;&nbsp;
                 <input class="edittext" type="checkbox" name="editval[oxcategories__oxhidden]" value='1' [{if $edit->oxcategories__oxhidden->value == 1}]checked[{/if}] [{$readonly}]>
                 [{oxinputhelp ident="HELP_CATEGORY_MAIN_ACTIVE"}]
+
+                Auf Startseite anzeigen
+                <input type="hidden" name="editval[oxcategories__stertseite]" value="0">
+                <input class="edittext" type="checkbox" name="editval[oxcategories__stertseite]" value='1' [{if $edit->oxcategories__stertseite->value == 1}]checked[{/if}] [{$readonly}]>
             </td>
         </tr>
         <tr>
@@ -20,6 +24,15 @@
                 [{oxinputhelp ident="HELP_CATEGORY_MAIN_TITLE"}]
             </td>
         </tr>
+    <tr>
+        <td class="edittext">
+            Icon Class
+        </td>
+        <td class="edittext" colspan="2">
+            <input type="text" class="editinput" size="25" maxlength="[{$edit->oxcategories__icon->fldmax_length}]" name="editval[oxcategories__icon]" value="[{$edit->oxcategories__icon->value}]" [{$readonly}]>
+            [{ oxinputhelp ident="HELP_CATEGORY_MAIN_TITLE" }]
+        </td>
+    </tr>
         <tr>
             <td class="edittext">
                 [{oxmultilang ident="CATEGORY_MAIN_DESCRIPTION"}]
@@ -58,13 +71,19 @@
             <td class="edittext">
                 <input id="oxthumb" type="text" class="editinput" size="42" maxlength="[{$edit->oxcategories__oxthumb->fldmax_length}]" name="editval[oxcategories__oxthumb]" value="[{$edit->oxcategories__oxthumb->value}]">
                 [{oxinputhelp ident="HELP_CATEGORY_MAIN_THUMB"}]
+                [{if (!($edit->oxcategories__oxthumb->value=="nopic.jpg" || $edit->oxcategories__oxthumb->value=="" || $edit->oxcategories__oxthumb->value=="nopic_ico.jpg"))}]
             </td>
             <td class="edittext">
-                [{if (!($edit->oxcategories__oxthumb->value=="nopic.jpg" || $edit->oxcategories__oxthumb->value=="" || $edit->oxcategories__oxthumb->value=="nopic_ico.jpg"))}]
-                    <a href="Javascript:DeletePic('oxthumb');" class="delete left" [{include file="help.tpl" helpid=item_delete}]></a>
+                <a href="Javascript:DeletePic('oxthumb');" class="delete left" [{include file="help.tpl" helpid=item_delete}]></a>
                 [{/if}]
+            </td>
+        </tr>
+        <tr>
+            <td class="edittext">
+                [{oxmultilang ident="CATEGORY_MAIN_THUMBUPLOAD"}] ([{oxmultilang ident="GENERAL_MAX_FILE_UPLOAD"}] [{$sMaxFormattedFileSize}], [{oxmultilang ident="GENERAL_MAX_PICTURE_DIMENSIONS"}])
+            </td>
+            <td class="edittext" colspan="2">
                 <input class="editinput" name="myfile[TC@oxcategories__oxthumb]" type="file"  size="26" [{$readonly}]>
-                ([{oxmultilang ident="GENERAL_MAX_FILE_UPLOAD"}] [{$sMaxFormattedFileSize}], [{oxmultilang ident="GENERAL_MAX_PICTURE_DIMENSIONS"}])
             </td>
         </tr>
         <tr>
@@ -79,8 +98,14 @@
                 [{if (!($edit->oxcategories__oxicon->value=="nopic.jpg" || $edit->oxcategories__oxicon->value=="" || $edit->oxcategories__oxicon->value=="nopic_ico.jpg"))}]
                     <a href="Javascript:DeletePic('oxicon');" class="delete left" [{include file="help.tpl" helpid=item_delete}]></a>
                 [{/if}]
+            </td>
+        </tr>
+        <tr>
+            <td class="edittext">
+                [{oxmultilang ident="CATEGORY_MAIN_ICONUPLOAD"}] ([{oxmultilang ident="GENERAL_MAX_FILE_UPLOAD"}] [{$sMaxFormattedFileSize}], [{oxmultilang ident="GENERAL_MAX_PICTURE_DIMENSIONS"}])
+            </td>
+            <td class="edittext" colspan="2">
                 <input class="editinput" name="myfile[CICO@oxcategories__oxicon]" type="file" size="26" >
-                ([{oxmultilang ident="GENERAL_MAX_FILE_UPLOAD"}] [{$sMaxFormattedFileSize}], [{oxmultilang ident="GENERAL_MAX_PICTURE_DIMENSIONS"}])
             </td>
         </tr>
         <tr>
@@ -93,10 +118,16 @@
             </td>
             <td class="edittext">
                 [{ if (!($edit->oxcategories__oxpromoicon->value=="nopic.jpg" || $edit->oxcategories__oxpromoicon->value=="" || $edit->oxcategories__oxpromoicon->value=="nopic_ico.jpg")) }]
-                    <a href="Javascript:DeletePic('oxpromoicon');" class="delete left" [{include file="help.tpl" helpid=item_delete}]></a>
+                <a href="Javascript:DeletePic('oxpromoicon');" class="delete left" [{include file="help.tpl" helpid=item_delete}]></a>
                 [{/if}]
+            </td>
+        </tr>
+        <tr>
+            <td class="edittext">
+                [{ oxmultilang ident="CATEGORY_MAIN_ICONUPLOAD" }] ([{ oxmultilang ident="GENERAL_MAX_FILE_UPLOAD"}] [{$sMaxFormattedFileSize}], [{ oxmultilang ident="GENERAL_MAX_PICTURE_DIMENSIONS"}])
+            </td>
+            <td class="edittext" colspan="2">
                 <input class="editinput" name="myfile[PICO@oxcategories__oxpromoicon]" type="file" size="26" >
-                ([{ oxmultilang ident="GENERAL_MAX_FILE_UPLOAD"}] [{$sMaxFormattedFileSize}], [{ oxmultilang ident="GENERAL_MAX_PICTURE_DIMENSIONS"}])
             </td>
         </tr>
         <tr>

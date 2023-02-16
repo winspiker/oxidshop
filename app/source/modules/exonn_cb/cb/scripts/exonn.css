@@ -1,0 +1,54 @@
+.cb_container .row-hide{cursor:pointer;background: rgb(255, 204, 0);color:#fff;width:30px;height:30px;text-align:center;line-height:30px;}
+
+.cb_container .row.exonn-hide {
+  background:url("hidden.jpg");
+}
+
+.cb_container .row img {
+  min-width: 20px;
+  min-height: 20px;
+}
+
+.contentarea.live  .row.exonn-hide {
+  display: none;
+}
+
+.cb_container .column {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
+.cb_container .row {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.cb_container .cb-save {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.cb_container p {
+  margin: 0;
+}
+
+#divCb button {
+  color: #666;
+}
+
+.cb_container .row .column.half {
+  padding-right: 10px;
+}
+
+.cb_container .row .column.half:last-child {
+  padding-right: 0;
+}
+
+.cmsContent a {
+  color: #0973a7;
+}

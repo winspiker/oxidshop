@@ -1,0 +1,22 @@
+15:06:29
+91.7.239.49
+Array
+(
+)
+
+Array
+(
+    [force_sid] => 6d0a7ad54e40612899d13a6e5b5a154f
+    [ldtype] => grid
+    [_artperpage] => 32
+    [pgNr] => 0
+    [?force_sid] => 6d0a7ad54e40612899d13a6e5b5a154f
+    [cl] => alist
+    [searchparam] => 
+    [cnid] => ac49c6e22d40b68202442630d4f3964d
+)
+
+time: 5.46112298965
+
+
+

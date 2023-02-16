@@ -11,8 +11,34 @@
             <h3 class="blockHead">[{oxmultilang ident="THANK_YOU"}]</h3>
 
             [{block name="checkout_thankyou_info"}]
+
                 [{oxmultilang ident="THANK_YOU_FOR_ORDER"}] [{$oxcmp_shop->oxshops__oxname->value}]. <br>
                 [{oxmultilang ident="REGISTERED_YOUR_ORDER" args=$order->oxorder__oxordernr->value}] <br>
+                <script>
+                    soluteConversionTracking({
+                        VALUE: "[{$order->oxorder__oxtotalordersum->value}]",
+                        ORDER_ID: "[{$order->oxorder__oxordernr->value}]",
+                        FACTOR: "1",
+                    });
+                    function soluteConversionTracking(data) {
+                        var ttl = 1000*60*60*24*30;
+                        var a = localStorage.getItem("soluteclid");
+                        if (!a) return;
+                        var b = a.split(" ", 2);
+                        if (parseInt(b[0])+ttl > (new Date()).getTime()) {
+                            var url = "https://cmodul.solutenetwork.com/conversion";
+                            url += "?val=" + encodeURIComponent(data.VALUE);
+                            url += "&oid=" + encodeURIComponent(data.ORDER_ID);
+                            url += "&factor=" + encodeURIComponent(data.FACTOR);
+                            url += "&url=" + encodeURIComponent(b[1]);
+                            var req = new XMLHttpRequest();
+                            req.open("GET", url);
+                            req.send();
+                        } else {
+                            localStorage.removeItem("soluteclid");
+                        }
+                    }
+                </script>
                 [{if !$oView->getMailError()}]
                     [{oxmultilang ident="MESSAGE_YOU_RECEIVED_ORDER_CONFIRM"}]<br>
                 [{else}]<br>

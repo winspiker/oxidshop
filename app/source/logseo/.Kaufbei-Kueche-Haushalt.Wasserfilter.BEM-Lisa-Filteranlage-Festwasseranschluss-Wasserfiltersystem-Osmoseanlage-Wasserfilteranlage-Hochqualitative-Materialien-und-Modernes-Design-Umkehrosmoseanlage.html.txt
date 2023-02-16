@@ -1,0 +1,22 @@
+15:11:19
+95.112.6.37
+Array
+(
+    [apay-session-set] => YQ8O93U94T6tgaEps3Lz6+avOuR+jqIch1OrgXEmm+TW8xzbiPKBT+kHos2KAyY=
+    [language] => 0
+    [sid] => 2c7ca98a36cefcb2ef2c5588b6e73749
+    [sid_key] => oxid
+)
+
+Array
+(
+    [apay-session-set] => YQ8O93U94T6tgaEps3Lz6+avOuR+jqIch1OrgXEmm+TW8xzbiPKBT+kHos2KAyY=
+    [language] => 0
+    [sid] => 2c7ca98a36cefcb2ef2c5588b6e73749
+    [sid_key] => oxid
+)
+
+time: 0.930188179016
+
+
+

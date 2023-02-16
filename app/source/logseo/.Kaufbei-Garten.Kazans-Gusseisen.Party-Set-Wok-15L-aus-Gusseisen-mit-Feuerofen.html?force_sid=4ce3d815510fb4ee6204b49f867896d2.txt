@@ -1,0 +1,86 @@
+15:04:45
+79.235.172.17
+Array
+(
+    [_ga] => GA1.2.1866237177.1636742666
+    [_gcl_au] => 1.1.1736035366.1636742667
+    [_omappvp] => smF8eN0CL3ApSJOQkwQ64idXlCoydIsDowscu5QIM59EVFPePmjTYD5RoWAsGDC0zpGtNdIsFMLhONoW2qXyvQSvGuigAlOD
+    [prism_1000428378] => 2179361a-1e62-47f7-ba79-16fca86ce27a
+    [_fbp] => fb.1.1636742672640.1013995156
+    [_pin_unauth] => dWlkPVl6Sm1Nemt6TnprdE0ySXdaaTAwWXpRd0xUaGtZelF0TkdWaE56QTVNbU5tWmpZMA
+    [displayedCookiesNotification] => 1
+    [apay-session-set] => cU5dr63umWT/sRVaXspWlFUwatCg25saf3OEGS1R2+85DbLhSpS3ZLegvAdUN1s=
+    [_gid] => GA1.2.1170197864.1637157813
+    [language] => 0
+    [sid] => 4ce3d815510fb4ee6204b49f867896d2
+    [_gcl_aw] => GCL.1637157869.CjwKCAiA7dKMBhBCEiwAO_crFIBxBI_nsTvZzgzdiDPIdECuRtSDD_04OVyIV9esgRle4bX_RDdo7xoCaHsQAvD_BwE
+    [_gac_UA-88088936-5] => 1.1637157870.CjwKCAiA7dKMBhBCEiwAO_crFIBxBI_nsTvZzgzdiDPIdECuRtSDD_04OVyIV9esgRle4bX_RDdo7xoCaHsQAvD_BwE
+    [_gat] => 1
+    [_gat_UA-88088936-5] => 1
+)
+
+Array
+(
+    [force_sid] => 4ce3d815510fb4ee6204b49f867896d2
+    [_ga] => GA1.2.1866237177.1636742666
+    [_gcl_au] => 1.1.1736035366.1636742667
+    [_omappvp] => smF8eN0CL3ApSJOQkwQ64idXlCoydIsDowscu5QIM59EVFPePmjTYD5RoWAsGDC0zpGtNdIsFMLhONoW2qXyvQSvGuigAlOD
+    [prism_1000428378] => 2179361a-1e62-47f7-ba79-16fca86ce27a
+    [_fbp] => fb.1.1636742672640.1013995156
+    [_pin_unauth] => dWlkPVl6Sm1Nemt6TnprdE0ySXdaaTAwWXpRd0xUaGtZelF0TkdWaE56QTVNbU5tWmpZMA
+    [displayedCookiesNotification] => 1
+    [apay-session-set] => cU5dr63umWT/sRVaXspWlFUwatCg25saf3OEGS1R2+85DbLhSpS3ZLegvAdUN1s=
+    [_gid] => GA1.2.1170197864.1637157813
+    [language] => 0
+    [sid] => 4ce3d815510fb4ee6204b49f867896d2
+    [_gcl_aw] => GCL.1637157869.CjwKCAiA7dKMBhBCEiwAO_crFIBxBI_nsTvZzgzdiDPIdECuRtSDD_04OVyIV9esgRle4bX_RDdo7xoCaHsQAvD_BwE
+    [_gac_UA-88088936-5] => 1.1637157870.CjwKCAiA7dKMBhBCEiwAO_crFIBxBI_nsTvZzgzdiDPIdECuRtSDD_04OVyIV9esgRle4bX_RDdo7xoCaHsQAvD_BwE
+    [_gat] => 1
+    [_gat_UA-88088936-5] => 1
+)
+
+15:04:47
+79.235.172.17
+Array
+(
+    [_ga] => GA1.2.1866237177.1636742666
+    [_gcl_au] => 1.1.1736035366.1636742667
+    [_omappvp] => smF8eN0CL3ApSJOQkwQ64idXlCoydIsDowscu5QIM59EVFPePmjTYD5RoWAsGDC0zpGtNdIsFMLhONoW2qXyvQSvGuigAlOD
+    [prism_1000428378] => 2179361a-1e62-47f7-ba79-16fca86ce27a
+    [_fbp] => fb.1.1636742672640.1013995156
+    [_pin_unauth] => dWlkPVl6Sm1Nemt6TnprdE0ySXdaaTAwWXpRd0xUaGtZelF0TkdWaE56QTVNbU5tWmpZMA
+    [displayedCookiesNotification] => 1
+    [apay-session-set] => cU5dr63umWT/sRVaXspWlFUwatCg25saf3OEGS1R2+85DbLhSpS3ZLegvAdUN1s=
+    [_gid] => GA1.2.1170197864.1637157813
+    [language] => 0
+    [sid] => 4ce3d815510fb4ee6204b49f867896d2
+    [_gcl_aw] => GCL.1637157869.CjwKCAiA7dKMBhBCEiwAO_crFIBxBI_nsTvZzgzdiDPIdECuRtSDD_04OVyIV9esgRle4bX_RDdo7xoCaHsQAvD_BwE
+    [_gac_UA-88088936-5] => 1.1637157870.CjwKCAiA7dKMBhBCEiwAO_crFIBxBI_nsTvZzgzdiDPIdECuRtSDD_04OVyIV9esgRle4bX_RDdo7xoCaHsQAvD_BwE
+    [_gat] => 1
+    [_gat_UA-88088936-5] => 1
+)
+
+Array
+(
+    [force_sid] => 4ce3d815510fb4ee6204b49f867896d2
+    [_ga] => GA1.2.1866237177.1636742666
+    [_gcl_au] => 1.1.1736035366.1636742667
+    [_omappvp] => smF8eN0CL3ApSJOQkwQ64idXlCoydIsDowscu5QIM59EVFPePmjTYD5RoWAsGDC0zpGtNdIsFMLhONoW2qXyvQSvGuigAlOD
+    [prism_1000428378] => 2179361a-1e62-47f7-ba79-16fca86ce27a
+    [_fbp] => fb.1.1636742672640.1013995156
+    [_pin_unauth] => dWlkPVl6Sm1Nemt6TnprdE0ySXdaaTAwWXpRd0xUaGtZelF0TkdWaE56QTVNbU5tWmpZMA
+    [displayedCookiesNotification] => 1
+    [apay-session-set] => cU5dr63umWT/sRVaXspWlFUwatCg25saf3OEGS1R2+85DbLhSpS3ZLegvAdUN1s=
+    [_gid] => GA1.2.1170197864.1637157813
+    [language] => 0
+    [sid] => 4ce3d815510fb4ee6204b49f867896d2
+    [_gcl_aw] => GCL.1637157869.CjwKCAiA7dKMBhBCEiwAO_crFIBxBI_nsTvZzgzdiDPIdECuRtSDD_04OVyIV9esgRle4bX_RDdo7xoCaHsQAvD_BwE
+    [_gac_UA-88088936-5] => 1.1637157870.CjwKCAiA7dKMBhBCEiwAO_crFIBxBI_nsTvZzgzdiDPIdECuRtSDD_04OVyIV9esgRle4bX_RDdo7xoCaHsQAvD_BwE
+    [_gat] => 1
+    [_gat_UA-88088936-5] => 1
+)
+
+time: 0.836091995239
+
+
+

@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ROOT>
+	<CONFIG name="sit_multifilter_ajax">
+	
+		<TITLE>SIT-Multifilter AJAX</TITLE>
+		<DESCRIPTION>Übersicht Ihrer Multifilter Konfiguration</DESCRIPTION>
+		<HELP></HELP>
+				
+		<GROUP name="Funktionen">
+		
+			<CONFIGITEM type="boolean" 	name="use_price_filter" default="1" >
+				<TITLE>Preisfilter aktivieren</TITLE>
+				<DESCRIPTION>Ist diese Option gesetzt wird der Preisfilter im Frontend dargestellt.</DESCRIPTION>
+				<HELP></HELP>
+			</CONFIGITEM>
+
+			<CONFIGITEM type="varchar" 	name="price_filter_vat">
+				<TITLE>Preisfilter MwSt.</TITLE>
+				<DESCRIPTION>(Optional) Wenn Sie Nettopreise im Shop pflegen können Sie hier den aufzurechnenden MwSt.-Satz angeben.</DESCRIPTION>
+				<HELP></HELP>
+			</CONFIGITEM>
+			
+			<CONFIGITEM type="boolean" 	name="use_content_filter" default="1">
+				<TITLE>Contentfilter aktivieren</TITLE>
+				<DESCRIPTION>Ist diese Option gesetzt werden über der Artikelliste alle selektierten Filter separat angezeigt.</DESCRIPTION>
+				<HELP></HELP>
+			</CONFIGITEM>
+			
+			<CONFIGITEM type="boolean" 	name="infinite_scrolling" default="0">
+				<TITLE>Infinite-Scrolling aktivieren</TITLE>
+				<DESCRIPTION>Beim Scrollen an das Ende der Artikelliste werden automatisch weitere Artikel geladen.</DESCRIPTION>
+				<HELP></HELP>
+			</CONFIGITEM>
+			
+			<CONFIGITEM type="boolean" 	name="use_article_count" default="0">
+				<TITLE>Artikelanzahl aktivieren</TITLE>
+				<DESCRIPTION>Ist diese Option gesetzt wird die Anzahl der verbleibenden Artikel hinter jedem Filterwert angezeigt.</DESCRIPTION>
+				<HELP></HELP>
+			</CONFIGITEM>
+			
+			<CONFIGITEM type="boolean" 	name="save_filters" default="0">
+				<TITLE>Speicherung der Filterauswahl aktivieren</TITLE>
+				<DESCRIPTION>Gesetze Filter werden beim Verlassen einer Kategorie gespeichert und bei der Rückkehr wieder hergestellt.</DESCRIPTION>
+				<HELP></HELP>
+			</CONFIGITEM>
+			
+			<CONFIGITEM type="boolean" 	name="utf8_mode_disable" default="0">
+				<TITLE>UTF-8 Modus deaktivieren</TITLE>
+				<DESCRIPTION>Ist diese Option gesetzt werden alle Filterwerte im ISO-Modus abgeglichen</DESCRIPTION>
+				<HELP></HELP>
+			</CONFIGITEM>
+			
+			<CONFIGITEM type="boolean" 	name="disable_session_cache" default="0">
+				<TITLE>Session-Cache deaktivieren</TITLE>
+				<DESCRIPTION>Ist diese Option gesetzt wird die Filteransicht nicht in der Session zwischengespeichert.</DESCRIPTION>
+				<HELP></HELP>
+			</CONFIGITEM>
+			
+			<CONFIGITEM type="boolean" 	name="enable_file_cache" default="0">
+				<TITLE>File-Cache aktivieren</TITLE>
+				<DESCRIPTION>Ist diese Option gesetzt wird die Filteransicht für jede Kategorie im File-Cache abgelegt.</DESCRIPTION>
+				<HELP></HELP>
+			</CONFIGITEM>
+			
+		</GROUP>
+				
+		<GROUP name="Darstellung">
+		
+			<CONFIGITEM type="boolean" 	name="article_list_only_parents" default="0">
+				<TITLE>Eltern-Modus</TITLE>
+				<DESCRIPTION>Ist diese Option gesetzt werden in der Ergebnisliste nur Hauptartikel angezeigt.</DESCRIPTION>
+				<HELP></HELP>
+			</CONFIGITEM>
+			
+			<CONFIGITEM type="varchar" 	name="htaccessUser" default="">
+				<TITLE>Htaccess User</TITLE>
+				<DESCRIPTION>Benutzername vom Passwortschutz</DESCRIPTION>
+				<HELP></HELP>
+			</CONFIGITEM>
+			
+			<CONFIGITEM type="varchar" 	name="htaccessPassword" default="">
+				<TITLE>Htaccess Password</TITLE>
+				<DESCRIPTION>Passwort vom Passwortschutz</DESCRIPTION>
+				<HELP></HELP>
+			</CONFIGITEM>
+			
+			<CONFIGITEM type="boolean" 	name="sitMultifilterUseAccordeon" default="1">
+				<TITLE>Akkordeon-Layout in der Filterliste verwenden</TITLE>
+				<DESCRIPTION>Beim Akkordeon-Layout wird immer nur eine Filterkategorie ausgeklappt dargestellt.</DESCRIPTION>
+				<HELP></HELP>
+			</CONFIGITEM>
+			
+			<CONFIGITEM type="boolean" 	name="sitMultifilterViewHideUnuseableAttributes" default="0">
+				<TITLE>Filterwerte ohne Treffer ausblenden</TITLE>
+				<DESCRIPTION>Es werden nur noch Filterwerte angezeigt für die noch Artikel in der aktuellen Ergebnisliste vorhanden sind.</DESCRIPTION>
+				<HELP></HELP>
+			</CONFIGITEM>
+		
+			<CONFIGITEM type="text" name="sitMultifilterSortFields" default="">
+				<TITLE>Sortierfelder Artikel und Varianten</TITLE>
+				<DESCRIPTION>Bestimmt die Werte der Auswahl-Dropdown 'Sortieren' in der Navigation (z.B. oxarticles.oxtitle oder oxarticles.oxprice)</DESCRIPTION>
+				<HELP></HELP>
+			</CONFIGITEM>	
+		
+			<CONFIGITEM type="varchar" name="article_per_page">
+				<TITLE>Artikel pro Seite</TITLE>
+				<DESCRIPTION>Bestimmt wie viele Artikel pro Seite in der Artikelliste angezeigt werden (ohne Angabe = 12 Artikel)</DESCRIPTION>
+				<HELP></HELP>
+			</CONFIGITEM>
+			
+			<CONFIGITEM type="varchar" name="sitMultifilterArticlePerPageSelection">
+				<TITLE>Artikel pro Seite Auswahl</TITLE>
+				<DESCRIPTION>Bestimmt die Werte vom Auswahl-Dropdown 'Artikel pro Seite' in der Navigation  (mehrere Werte kommagetrennt angeben z.B. 12,24,48)</DESCRIPTION>
+				<HELP></HELP>
+			</CONFIGITEM>
+			
+			<CONFIGITEM type="varchar" name="no_articles_found_text">
+				<TITLE>Platzhalter-Text</TITLE>
+				<DESCRIPTION>Text wenn keine Artikel gefunden wurden (Optional)</DESCRIPTION>
+				<HELP></HELP>
+			</CONFIGITEM>
+			
+			<CONFIGITEM type="varchar" name="standard_sorting" default="">
+				<TITLE>Standardsortierung</TITLE>
+				<DESCRIPTION>Standardsortierung für ORDER BY (z.B. oxarticles.oxartnum DESC = nach Artikelnummer absteigend)</DESCRIPTION>
+				<HELP></HELP>
+			</CONFIGITEM>
+			
+			<CONFIGITEM type="varchar" name="sitMultiflterEnableFilterCount">
+				<TITLE>Anzahl Filterwerte für Suchfunktion</TITLE>
+				<DESCRIPTION>Bestimmt wie viele Filterwerte mindestens sichtbar sein müssen, damit die Suchfunktion für das jeweilige Attribut aktiviert wird.</DESCRIPTION>
+				<HELP></HELP>
+			</CONFIGITEM>
+			
+		</GROUP>
+		
+		<GROUP name="Konfiguration">
+		
+			<CONFIGITEM type="boolean" 	name="use_shop_settings" default="0">
+				<TITLE>Shopeinstellungen für Attribute berücksichtigen</TITLE>
+				<DESCRIPTION>Es werden nur Attribute im Filter angezeigt, die der aktiven Kategorie zugewiesen sind.</DESCRIPTION>
+				<HELP></HELP>
+			</CONFIGITEM>
+
+			<CONFIGITEM type="boolean" 	name="check_child_categories" default="0">
+				<TITLE>Artikel aus Kind-Kategorien berücksichtigen.</TITLE>
+				<DESCRIPTION>Der Filter wird aus Artikeln der aktiven Kategorie und Artikeln aller Kind-Kategorien erzeugt.</DESCRIPTION>
+				<HELP></HELP>
+			</CONFIGITEM>
+
+			<CONFIGITEM type="boolean" name="check_stock" default="0">
+				<TITLE>Lagerbestand berücksichtigen</TITLE>
+				<DESCRIPTION>Es werden nur Artikel mit Lagerbestand durchsucht</DESCRIPTION>
+				<HELP></HELP>
+			</CONFIGITEM>
+			
+			<CONFIGITEM type="boolean" name="check_stockflag" default="0">
+				<TITLE>Lieferstatus berücksichtigen</TITLE>
+				<DESCRIPTION>Es werden nur Artikel mit Lagerbestand durchsucht, oder Lieferstatus = Fremdlager, oder Lieferstatus = Standard. Diese Einstellung überschreibt 'Lagerbestand berücksichtigen'</DESCRIPTION>
+				<HELP></HELP>
+			</CONFIGITEM>
+			
+			<CONFIGITEM type="boolean" name="combine_with_or" default="0">
+				<TITLE>Oder-Suche</TITLE>
+				<DESCRIPTION>Werden mehrere Werte desselben Artikel-Attributs gewählt, reicht ein Treffer aus um den Artikel in der Liste anzuzeigen. (Nicht gesetzt = Es müssen alle Werte vorhanden sein)</DESCRIPTION>
+				<HELP></HELP>
+			</CONFIGITEM>
+		
+			<CONFIGITEM type="boolean" 	name="check_variants" default="0">
+				<TITLE>Varianten durchsuchen</TITLE>
+				<DESCRIPTION>Es werden auch Varianten-Attribute durchsucht und Varianten angezeigt</DESCRIPTION>
+				<HELP></HELP>
+			</CONFIGITEM>
+		
+			<CONFIGITEM type="varchar" name="filter_by_number" default="">
+				<TITLE>Nummernkreis auschließen (Optional)</TITLE>
+				<DESCRIPTION>Artikel die mit dem angegebenen Nummernkreis beginnen werden nicht durchsucht.</DESCRIPTION>
+				<HELP></HELP>
+			</CONFIGITEM>
+
+			<CONFIGITEM type="varchar" name="flag_include" default="">
+				<TITLE>Flag einschließen (Optional)</TITLE>
+				<DESCRIPTION>Nur Artikel die in der angegebenen Flag-Spalte den Wert 1 haben werden durchsucht.</DESCRIPTION>
+				<HELP></HELP>
+			</CONFIGITEM>
+
+			<CONFIGITEM type="varchar" name="flag_exclude" default="">
+				<TITLE>Flag auschließen (Optional)</TITLE>
+				<DESCRIPTION>Artikel die in der angegebenen Flag-Spalte den Wert 1 haben werden nicht durchsucht.</DESCRIPTION>
+				<HELP></HELP>
+			</CONFIGITEM>
+
+		</GROUP>
+		
+		<TAB title="Spezialfilter" name="_sit_multifilter_specialfilter_selection">
+		
+			<TITLE>Spezialfilter</TITLE>
+			<DESCRIPTION>Hier konfigurieren Sie spezielle Darstellungen der Attributwerte</DESCRIPTION>
+			<HELP></HELP>
+			
+			<CONFIGITEM type="list" name="colorAttributeSelection" selection="SITMultiFilter.getColorAttributeSelection" option="SITMultiFilter.getColorAttributeOption" target="SITMultiFilter.saveColorAttributeList">
+				<TITLE>Farbfilter Attribute festlegen</TITLE>
+				<DESCRIPTION>Legt fest welche Attribute im Frontend mit Farbplättchen dargestellt werden.</DESCRIPTION>
+				<HELP></HELP>
+			</CONFIGITEM>
+			
+			<CONFIGITEM type="list" name="dropdownAttributeSelection" selection="SITMultiFilter.getDropdownAttributeSelection" option="SITMultiFilter.getDropdownAttributeOption" target="SITMultiFilter.saveDropdownAttributeList">
+				<TITLE>Dropdown Attribute festlegen</TITLE>
+				<DESCRIPTION>Legt fest welche Attribute im Frontend als Auswahlliste dargestellt werden.</DESCRIPTION>
+				<HELP></HELP>
+			</CONFIGITEM>
+			
+			<CONFIGITEM type="list" name="manufacturerAttributeSelection" selection="SITMultiFilter.getManufacturerAttributeSelection" option="SITMultiFilter.getManufacturerAttributeOption" target="SITMultiFilter.saveManufacturerAttributeList">
+				<TITLE>Hersteller Attribute festlegen</TITLE>
+				<DESCRIPTION>Legt fest welche Attribute im Frontend bei den Herstellern dargestellt werden. (Keine Auswahl = Alle Attribute)</DESCRIPTION>
+				<HELP></HELP>
+			</CONFIGITEM>
+			
+			<CONFIGITEM type="list" name="searchAttributeSelection" selection="SITMultiFilter.getSearchAttributeSelection" option="SITMultiFilter.getSearchAttributeOption" target="SITMultiFilter.saveSearchAttributeList">
+				<TITLE>Such Attribute festlegen</TITLE>
+				<DESCRIPTION>Legt fest welche Attribute im Frontend bei der Suche dargestellt werden. (Keine Auswahl = Alle Attribute)</DESCRIPTION>
+				<HELP></HELP>
+			</CONFIGITEM>
+			
+		</TAB>
+		
+		<TAB title="Attributdaten" name="sit_multifilter__attribute_specialdata" type="list">
+			
+			<TITLE>Attributdaten</TITLE>
+			<DESCRIPTION>Hier konfigurieren die speziellen Daten der Attribuwerte</DESCRIPTION>
+			<HELP></HELP>
+		
+			<LIST>
+				<LISTITEM name="attributevalue">Attributwert</LISTITEM>
+				<LISTITEM name="specialdata">Datenwert</LISTITEM>
+			</LIST>
+		
+			<CONFIGITEM type="varchar" name="attributevalue">
+				<TITLE>Attributwert</TITLE>
+				<DESCRIPTION>Entspricht dem Wert in der Datenbank</DESCRIPTION>
+				<HELP></HELP>
+			</CONFIGITEM>
+			
+			<CONFIGITEM type="varchar" name="specialdata">
+				<TITLE>Datenwert</TITLE>
+				<DESCRIPTION>z.B. Farbwert (Hexadezimal) oder ein Bildpfad</DESCRIPTION>
+				<HELP></HELP>
+			</CONFIGITEM>
+		
+		</TAB>
+		
+		<TAB title="Textersetzung" name="sit_multifilter_ajax_replacement" type="list">
+			
+			<TITLE>Textersetzung (SEO/SEM)</TITLE>
+			<DESCRIPTION>Erstellen Sie hier Textersetzungen um z.B. mit verschiedenen URLs dassselbe Filterergebnis zu erhalten (SEO/SEM)</DESCRIPTION>
+			<HELP></HELP>
+		
+			<LIST>
+				<LISTITEM name="filter_value">Attributwert</LISTITEM>
+				<LISTITEM name="filter_replacement">Ersetzung</LISTITEM>
+			</LIST>
+		
+			<CONFIGITEM type="varchar" name="filter_value">
+				<TITLE>Filterwert</TITLE>
+				<DESCRIPTION>Entspricht dem Wert in der URL</DESCRIPTION>
+				<HELP></HELP>
+			</CONFIGITEM>
+			
+			<CONFIGITEM type="varchar" name="filter_replacement">
+				<TITLE>Attributwert (Ersetzung)</TITLE>
+				<DESCRIPTION>Entspricht dem Wert in der Datenbank</DESCRIPTION>
+				<HELP></HELP>
+			</CONFIGITEM>
+		
+		</TAB>
+		
+		<TAB title="Manuelle Sortierung" name="sit_multifilter_ajax_sorting" type="list">
+			
+			<TITLE>Manuelle Sortierung</TITLE>
+			<DESCRIPTION>Tragen Sie hier alle Attributwerte ein welche Sie VOR der automatischen 'alphabetischen' Sortierung anzeigen möchten</DESCRIPTION>
+			<HELP></HELP>
+		
+			<LIST>
+				<LISTITEM name="db_value">Attributwert</LISTITEM>
+				<LISTITEM name="sortorder">Sortierung</LISTITEM>
+			</LIST>
+		
+			<CONFIGITEM type="varchar" name="db_value">
+				<TITLE>Attributwert</TITLE>
+				<DESCRIPTION>Entspricht dem Wert in der Datenbank</DESCRIPTION>
+				<HELP></HELP>
+			</CONFIGITEM>
+			
+			<CONFIGITEM type="varchar" name="sortorder">
+				<TITLE>Sortierung (Zahl)</TITLE>
+				<DESCRIPTION>Sortierung: Kleiner = Oben in der Liste. (100er Schritte empfohlen um spätere Anpassungen zu erleichtern)</DESCRIPTION>
+				<HELP></HELP>
+			</CONFIGITEM>
+		
+		</TAB>
+		
+		<TAB title="Attribute erstellen" name="_sit_multifilter_ajax_attribute_generation">
+			
+			<TITLE>Attribute erstellen</TITLE>
+			<DESCRIPTION></DESCRIPTION>
+			<HELP></HELP>
+			
+			<GROUP name="Kategorien">
+			
+				<CONFIGITEM type="button" name="get_cronjob_url_attributes_category" target="SITMultiFilter.getCronjobUrlAttributesCategory">
+					<TITLE>Cronjob URL anzeigen (Kategorien)</TITLE>
+					<DESCRIPTION>Sie können die Cronjob URL zum regelmäßigen Aktualisieren Ihrer Kategorie-Attribute verwenden.</DESCRIPTION>
+					<HELP></HELP>
+				</CONFIGITEM>
+				
+				<CONFIGITEM type="button" name="create_attributes_category" target="SITMultiFilter.createAttributesCategory">
+					<TITLE>Kategorie-Attribute aktualisieren</TITLE>
+					<DESCRIPTION>Ein Klick auf Diesen Button löst die Aktualisierung der Kategorie-Attribute aus.</DESCRIPTION>
+					<HELP></HELP>
+				</CONFIGITEM>
+				
+				<CONFIGITEM type="boolean" 	name="create_attributes_only_main" default="0">
+					<TITLE>Nur Hauptkategorien verwenden</TITLE>
+					<DESCRIPTION>Es werden nur Hauptkategorien als Kategorie-Attribute gesetzt.</DESCRIPTION>
+					<HELP></HELP>
+				</CONFIGITEM>	
+				
+			</GROUP>
+			
+			<GROUP name="Hersteller">
+			
+				<CONFIGITEM type="button" name="get_cronjob_url_attributes_manufacturer" target="SITMultiFilter.getCronjobUrlAttributesManufacturer">
+					<TITLE>Cronjob URL anzeigen (Hersteller)</TITLE>
+					<DESCRIPTION>Sie können die Cronjob URL zum regelmäßigen Aktualisieren Ihrer Hersteller-Attribute verwenden.</DESCRIPTION>
+					<HELP></HELP>
+				</CONFIGITEM>
+				
+				<CONFIGITEM type="button" name="create_attributes_manufacturer" target="SITMultiFilter.createAttributesManufacturer">
+					<TITLE>Hersteller-Attribute aktualisieren</TITLE>
+					<DESCRIPTION>Ein Klick auf diesen Button löst die Aktualisierung der Hersteller-Attribute aus.</DESCRIPTION>
+					<HELP></HELP>
+				</CONFIGITEM>
+				
+			</GROUP>
+			
+			<GROUP name="Lieferanten">
+			
+				<CONFIGITEM type="button" name="get_cronjob_url_attributes_vendor" target="SITMultiFilter.getCronjobUrlAttributesVendor">
+					<TITLE>Cronjob URL anzeigen (Lieferanten)</TITLE>
+					<DESCRIPTION>Sie können die Cronjob URL zum regelmäßigen Aktualisieren Ihrer Lieferanten-Attribute verwenden.</DESCRIPTION>
+					<HELP></HELP>
+				</CONFIGITEM>
+				
+				<CONFIGITEM type="button" name="create_attributes_vendor" target="SITMultiFilter.createAttributesVendor">
+					<TITLE>Lieferanten-Attribute aktualisieren</TITLE>
+					<DESCRIPTION>Ein Klick auf diesen Button löst die Aktualisierung der Lieferanten-Attribute aus.</DESCRIPTION>
+					<HELP></HELP>
+				</CONFIGITEM>
+				
+			</GROUP>
+			
+			<GROUP name="Varianten">
+			
+				<CONFIGITEM type="button" name="get_cronjob_url_attributes_byvariant" target="SITMultiFilter.getCronjobUrlAttributesByVariant">
+					<TITLE>Cronjob URL anzeigen (Varianten)</TITLE>
+					<DESCRIPTION>Sie können die Cronjob URL zum regelmäßigen Aktualisieren Ihrer Varianten-Attribute verwenden.</DESCRIPTION>
+					<HELP></HELP>
+				</CONFIGITEM>
+				
+				<CONFIGITEM type="button" name="create_attributes_byvariant" target="SITMultiFilter.createAttributesByVariant">
+					<TITLE>Varianten-Attribute aktualisieren</TITLE>
+					<DESCRIPTION>Ein Klick auf diesen Button löst die Aktualisierung der Varianten-Attribute aus.</DESCRIPTION>
+					<HELP></HELP>
+				</CONFIGITEM>
+				
+				<CONFIGITEM type="button" visibility="hidden" name="create_attributes_byvariant_cron" target="SITMultiFilter.createAttributesByVariantCron">
+					<TITLE>Varianten erstellen per Cron</TITLE>
+					<DESCRIPTION></DESCRIPTION>
+					<HELP></HELP>
+				</CONFIGITEM>
+				
+			</GROUP>
+			
+		</TAB>
+		
+	</CONFIG>	
+	
+	<CONFIG name="sit_multifilter__attribute_color" type="table">
+		<CONFIGITEM type="varchar" name="attributeid" default=""/>
+	</CONFIG>
+	
+	<CONFIG name="sit_multifilter__attribute_dropdown" type="table">
+		<CONFIGITEM type="varchar" name="attributeid" default=""/>
+	</CONFIG>
+	
+	<CONFIG name="sit_multifilter__attribute_search" type="table">
+		<CONFIGITEM type="varchar" name="attributeid" default=""/>
+	</CONFIG>
+	
+	<CONFIG name="sit_multifilter__attribute_manufacturer" type="table">
+		<CONFIGITEM type="varchar" name="attributeid" default=""/>
+	</CONFIG>
+</ROOT>

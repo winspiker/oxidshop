@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="iso-8859-15"?>
+<OX>
+    <OXMENU id="DGMODULE">
+        <MAINMENU id="DGGOOGLETOOLS">
+            <SUBMENU id="dggoogleanalytics" cl="dggoogleanalytics_admin" list="dggoogleanalytics_list">
+                <TAB id="dggoogleanalytics_main" cl="dggoogleanalytics_main" />
+                <TAB id="dggoogleanalytics_support" cl="dggoogleanalytics_support" />
+                <TAB id="dggoogleanalytics_setup" cl="dggoogleanalytics_setup" />
+            </SUBMENU>
+        </MAINMENU>
+    </OXMENU>
+</OX>

@@ -1,0 +1,19 @@
+{
+  "name": "exonn/exonn_shopoxidconnector",
+  "description": "Exonn: ERP oxid eShop Connector",
+  "type": "oxideshop-module",
+  "keywords": ["exonn", "erp", "shopconnector", "module", "oxid"],
+  "homepage": "https://www.exonn.de",
+  "extra": {
+    "oxideshop": {
+      "target-directory": "exonn/exonn_shopoxidconnector"
+    }
+  },
+  "version": "3.2.6",
+  "require": {
+  },
+  "autoload": {
+    "psr-4": {
+    }
+  }
+}

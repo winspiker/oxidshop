@@ -1,0 +1,27 @@
+{
+	"name": "tabsl/tabslimagetags",
+	"version": "3.0.1",
+	"description": "Individuelle Alt- und Titel-Tags für Artikel- und Kategoriebilder.",
+	"type": "oxideshop-module",
+	"license": [
+		"proprietary"
+	],
+	"homepage": "https://oxid-module.eu",
+	"author": [{
+		"name": "Tobias Merkl",
+		"homepage": "https://oxid-module.eu"
+	}],
+	"support": {
+		"email": "support@oxid-module.eu"
+	},
+	"autoload": {
+		"psr-4": {
+			"Tabsl\\ImageTags\\": "../../../source/modules/tabsl/tabslImageTags"
+		}
+	},
+	"extra": {
+		"oxideshop": {
+			"target-directory": "tabsl/tabslImageTags"
+		}
+	}
+}

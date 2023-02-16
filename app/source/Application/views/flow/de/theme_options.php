@@ -63,9 +63,6 @@ $aLang = array(
     'SHOP_THEME_sCatPromotionsize'                  => 'Größe des Kategoriebildes für die Startseite in Pixeln (Breite*Höhe)',
     'HELP_SHOP_THEME_sCatPromotionsize'             => 'Kategorien, die auf der Startseite beworben werden, benötigen eine eigens dafür vorgesehene Größgenangabe. Stellen Sie diese hier ein.',
 
-    'SHOP_THEME_stickyHeader'                       => 'Sticky Header verwenden',
-    'HELP_SHOP_THEME_stickyHeader'                  => 'Der Header bleibt oben fix positioniert, wenn auf der Seite nach unten gescrollt wird.',
-
     'SHOP_THEME_blFooterShowHelp'                   => 'Hilfe-Link aktivieren',
     'SHOP_THEME_blFooterShowLinks'                  => 'Links-Link aktivieren',
     'SHOP_THEME_blFooterShowNewsletter'             => 'Newsletter-Link aktivieren',
@@ -168,7 +165,6 @@ $aLang = array(
     'SHOP_THEME_sBackgroundSize_contain'            => 'deckend (volle Breite)',
     'SHOP_THEME_sBackgroundSize_normal'             => 'Originalgröße behalten',
     'SHOP_THEME_blBackgroundAttachment'             => 'Soll das Hintergrundbild beim Scrollen stehen bleiben?',
-    'SHOP_THEME_bl_showPriceAlarm'                  => 'Wunschpreis aktivieren',
 
     'SHOP_THEME_blUseGoogleTS'                      => 'Google Zertifizierte Händler benutzen',
     'SHOP_THEME_sGoogleVendorId'                    => 'Google Store-ID (Erforderlich)',
@@ -215,5 +211,15 @@ $aLang = array(
     'SHOP_THEME_blFullwidthLayout'                  => 'Full-Width Layout aktivieren',
 
     'SHOP_THEME_blEmailsShowProductPictures'        => 'Produktbilder in E-Mails anzeigen',
+
+
+
+    'SHOP_THEME_GROUP_holiday' => 'Urlaubsdesign',
+     'SHOP_THEME_blHolidaySelect_none' => 'Keine',
+     'SHOP_THEME_blHolidaySelect_spring' => 'Frühling',
+     'SHOP_THEME_blHolidaySelect_newyear' => 'Neujahr',
+     'SHOP_THEME_blHolidaySelect_winter' => 'Winter',
+     'SHOP_THEME_blHolidaySelect_blackfriday' => 'Schwarzer Freitag',
+     'SHOP_THEME_blHolidaySelect' => 'Design für den Urlaub auswählen',
 
 );

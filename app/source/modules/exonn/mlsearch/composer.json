@@ -1,0 +1,26 @@
+{
+  "name": "exonn/mlsearch",
+  "version": "1.0.2",
+  "description": "This package allows for a search to query all activated languages for OXID eShop.",
+  "type": "oxideshop-module",
+  "keywords": ["oxid", "modules", "eShop"],
+  "license": [
+    "proprietary"
+  ],
+  "extra": {
+    "oxideshop": {
+      "blacklist-filter": [
+        "documentation/**/*.*"
+      ],
+      "target-directory": "exonn/mlsearch"
+    }
+  },
+  "require": {
+    "php": ">=7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Exonn\\MultilangualSearch\\": "../../../source/modules/exonn/mlsearch"
+    }
+  }
+}

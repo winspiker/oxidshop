@@ -1,0 +1,14 @@
+15:07:47
+85.13.128.239
+Array
+(
+)
+
+Array
+(
+    [cl] => exonn_shopconnector
+    [fnc] => resetcash
+    [functionname] => resetCatArticleCount
+    [parameter] => 9b2e2df8498c99ebdea1a8cdc76845b5
+)
+

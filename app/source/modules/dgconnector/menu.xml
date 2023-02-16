@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="iso-8859-15"?>
+<OX>
+  <OXMENU id="DGMODULE">
+      <MAINMENU id="DGCONNECTOR">
+          <SUBMENU id="dgconnectoradmin" cl="dgconnector_admin" list="dgconnector_list">
+              <TAB id="dgconnector_module" cl="dgconnector_module" />
+              <TAB id="dgconnector_main" cl="dgconnector_main" />
+              <TAB id="dgconnector_support" cl="dgconnector_support" />
+              <TAB id="dgconnector_setup" cl="dgconnector_setup" />
+          </SUBMENU>
+          <SUBMENU id="dgconnectortplblocksadmin" cl="dgconnector_tplblocks_admin" list="dgconnector_tplblocks_list">
+              <TAB id="dgconnector_tplblocks_main" cl="dgconnector_tplblocks_main" />
+          </SUBMENU>
+          <SUBMENU id="dgconnector_maintenance_admin" cl="dgconnector_maintenance_admin" list="dgconnector_maintenance_list">
+              <TAB id="dgconnector_maintenance_main" cl="dgconnector_maintenance_main" />
+          </SUBMENU>
+      </MAINMENU>
+  </OXMENU>
+</OX>

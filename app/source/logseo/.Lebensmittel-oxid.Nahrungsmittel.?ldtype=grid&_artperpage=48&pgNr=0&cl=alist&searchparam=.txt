@@ -1,0 +1,19 @@
+15:11:18
+54.36.148.105
+Array
+(
+)
+
+Array
+(
+    [ldtype] => grid
+    [_artperpage] => 48
+    [pgNr] => 0
+    [cl] => alist
+    [searchparam] => 
+)
+
+time: 0.952081918716
+
+
+

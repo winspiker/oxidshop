@@ -1,0 +1,20 @@
+{
+  "name": "netensio/net_redirect_manager",
+  "description": "Netensio: Redirect Manager",
+  "type": "oxideshop-module",
+  "keywords": ["netensio", "redirect", "manager", "module", "oxid"],
+  "homepage": "https://www.netensio.de",
+  "extra": {
+    "oxideshop": {
+      "target-directory": "netensio/net_redirect_manager"
+    }
+  },
+  "version": "1.0.4",
+  "require": {
+  },
+  "autoload": {
+    "psr-4": {
+      "Netensio\\RedirectManager\\": "../../../source/modules/netensio/net_redirect_manager"
+    }
+  }
+}

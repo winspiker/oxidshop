@@ -27,13 +27,11 @@
                 <input id="loginEmail" type="email" name="lgn_usr" value="" class="form-control" placeholder="[{oxmultilang ident="EMAIL_ADDRESS"}]">
             </div>
 
-            <div class="form-group">
-                <div class="input-group">
-                    <input id="loginPasword" type="password" name="lgn_pwd" class="form-control" value="" placeholder="[{oxmultilang ident="PASSWORD"}]">
-                    <span class="input-group-btn">
-                        <a class="forgotPasswordOpener btn btn-default" href="[{oxgetseourl ident=$oViewConf->getSslSelfLink()|cat:"cl=forgotpwd"}]" title="[{oxmultilang ident="FORGOT_PASSWORD"}]">?</a>
-                    </span>
-                </div>
+            <div class="form-group" style="margin-bottom:5px;">
+                <input id="loginPasword" type="password" name="lgn_pwd" class="form-control" value="" placeholder="[{oxmultilang ident="PASSWORD"}]">
+            </div>
+            <div class="form-group" style="margin-bottom:0;">
+                <a class="forgotPasswordOpener" href="[{oxgetseourl ident=$oViewConf->getSslSelfLink()|cat:"cl=forgotpwd"}]" title="[{oxmultilang ident="FORGOT_PASSWORD"}]">[{oxmultilang ident="FORGOT_PASSWORD"}]</a>
             </div>
 
             [{if $oViewConf->isFunctionalityEnabled( "blShowRememberMe" )}]

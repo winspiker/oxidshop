@@ -1,0 +1,20 @@
+{
+  "name": "netensio/net_sitemap",
+  "description": "Netensio: Google XML Sitemap",
+  "type": "oxideshop-module",
+  "keywords": ["netensio", "google", "xml", "sitemap", "module", "oxid"],
+  "homepage": "https://www.netensio.de",
+  "extra": {
+    "oxideshop": {
+      "target-directory": "netensio/net_sitemap"
+    }
+  },
+  "version": "1.0.0",
+  "require": {
+  },
+  "autoload": {
+    "psr-4": {
+      "Netensio\\Sitemap\\": "../../../source/modules/netensio/net_sitemap"
+    }
+  }
+}

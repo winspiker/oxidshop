@@ -1,0 +1,86 @@
+﻿﻿[dg] Google Analytics Schnittstelle
+Javascript Anbingung an Google Analytics
+
+Vielen Dank für Ihre Bestellung bei draufgeschaut.de.
+
+Zum Betrieb des Moduls muss der IonCube loader installiert sein.
+Ob dieser bei Ihnen installiert ist können Sie im OXID Admin unter Service => Systeminfo einsehen.
+
+Sollte diese Systemvorraussetzung nicht gegeben sein installieren Sie das Modul NICHT. 
+Kontaktieren Sie ihren Provider um die entsprechenden Systemvorraussetzung mit Ihren Provider herzustellen.
+
+Beim Update von einer OXID Version kleiner 6.0 ist es wichtig, dass Sie unter Module das alte Modul deaktivieren.
+Vor dem kopieren der neuen Daten müssen die alten Dateien entfernt werden.
+
+Sie können gefahrlos alle Dateien die mit dggoogleanalytics* beginnen löschen, alle Dateien für das Modul sind im dggoogleanalytics.zip enthalten.
+ 
+Zur Installation führen Sie folgende Schritte durch:
+
+ - Erstinstallation:
+ 
+ - - Produktivsystem:
+     composer config repositories.draufgeschaut composer https://update.draufgeschaut.de
+     composer require --update-no-dev draufgeschaut/dggoogleanalytics
+     
+ - - Testsystem/Entwicklungssystem:
+     composer config repositories.draufgeschaut composer https://update.draufgeschaut.de
+     composer require draufgeschaut/dggoogleanalytics
+     
+ - Modulupdate:
+ 
+ - - Produktivsystem:
+     composer config repositories.draufgeschaut composer https://update.draufgeschaut.de
+     composer require --no-dev draufgeschaut/dggoogleanalytics
+     
+ - - Testsystem/Entwicklungssystem:
+     composer config repositories.draufgeschaut composer https://update.draufgeschaut.de 
+     composer update draufgeschaut/dggoogleanalytics
+ 
+
+4. Aktivieren Sie das Modul unter Erweiterungen => Module => [dg] Google Analytics Schnittstelle
+
+
+
+Bei Modulen mit Konfiguration nehmen Sie unter [dg] Module => Google Tools => Google Analytics Schnittstelle die weiteren Einstellungen vor.
+
+
+Nach der Installation aktualisieren sie unter Service => Tools die Views und Leeren Sie bitte noch das Verzeichnis /tmp im Shop, außer der Datei ".htaccess".
+
+
+Bitte nutzen Sie falls im Modul vorhanden den Support-Reiter für Supportanfragen, Vielen Dank.
+
+Falls Sie die Installation nicht selbst ausführen möchten können Sie unter www.volker-doerk.de die Installation bestellen.
+
+draufgeschaut.de
+E-Mail: support@draufgeschaut.de 
+URL: http://www.volker-doerk.de
+
+Dateiliste:
+ - modules\dggoogleanalytics\Application\Controller\Admin\dggoogleanalytics_admin.php
+ - modules\dggoogleanalytics\Application\Controller\Admin\dggoogleanalytics_list.php
+ - modules\dggoogleanalytics\Application\Controller\Admin\dggoogleanalytics_main.php
+ - modules\dggoogleanalytics\Application\Controller\Admin\dggoogleanalytics_setup.php
+ - modules\dggoogleanalytics\Application\Controller\Admin\dggoogleanalytics_support.php
+ - modules\dggoogleanalytics\Application\Model\dggoogleanalytics.php
+ - modules\dggoogleanalytics\Application\Model\dggoogleanalyticsevents.php
+ - modules\dggoogleanalytics\Application\Model\dggoogleanalyticsupdate.php
+ - modules\dggoogleanalytics\Application\translations\de\dggoogleanalytics_help_lang.php
+ - modules\dggoogleanalytics\Application\translations\de\dggoogleanalytics_lang.php
+ - modules\dggoogleanalytics\Application\translations\en\dggoogleanalytics_help_lang.php
+ - modules\dggoogleanalytics\Application\translations\en\dggoogleanalytics_lang.php
+ - modules\dggoogleanalytics\Application\views\admin\de\dggoogleanalytics_help_lang.php
+ - modules\dggoogleanalytics\Application\views\admin\de\dggoogleanalytics_lang.php
+ - modules\dggoogleanalytics\Application\views\admin\en\dggoogleanalytics_help_lang.php
+ - modules\dggoogleanalytics\Application\views\admin\en\dggoogleanalytics_lang.php
+ - modules\dggoogleanalytics\Application\views\admin\tpl\dggoogleanalytics_admin.tpl
+ - modules\dggoogleanalytics\Application\views\admin\tpl\dggoogleanalytics_exception.tpl
+ - modules\dggoogleanalytics\Application\views\admin\tpl\dggoogleanalytics_list.tpl
+ - modules\dggoogleanalytics\Application\views\admin\tpl\dggoogleanalytics_main.tpl
+ - modules\dggoogleanalytics\Application\views\admin\tpl\dggoogleanalytics_setup.tpl
+ - modules\dggoogleanalytics\Application\views\admin\tpl\dggoogleanalytics_support.tpl
+ - modules\dggoogleanalytics\Modul\dggoogleanalytics_navigation.php
+ - modules\dggoogleanalytics\Modul\dggoogleanalytics_oxcmp_basket.php
+ - modules\dggoogleanalytics\Modul\dggoogleanalytics_oxutilsview.php
+ - modules\dggoogleanalytics\out\admin\img\dginfo.gif
+ - modules\dggoogleanalytics\out\blocks\dggoogleanalytics_base_js.tpl
+ - modules\dggoogleanalytics\out\blocks\dggoogleanalytics_base_style.tpl

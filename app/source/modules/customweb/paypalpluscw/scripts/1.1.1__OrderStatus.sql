@@ -1,0 +1,1 @@
+ALTER TABLE `paypalpluscw_transaction` ADD `lastSetOrderStatusSettingKey` VARCHAR(255);
