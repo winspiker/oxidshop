@@ -17,7 +17,6 @@
     "oxid-professional-services/countryvatadministration": "^1.0",
     "draufgeschaut/dgidealo": "^6.20",
     "exonn/mlsearch": "^1.0",
-    "exonn/livesearch": "^2.0",
     "tabsl/tabslimagetags": "^3.0",
     "seemannit/more-tabs": "^4.0",
     "exonn/seoadaptations": "^1.0",
@@ -93,10 +92,6 @@
     "netensio/net_sitemap": {
       "type": "path",
       "url": "module_install/net_sitemap"
-    },
-    "exonn/livesearch": {
-      "type": "path",
-      "url": "module_install/exonn/livesearch/"
     },
     "exonn/mlsearch": {
       "type": "path",

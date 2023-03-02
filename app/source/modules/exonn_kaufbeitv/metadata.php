@@ -38,7 +38,6 @@ $aModule = array(
         'oxwarticledetails'   => 'exonn_kaufbeitv/controllers/exonn_kaufbei_articledetailswidget',
         'oxwcategorytree' => 'exonn_kaufbeitv/Component/Widget/exonn_marketplace_category_tree',
         'details'   => 'exonn_kaufbeitv/controllers/exonn_kaufbei_articledetails',
-        'oxsearch' => 'exonn_kaufbeitv/models/exonn_kaufbei_search',
         'manufacturerlist'   => 'exonn_kaufbeitv/controllers/exonn_kaufbei_manufacturerlist',
         'oxpaymentlist' => 'exonn_kaufbeitv/models/exonn_kaufbei_oxpaymentlist',
         'oxbasket' => 'exonn_kaufbeitv/models/exonn_kaufbei_oxbasket',

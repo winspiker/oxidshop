@@ -1316,41 +1316,6 @@
             ]
         },
         {
-            "name": "exonn/livesearch",
-            "version": "2.0.1",
-            "dist": {
-                "type": "path",
-                "url": "module_install/exonn/livesearch",
-                "reference": "1bfb1feac388f67b1cf24619ae3c07bf1210cfe6"
-            },
-            "require": {
-                "php": ">=7.0"
-            },
-            "type": "oxideshop-module",
-            "extra": {
-                "oxideshop": {
-                    "blacklist-filter": [
-                        "documentation/**/*.*"
-                    ],
-                    "target-directory": "exonn/livesearch"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Exonn\\LiveSearch\\": "../../../source/modules/exonn/livesearch"
-                }
-            },
-            "license": [
-                "proprietary"
-            ],
-            "description": "The livesearch module simplifies searching for the desired product",
-            "keywords": [
-                "eShop",
-                "modules",
-                "oxid"
-            ]
-        },
-        {
             "name": "exonn/mlsearch",
             "version": "1.0.2",
             "dist": {
